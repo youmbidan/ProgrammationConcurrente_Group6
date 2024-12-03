@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="/">
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/chef.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/cuisine.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/Menu-removebg-preview.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/foret2.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/foret.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/pancarte-removebg-preview.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/pancarte-removebg-preview.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/plancher2.jpeg</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/plancher3.jpg</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/fleur-removebg-preview.png</file>
+       <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/sol1.jpg</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/Annotation_2024-12-01_230057-removebg-preview.png</file>
+
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/plancher.jpeg</file>
+  </qresource>
+</RCC>

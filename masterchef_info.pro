@@ -14,3 +14,7 @@ CONFIG += c++17
 
 # Inclut les répertoires nécessaires
 INCLUDEPATH += .
+
+RESOURCES += \
+    ressources.qrc
+
