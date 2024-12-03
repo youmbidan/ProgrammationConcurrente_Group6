@@ -3,7 +3,7 @@ TEMPLATE = app
 TARGET = masterchef_info
 
 # Indique les fichiers source
-SOURCES += main.cpp
+SOURCES += main.cpp src/
 
 # Indique l'utilisation des modules Qt nécessaires
 QT += widgets
