@@ -1,0 +1,71 @@
+-- Table Type
+CREATE TABLE Type (
+    Type_id INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    Wash_time INT NOT NULL
+);
+
+-- Table Common_material
+CREATE TABLE Common_material (
+    Material_id INT AUTO_INCREMENT PRIMARY KEY,
+    Type_id INT NOT NULL,
+    Name VARCHAR(255) NOT NULL,
+    Quantity INT NOT NULL,
+    FOREIGN KEY (Type_id) REFERENCES Type(Type_id)
+);
+
+-- Table Ustensils_kitchen
+CREATE TABLE Ustensils_kitchen (
+    Utensils_id INT AUTO_INCREMENT PRIMARY KEY,
+    Type_id INT NOT NULL,
+    Name VARCHAR(255) NOT NULL,
+    Quantity INT NOT NULL,
+    FOREIGN KEY (Type_id) REFERENCES Type(Type_id)
+);
+
+-- Table Location
+CREATE TABLE Location (
+    Location_id INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    Validity INT NOT NULL
+);
+
+-- Table Ingredients
+CREATE TABLE Ingredients (
+    Ingredient_id INT AUTO_INCREMENT PRIMARY KEY,
+    Location_id INT NOT NULL,
+    Name VARCHAR(255) NOT NULL,
+    Quantity INT NOT NULL,
+    Drop_date DATETIME NOT NULL,
+    FOREIGN KEY (Location_id) REFERENCES Location(Location_id)
+);
+
+-- Table Ingredient_used
+CREATE TABLE Ingredient_used (
+    Ingredient_used_id INT AUTO_INCREMENT PRIMARY KEY,
+    Ingredient_id INT NOT NULL,
+    Quantity_used FLOAT NOT NULL,
+    Date_used DATETIME NOT NULL,
+    FOREIGN KEY (Ingredient_id) REFERENCES Ingredients(Ingredient_id)
+);
+
+-- Table Reservation
+CREATE TABLE Reservation (
+    Reservation_id INT AUTO_INCREMENT PRIMARY KEY,
+    ClientNumber INT NOT NULL,
+    ReservationTime DATETIME NOT NULL
+);
+
+-- Table Daily_stats
+CREATE TABLE Daily_stats (
+    Daily_stat_id INT AUTO_INCREMENT PRIMARY KEY,
+    First_client_arrival DATETIME NOT NULL,
+    Last_client_left DATETIME NOT NULL,
+    Plates_served INT NOT NULL,
+    Avg_client_time FLOAT NOT NULL,
+    DOTD VARCHAR(255) NOT NULL,
+    DOTD_served INT NOT NULL,
+    Revenue FLOAT NOT NULL,
+    NbReservation INT NOT NULL,
+    FOREIGN KEY (NbReservation) REFERENCES Reservation(Reservation_id)
+);
