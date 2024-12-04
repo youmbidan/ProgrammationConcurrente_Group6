@@ -5,6 +5,9 @@
     "string": "cpp",
     "format": "cpp",
     "qwidget": "cpp",
-    "qcoreapplication": "cpp"
+    "qcoreapplication": "cpp",
+    "qframe": "cpp",
+    "qlabel": "cpp",
+    "qpushbutton": "cpp"
   }
 }
