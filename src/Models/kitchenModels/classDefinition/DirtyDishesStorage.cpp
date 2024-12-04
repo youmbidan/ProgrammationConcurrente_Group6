@@ -3,6 +3,9 @@
 //
 
 #include "../classDeclaration/DirtyDishesStorage.h"
+
+DirtyDishesStorage::DirtyDishesStorage(){};
+
 int DirtyDishesStorage::getdirtyCutleryNumber() const {
     return dirtyCutleryNumber;
 }

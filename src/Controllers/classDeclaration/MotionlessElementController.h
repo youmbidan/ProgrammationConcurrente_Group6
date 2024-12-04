@@ -4,8 +4,8 @@
 
 #ifndef MOTIONLESSELEMENTCONTROLLER_H
 #define MOTIONLESSELEMENTCONTROLLER_H
-#include "../../Models/classDeclaration/DirtyDishesStorage.h"
-#include "../../Models/classDeclaration/WashingMachine.h"
+#include "../../Models/kitchenModels/classDeclaration/DirtyDishesStorage.h"
+#include "../../Models/kitchenModels/classDeclaration/WashingMachine.h"
 using namespace std;
 
 /**
@@ -13,6 +13,10 @@ using namespace std;
  */
 class MotionlessElementController {
 public:
+
+    MotionlessElementController();
+
+
     /**
      * @brief
      *

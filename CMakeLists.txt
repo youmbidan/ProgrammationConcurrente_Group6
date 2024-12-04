@@ -11,7 +11,20 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 
 # Ajouter l'exécutable
-add_executable(masterchef_info main.cpp)
+add_executable(masterchef_info main.cpp
+    src/Controllers/classDeclaration/MainController.h 
+    src/Controllers/classDeclaration/DBController.h 
+    src/Controllers/classDeclaration/MotionlessElementController.h 
+    src/Controllers/classDefinition/MainController.cpp 
+    src/Controllers/classDefinition/DBController.cpp 
+    src/Controllers/classDefinition/MotionlessElementController.cpp
+    src/Models/kitchenModels/classDefinition/DirtyDishesStorage.cpp
+    src/Models/kitchenModels/classDefinition/WashingMachine.cpp
+    src/Models/kitchenModels/classDeclaration/DirtyDishesStorage.h
+    src/Models/kitchenModels/classDeclaration/WashingMachine.h
+    src/Views/mainView.h
+    src/Views/mainView.cpp
+)
 
 # Lier l'exécutable aux bibliothèques Qt nécessaires
 target_link_libraries(masterchef_info PRIVATE Qt6::Widgets)
