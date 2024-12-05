@@ -2,10 +2,9 @@
 #define OBSERVER_H
 
 
-
-
+#include <unordered_map>
 #include <string>
-
+#include <any>
 /**
  * @class Observer
  * 
@@ -15,7 +14,7 @@
 class Observer {
 public:
     virtual ~Observer() = default;
-    virtual void update(const std::string& message) = 0;
+    virtual void update(const std::unordered_map<std::string, auto>& data) = 0;
 };
 
 #endif

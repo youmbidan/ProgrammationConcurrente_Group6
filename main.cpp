@@ -1,8 +1,15 @@
 #include "src/Controllers/classDeclaration/MainController.h"
+#include <QApplication>
 
 int main(int argc, char *argv[])
 {
-    MainController mainController(argc, argv);
+    QApplication app(argc, argv);
+
+    MobilePointView mobilePointView(250,250);
+    MainView mainView(nullptr, &mobilePointView);
+    MainController mainController(mainView, mobilePointView);
+
     mainController.startMainView();
-    return 0;
+
+    return QApplication::exec();
 }

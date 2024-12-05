@@ -10,6 +10,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Rechercher les modules nécessaires de Qt
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 
+set(CMAKE_AUTOMOC ON)
+
 # Ajouter l'exécutable
 add_executable(masterchef_info main.cpp
     src/Controllers/classDeclaration/MainController.h 
@@ -24,6 +26,12 @@ add_executable(masterchef_info main.cpp
     src/Models/kitchenModels/classDeclaration/WashingMachine.h
     src/Views/mainView.h
     src/Views/mainView.cpp
+        src/Views/MobilePointView.cpp
+        src/Views/MobilePointView.h
+        src/Models/MobilePointModel.cpp
+        src/Models/MobilePointModel.h
+        src/Observer/Observable.cpp
+        src/Structs/PointStruct.cpp
 )
 
 # Lier l'exécutable aux bibliothèques Qt nécessaires
