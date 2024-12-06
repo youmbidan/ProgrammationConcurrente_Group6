@@ -10,6 +10,9 @@ class MobilePointModel :public QObject, public Observable {
     Q_OBJECT
 public:
     explicit MobilePointModel(const QString& labelText, int x = 0, int y = 0, QObject* parent = nullptr);
+
+    MobilePointModel(int x, int y, QObject *parent);
+
     ~MobilePointModel() override;
 
     void move();

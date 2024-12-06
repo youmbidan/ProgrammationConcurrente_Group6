@@ -12,6 +12,10 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 
 set(CMAKE_AUTOMOC ON)
 
+# Ajoutez les ressources
+qt_add_resources(RESOURCES ressources.qrc)
+
+
 # Ajouter l'exécutable
 add_executable(masterchef_info main.cpp
         src/Controllers/classDeclaration/MainController.h
@@ -19,11 +23,11 @@ add_executable(masterchef_info main.cpp
         src/Controllers/classDeclaration/MotionlessElementController.h
         src/Controllers/classDefinition/MainController.cpp
         src/Controllers/classDefinition/DBController.cpp
-        src/Controllers/classDefinition/MotionlessElementController.cpp
-        src/Models/kitchenModels/classDefinition/DirtyDishesStorage.cpp
-        src/Models/kitchenModels/classDefinition/WashingMachine.cpp
-        src/Models/kitchenModels/classDeclaration/DirtyDishesStorage.h
-        src/Models/kitchenModels/classDeclaration/WashingMachine.h
+#        src/Controllers/classDefinition/MotionlessElementController.cpp
+#        src/Models/kitchenModels/classDefinition/DirtyDishesStorage.cpp
+#        src/Models/kitchenModels/classDefinition/WashingMachine.cpp
+#        src/Models/kitchenModels/classDeclaration/DirtyDishesStorage.h
+#        src/Models/kitchenModels/classDeclaration/WashingMachine.h
         src/Views/mainView.h
         src/Views/mainView.cpp
         src/Views/MobilePointView.cpp
@@ -32,17 +36,21 @@ add_executable(masterchef_info main.cpp
         src/Models/MobilePointModel.h
         src/Observer/Observable.cpp
         src/Structs/PointStruct.h
-        src/Controllers/classDefinition/CharacterElementController.cpp
-        src/Controllers/classDeclaration/CharacterElementController.h
-        src/Controllers/classDefinition/CharacterElementController.cpp
-        src/Models/dinningRoomModels/classDefinition/HeadWaiter.cpp
-        src/Models/dinningRoomModels/classDefinition/Server.cpp
-        src/Models/dinningRoomModels/classDefinition/RoomClerk.cpp
-        src/Factories/classDefinition/TableFactory.cpp
-        src/Factories/classDefinition/TableFactory.cpp
-        src/Factories/classDeclaration/TableFactory.h
-        src/Factories/classDeclaration/ServerFactory.h
-        src/Factories/classDefinition/ServerFactory.cpp
+#        src/Controllers/classDefinition/CharacterElementController.cpp
+#        src/Controllers/classDeclaration/CharacterElementController.h
+#        src/Controllers/classDefinition/CharacterElementController.cpp
+#        src/Models/dinningRoomModels/classDefinition/HeadWaiter.cpp
+#        src/Models/dinningRoomModels/classDefinition/Server.cpp
+#        src/Models/dinningRoomModels/classDefinition/RoomClerk.cpp
+#        src/Factories/classDefinition/TableFactory.cpp
+#        src/Factories/classDefinition/TableFactory.cpp
+#        src/Factories/classDeclaration/TableFactory.h
+#        src/Factories/classDeclaration/ServerFactory.h
+#        src/Factories/classDefinition/ServerFactory.cpp
+        src/Views/kitchenView/kitchenView.cpp
+        src/Views/dinningRoomView/dinningRoomView.cpp
+
+        ${RESOURCES}
 )
 
 # Lier l'exécutable aux bibliothèques Qt nécessaires

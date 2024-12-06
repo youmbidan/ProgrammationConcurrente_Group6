@@ -34,6 +34,10 @@ src/Controllers/classDefinition/CharacterElementController.cpp \
     src/Models/kitchenModels/classDefinition/WashingMachine.cpp \
     src/Views/dinningRoomView/mainDinningRoomView.cpp \
     src/Views/kitchenView/mainKitchenView.cpp \
+    src/Views/MainView.cpp \
+    src/Views/MobilePointView.cpp \
+    src/Views/dinningRoomView/mainDinningRoomView.cpp \
+    src/Views/kitchenView/mainKitchenView.cpp \
     src/Observer/Observable.cpp \
     src/Factories/classDefinition/ServerFactory.cpp \
     src/Factories/classDefinition/TableFactory.cpp
@@ -68,6 +72,8 @@ src/Controllers/classDeclaration/CharacterElementController.h \
     src/Models/kitchenModels/classDeclaration/StorageModel.h \
     src/Models/kitchenModels/classDeclaration/UstensilModel.h \
     src/Models/kitchenModels/classDeclaration/WashingMachine.h \
+    src/Views/MainView.h \
+    src/Views/MobilePointView.h \
     src/Structs/PointStruct.h \
     src/Observer/Observable.h \
     src/Observer/Observer.h \
@@ -97,5 +103,6 @@ src/Controllers/classDeclaration \
     src/Models/kitchenModels/classDefinition \
     src/Observer \
     src/Structs \
+    src/Views \
     src/Views/dinningRoomView \
     src/Views/kitchenView

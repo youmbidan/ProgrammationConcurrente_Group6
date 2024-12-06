@@ -14,8 +14,8 @@
 class MainController
 {
 private:
-    DBController dbController;
-    MotionlessElementController motionlessElementController;
+    //DBController dbController;
+    //MotionlessElementController motionlessElementController;
     MainView &mainView;
     MobilePointView* mobile_point;  // Référence à MobilePoint
     MobilePointView* second_mobile_point;  // Référence à MobilePoint
@@ -25,7 +25,7 @@ private:
 public:
     explicit MainController(MainView &mainView);
     void startMainView();
-    void startMovementInThreads();
+    //void startMovementInThreads();
 };
 
 #endif // MAINCONTROLLER_H
