@@ -1,0 +1,42 @@
+<RCC>
+  <qresource prefix="/">
+    <file>assets/chef.png</file>
+    <file>assets/cuisine.png</file>
+    <file>assets/Menu-removebg-preview.png</file>
+    <file>assets/foret2.png</file>
+    <file>assets/foret.png</file>
+    <file>assets/pancarte-removebg-preview.png</file>
+    <file>assets/pancarte-removebg-preview.png</file>
+    <file>assets/plancher2.jpeg</file>
+    <file>assets/plancher3.jpg</file>
+    <file>assets/fleur-removebg-preview.png</file>
+    <file>assets/sol1.jpg</file>
+    <file>assets/Annotation_2024-12-01_230057-removebg-preview.png</file>
+
+    <file>assets/carreau.jpeg</file>
+    <file>assets/sol.jpeg</file>
+    <file>assets/table2.png</file>
+    <file>assets/table4.png</file>
+    <file>assets/plancher1.png</file>
+    <file>assets/planch.png</file>
+    <file>assets/planch1.png</file>
+    <file>assets/planch2.jpg</file>
+    <file>assets/table6.png</file>
+    <file>assets/table8.png</file>
+    <file>assets/tapis.png</file>
+    <file>assets/maitre.png</file>
+     <file>assets/reception-table.png</file>
+         <file>assets/stove.png</file>
+             <file>assets/kitchen.png</file>
+                 <file>assets/machine.png</file>
+                     <file>assets/kitchen-shelves.png</file>
+                         <file>assets/kitch.png</file>
+                          <file>assets/fridge.png</file>
+                           <file>assets/counter.png</file>
+
+
+
+
+    <file>assets/plancher.jpeg</file>
+  </qresource>
+</RCC>
