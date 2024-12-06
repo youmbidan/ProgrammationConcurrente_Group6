@@ -2,7 +2,7 @@
 //
 // Created by franck on 12/2/24.
 //
-void MoveController::moveServe(Server server) {
+void MoveController::moveServer(Server server) {
     // TODO: add few instructions to manage it
 }
 void MoveController::moveHeadWaiter(HeadWaiter headWaiter) {

@@ -3,6 +3,8 @@
     "qmainwindow": "cpp",
     "qapplication": "cpp",
     "string": "cpp",
-    "format": "cpp"
+    "format": "cpp",
+    "qwidget": "cpp",
+    "qcoreapplication": "cpp"
   }
 }

@@ -1,16 +1,21 @@
-//
-// Created by franck on 12/2/24.
-//
-
+// MainController.h
 #ifndef MAINCONTROLLER_H
 #define MAINCONTROLLER_H
+
 #include "DBController.h"
 #include "MotionlessElementController.h"
-using namespace std;
+#include "../../Views/mainView.h"
 
-class MainController {
+class MainController
+{
+private:
     DBController dbController;
     MotionlessElementController motionlessElementController;
-    // TODO: add the rest and modify where necessary
+    MainView mainView;
+
+public:
+    MainController(int argc, char *argv[]);
+    void startMainView();
 };
-#endif //MAINCONTROLLER_H
+
+#endif // MAINCONTROLLER_H

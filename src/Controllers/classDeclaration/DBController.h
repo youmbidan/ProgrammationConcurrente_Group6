@@ -10,13 +10,15 @@ using namespace std;
 /**
  * @class DBController
  */
-class DBController {
+class DBController
+{
     string DBName;
     string DBPassword;
+
 public:
+    DBController();
     void DBconnect();
     void DBdisconnect();
     void makeRequest();
-
 };
-#endif //DBCONTROLLER_H
+#endif // DBCONTROLLER_H

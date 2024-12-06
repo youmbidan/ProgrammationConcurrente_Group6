@@ -16,7 +16,8 @@
 #include "restauranttab.h"
 #include "kitchenwindow.h"
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     QApplication app(argc, argv);
 
     // Création du QTabWidget
@@ -33,7 +34,8 @@ int main(int argc, char *argv[]) {
     QHBoxLayout *controlBar = new QHBoxLayout();
 
     // Création d'un bouton avec icônes Qt standard
-    auto createButton = [](const QStyle::StandardPixmap iconType, const QString &tooltip) -> QPushButton * {
+    auto createButton = [](const QStyle::StandardPixmap iconType, const QString &tooltip) -> QPushButton *
+    {
         QPushButton *btn = new QPushButton();
         btn->setIcon(QApplication::style()->standardIcon(iconType));
         btn->setIconSize(QSize(24, 24));

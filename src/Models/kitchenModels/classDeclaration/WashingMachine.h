@@ -11,6 +11,7 @@ using namespace std;
  */
 class WashingMachine {
 public:
+    WashingMachine();
     /**
      * @brief
      *

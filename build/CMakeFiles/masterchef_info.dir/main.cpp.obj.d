@@ -1,48 +1,164 @@
 CMakeFiles/masterchef_info.dir/main.cpp.obj: \
  C:\Users\seand\Documents\X3\ Djissou\ Happi\Module\ 2\ -\ Programmation\ concourrente\projet\ programmation\ concourrante\masterchef_info\main.cpp \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/QApplication \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qapplication.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qtguiglobal.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qglobal.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/type_traits \
+ C:\Users\seand\Documents\X3\ Djissou\ Happi\Module\ 2\ -\ Programmation\ concourrente\projet\ programmation\ concourrante\masterchef_info\src/Controllers/classDeclaration/MainController.h \
+ C:\Users\seand\Documents\X3\ Djissou\ Happi\Module\ 2\ -\ Programmation\ concourrente\projet\ programmation\ concourrante\masterchef_info\src/Controllers/classDeclaration/DBController.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/iostream \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/requires_hosted.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/pstl/pstl_config.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/version.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstddef \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/stddef.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ostream \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ios \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/iosfwd \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stringfwd.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/memoryfwd.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/postypes.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cwchar \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/wchar.h \
  C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/corecrt.h \
  C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/_mingw.h \
  C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/_mingw_mac.h \
  C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/_mingw_secapi.h \
  C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/vadefs.h \
  C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/_mingw_stat64.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/exception \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/exception.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/version.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/exception_ptr.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/exception_defines.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/cxxabi_init_exception.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/stddef.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/typeinfo \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/hash_bytes.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/new \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/move.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/type_traits \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/nested_exception.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/char_traits.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/localefwd.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/clocale \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/locale.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/stdio.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cctype \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/ctype.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/ios_base.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/atomicity.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/pthread.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/errno.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/sys/types.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/process.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/corecrt_startup.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/limits.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/signal.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/pthread_signal.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/time.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/sys/timeb.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/_timeval.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/pthread_time.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/pthread_compat.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/pthread_unistd.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/locale_classes.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/string \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/allocator.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/new_allocator.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/functexcept.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/cpp_type_traits.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/ostream_insert.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/cxxabi_forced.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/concept_check.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/debug/assertions.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_iterator_base_types.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_iterator.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/type_traits.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/ptr_traits.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_function.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward/binders.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/numeric_traits.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_algobase.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_pair.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/utility.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/debug/debug.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/predefined_ops.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bit \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/concepts \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/refwrap.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/invoke.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/range_access.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/initializer_list \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_string.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/alloc_traits.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/alloc_traits.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_construct.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/string_view \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/functional_hash.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/string_view.tcc \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/string_conversions.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstdlib \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/stdlib.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/stdlib.h \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/malloc.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/std_abs.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstdio \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cerrno \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/charconv.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_string.tcc \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/memory_resource.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstddef \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/uses_allocator.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/uses_allocator_args.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/tuple \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/locale_classes.tcc \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/system_error \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/stdexcept \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/streambuf \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/streambuf.tcc \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_ios.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/locale_facets.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cwctype \
+ C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/wctype.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/streambuf_iterator.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/locale_facets.tcc \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_ios.tcc \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/ostream.tcc \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/istream \
+ C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/istream.tcc \
+ C:\Users\seand\Documents\X3\ Djissou\ Happi\Module\ 2\ -\ Programmation\ concourrente\projet\ programmation\ concourrante\masterchef_info\src/Controllers/classDeclaration/MotionlessElementController.h \
+ C:/Users/seand/Documents/X3\ Djissou\ Happi/Module\ 2\ -\ Programmation\ concourrente/projet\ programmation\ concourrante/masterchef_info/src/Models/kitchenModels/classDeclaration/DirtyDishesStorage.h \
+ C:/Users/seand/Documents/X3\ Djissou\ Happi/Module\ 2\ -\ Programmation\ concourrente/projet\ programmation\ concourrante/masterchef_info/src/Models/kitchenModels/classDeclaration/WashingMachine.h \
+ C:/Users/seand/Documents/X3\ Djissou\ Happi/Module\ 2\ -\ Programmation\ concourrente/projet\ programmation\ concourrante/masterchef_info/src/Views/MainView.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/QCoreApplication \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qcoreapplication.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qglobal.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/utility \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_relops.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_pair.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/move.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/utility.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/initializer_list \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstdint \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/stdint.h \
  C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/assert.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/stdlib.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstdlib \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/stdlib.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/limits.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/malloc.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/errno.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/std_abs.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdbool.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qtversionchecks.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qtconfiginclude.h \
@@ -76,8 +192,6 @@ CMakeFiles/masterchef_info.dir/main.cpp.obj: \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qyieldcpu.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/atomic \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/atomic_base.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/new \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/exception.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/atomic_lockfree_defines.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qconstructormacros.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qdarwinhelpers.h \
@@ -85,28 +199,9 @@ CMakeFiles/masterchef_info.dir/main.cpp.obj: \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qforeach.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qttypetraits.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/optional \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/exception \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/exception_ptr.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/exception_defines.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/cxxabi_init_exception.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/typeinfo \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/hash_bytes.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/nested_exception.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/enable_special_members.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/functional_hash.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_construct.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_iterator_base_types.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_iterator_base_funcs.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/concept_check.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/debug/assertions.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/tuple \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/uses_allocator.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/invoke.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/variant \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/parse_numbers.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/numeric_traits.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/cpp_type_traits.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/type_traits.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/aligned_buffer.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qfunctionpointer.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qglobalstatic.h \
@@ -114,17 +209,8 @@ CMakeFiles/masterchef_info.dir/main.cpp.obj: \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qminmax.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qnumeric.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cmath \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/requires_hosted.h \
  C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/math.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/specfun.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_algobase.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/functexcept.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_iterator.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/ptr_traits.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/debug/debug.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/predefined_ops.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bit \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/concepts \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/tr1/gamma.tcc \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/tr1/special_function_util.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/tr1/bessel_function.tcc \
@@ -143,36 +229,19 @@ CMakeFiles/masterchef_info.dir/main.cpp.obj: \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qtresource.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qttranslation.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qversiontagging.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qtgui-config.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qtguiexports.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qcoreapplication.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qstring.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qchar.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qcompare.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qcomparehelpers.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/q20type_traits.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/functional \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_function.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward/binders.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/refwrap.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/std_function.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/unordered_map \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/unordered_map.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/hashtable.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/hashtable_policy.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/alloc_traits.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/alloc_traits.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/memoryfwd.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/allocator.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/new_allocator.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/node_handle.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/range_access.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/erase_if.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/memory_resource.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/uses_allocator_args.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/vector \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_uninitialized.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_vector.h \
@@ -196,62 +265,6 @@ CMakeFiles/masterchef_info.dir/main.cpp.obj: \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstring \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/iterator \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stream_iterator.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/iosfwd \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stringfwd.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/postypes.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cwchar \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/wchar.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/_mingw_off_t.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/_mingw_stat64.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/swprintf.inl \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/streambuf_iterator.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/streambuf \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/localefwd.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/clocale \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/locale.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/stdio.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cctype \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/ctype.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/ios_base.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/atomicity.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/pthread.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/sys/types.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/process.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/corecrt_startup.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/signal.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/pthread_signal.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/time.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/sys/timeb.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/_timeval.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/pthread_time.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/pthread_compat.h \
- C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include/pthread_unistd.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/locale_classes.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/string \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/char_traits.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/ostream_insert.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/cxxabi_forced.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_string.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/string_view \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/string_view.tcc \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/string_conversions.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstdio \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cerrno \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/charconv.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_string.tcc \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/locale_classes.tcc \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/system_error \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/stdexcept \
- C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/streambuf.tcc \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/memory \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_tempbuf.h \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_raw_storage_iter.h \
@@ -344,17 +357,27 @@ CMakeFiles/masterchef_info.dir/main.cpp.obj: \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qhash.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qvarlengtharray.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qcoreapplication.h \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/QWidget \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/qwidget.h \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+ C:/Qt/6.8.0/mingw_64/include/QtGui/qtguiglobal.h \
+ C:/Qt/6.8.0/mingw_64/include/QtGui/qtgui-config.h \
+ C:/Qt/6.8.0/mingw_64/include/QtGui/qtguiexports.h \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs_win.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qpoint.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/q23utility.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qsize.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qmargins.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qcursor.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qbitmap.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/q23utility.h \
+ C:/Qt/6.8.0/mingw_64/include/QtGui/qaction.h \
+ C:/Qt/6.8.0/mingw_64/include/QtGui/qkeysequence.h \
+ C:/Qt/6.8.0/mingw_64/include/QtGui/qicon.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qsize.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qpixmap.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qpaintdevice.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qrect.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qpoint.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qcolor.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qrgb.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qrgba64.h \
@@ -367,31 +390,13 @@ CMakeFiles/masterchef_info.dir/main.cpp.obj: \
  C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cassert \
  C:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qline.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qguiapplication.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qinputmethod.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qvariant.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qguiapplication_platform.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/QVBoxLayout \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qboxlayout.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlayout.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlayoutitem.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qboxlayout.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgridlayout.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGridLayout \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgridlayout.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/QWidget \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qwidget.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qaction.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qkeysequence.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qicon.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qpalette.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qbrush.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qfont.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qendian.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qfontmetrics.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qfontinfo.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/QFrame \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qframe.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qwidget.h
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
+ C:/Qt/6.8.0/mingw_64/include/QtGui/qcursor.h \
+ C:/Qt/6.8.0/mingw_64/include/QtGui/qbitmap.h
