@@ -1,42 +1,42 @@
 <RCC>
   <qresource prefix="/">
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/chef.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/cuisine.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/Menu-removebg-preview.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/foret2.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/foret.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/pancarte-removebg-preview.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/pancarte-removebg-preview.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/plancher2.jpeg</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/plancher3.jpg</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/fleur-removebg-preview.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/sol1.jpg</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/Annotation_2024-12-01_230057-removebg-preview.png</file>
+    <file>assets/chef.png</file>
+    <file>assets/cuisine.png</file>
+    <file>assets/Menu-removebg-preview.png</file>
+    <file>assets/foret2.png</file>
+    <file>assets/foret.png</file>
+    <file>assets/pancarte-removebg-preview.png</file>
+    <file>assets/pancarte-removebg-preview.png</file>
+    <file>assets/plancher2.jpeg</file>
+    <file>assets/plancher3.jpg</file>
+    <file>assets/fleur-removebg-preview.png</file>
+    <file>assets/sol1.jpg</file>
+    <file>assets/Annotation_2024-12-01_230057-removebg-preview.png</file>
 
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/carreau.jpeg</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/sol.jpeg</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/table2.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/table4.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/plancher1.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/planch.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/planch1.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/planch2.jpg</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/table6.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/table8.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/tapis.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/maitre.png</file>
-     <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/reception-table.png</file>
-         <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/stove.png</file>
-             <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/kitchen.png</file>
-                 <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/machine.png</file>
-                     <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/kitchen-shelves.png</file>
-                         <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/kitch.png</file>
-                          <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/fridge.png</file>
-                           <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/counter.png</file>
-
-
+    <file>assets/carreau.jpeg</file>
+    <file>assets/sol.jpeg</file>
+    <file>assets/table2.png</file>
+    <file>assets/table4.png</file>
+    <file>assets/plancher1.png</file>
+    <file>assets/planch.png</file>
+    <file>assets/planch1.png</file>
+    <file>assets/planch2.jpg</file>
+    <file>assets/table6.png</file>
+    <file>assets/table8.png</file>
+    <file>assets/tapis.png</file>
+    <file>assets/maitre.png</file>
+     <file>assets/reception-table.png</file>
+         <file>assets/stove.png</file>
+             <file>assets/kitchen.png</file>
+                 <file>assets/machine.png</file>
+                     <file>assets/kitchen-shelves.png</file>
+                         <file>assets/kitch.png</file>
+                          <file>assets/fridge.png</file>
+                           <file>assets/counter.png</file>
 
 
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/plancher.jpeg</file>
+
+
+    <file>assets/plancher.jpeg</file>
   </qresource>
 </RCC>

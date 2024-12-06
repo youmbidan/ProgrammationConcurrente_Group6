@@ -4,9 +4,9 @@
 
 #ifndef SERVER_H
 #define SERVER_H
-#include "UstensilModel.h"
+#include "../../kitchenModels/classDeclaration/UstensilModel.h"
 #include "Table.h"
-#include "Order.h"
+#include "../../commonModels/classDeclaration/Order.h"
 #include <vector>
 /**
  * @class Server
@@ -22,16 +22,13 @@ public:
      * @param intercept the position y of the server
      * @param area the actual square of the server
      * @param max_ready_order
-     * @param dirty_dishes_collected
      */
 
 
-    Server(double abscice, double intercept, int area, int max_ready_order,
-     const vector<UstensilModel> &dirty_dishes_collected)
+    Server(double abscice, double intercept, int area, int max_ready_order)
      : Human(abscice, intercept),
        area(area),
-       maxReadyOrder(max_ready_order),
-       dirtyDishesCollected(dirty_dishes_collected) {
+       maxReadyOrder(max_ready_order){
     }
 
     /**

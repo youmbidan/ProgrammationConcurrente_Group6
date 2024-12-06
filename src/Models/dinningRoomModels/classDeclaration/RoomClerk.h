@@ -5,6 +5,8 @@
 #ifndef ROOMCLERK_H
 #define ROOMCLERK_H
 #include "Server.h"
+#include "../../kitchenModels//classDeclaration/UstensilModel.h"
+
 using namespace std;
 
 /**
@@ -12,7 +14,8 @@ using namespace std;
  *
  * @brief a subsitute server
  */
-class RoomClerk : Server{
+class RoomClerk : Server
+{
 public:
     /**
      * @brief the RoomClerk constructor
@@ -20,11 +23,10 @@ public:
      * @param area
      * @param max_ready_order
      * @param dirty_dishes_collected
-     * @param type
      */
-    RoomClerk(int area, int max_ready_order, const vector<UstensilModel> &dirty_dishes_collected, const string &type)
-        : Server(area, max_ready_order, dirty_dishes_collected),
-          type(type) {
+    RoomClerk(double abscice, double intercept, int area, int max_ready_order)
+        : Server(abscice, intercept, area, max_ready_order)
+    {
     }
 
     /**
@@ -35,6 +37,5 @@ public:
 
 private:
     string type;
-
 };
-#endif //ROOMCLERK_H
+#endif // ROOMCLERK_H

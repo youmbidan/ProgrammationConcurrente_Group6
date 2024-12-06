@@ -6,13 +6,13 @@
 #define BUTLE_H
 #include <vector>
 #include "Table.h"
-#include "ClientModel.h"
+#include "../../commonModels/classDeclaration/ClientModel.h"
 using namespace std;
 
 /**
  * @class Butler
  *
- * the class of the butler (he is supposed to welcome the client at thier
+ * the class of the butler (he is supposed to welcome the client at their
  * entry)
  */
 class Butler {
@@ -20,11 +20,11 @@ public:
     /**
      * @brief Constructor of the class Butler
      *
-     * @param client_n_umber
+     * @param client_number
      * @param priority_table
      */
-    Butler(const int client_n_umber, const vector<int> &priority_table)
-        : clientNUmber(client_n_umber),
+    Butler(const int client_number, const vector<int> &priority_table)
+        : clientNUmber(client_number),
           priorityTable(priority_table) {
     }
 

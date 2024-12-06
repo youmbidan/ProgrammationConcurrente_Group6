@@ -4,18 +4,20 @@
 
 #ifndef HEADWAITER_H
 #define HEADWAITER_H
-#include "Order.h"
+#include "../../commonModels/classDeclaration/Order.h"
 #include "Table.h"
-#include "ClientModel.h"
+#include "../../commonModels/classDeclaration/ClientModel.h"
 #include <queue>
 /**
  * @class HeadWaiter
  *
  * @brief the guys who lead the client to his table
  */
-class HeadWaiter {
+class HeadWaiter : public Human {
     queue<Order> orderQueue;
 public:
+
+    HeadWaiter(int abscice, int intercept);
     /**
      * @brief the function to lead the clients to their table
      *
