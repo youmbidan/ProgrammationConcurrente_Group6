@@ -14,7 +14,7 @@
 class Observer {
 public:
     virtual ~Observer() = default;
-    virtual void update(const std::unordered_map<std::string, auto>& data) = 0;
+    virtual void update(const std::any& data) = 0;
 };
 
 #endif

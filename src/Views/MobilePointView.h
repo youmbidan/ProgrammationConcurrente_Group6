@@ -7,15 +7,18 @@
 
 #include <QGraphicsEllipseItem>
 #include "../Observer/Observer.h"
+#include "../Structs/PointStruct.h"
+
 
 
 class MobilePointView : public QObject, public QGraphicsEllipseItem, public Observer {
     Q_OBJECT
 public:
-    MobilePointView(int initialX = 0, int initialY = 0, QGraphicsItem* parent = nullptr);
-
     ~MobilePointView() override;
-    void update(const std::unordered_map<std::string, auto>& data) override;
+
+    MobilePointView(const QString &labelText, int initialX, int initialY);
+
+    void update(const std::any& data) override;
     int getX() const;
     int getY() const;
     // signals:
@@ -24,7 +27,7 @@ public:
 private:
     int x{};
     int y{};
-
+    QGraphicsTextItem *label;
 };
 
 

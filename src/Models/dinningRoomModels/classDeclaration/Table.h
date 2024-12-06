@@ -7,7 +7,7 @@
 #include <iostream>
 #include <vector>
 
-#include "ClientModel.h"
+#include "../../commonModels/classDeclaration/ClientModel.h"
 
 /**
  * @class Table
@@ -23,18 +23,11 @@ public:
      * @param abscice
      * @param intercept
      * @param capacity
-     * @param occuped
-     * @param client_list
-     * @param bread_cart_needed
      */
-    Table(double abscice, double intercept, int capacity, int occuped, const vector<ClientModel> &client_list,
-          int bread_cart_needed)
+    Table(double abscice, double intercept, int capacity)
         : abscice(abscice),
           intercept(intercept),
-          capacity(capacity),
-          occuped(occuped),
-          clientList(client_list),
-          breadCartNeeded(bread_cart_needed) {
+          capacity(capacity){
     }
 
     /**

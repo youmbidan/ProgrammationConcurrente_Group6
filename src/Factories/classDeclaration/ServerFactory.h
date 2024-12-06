@@ -6,8 +6,13 @@
 #define SERVERFACTORY_H
 
 
+/**
+ *@class ServerFactory
+ *
+ *@brief generate instances of Server class according to their area (1 or 2)
+ */
 
-class serverFactory {
+class ServerFactory {
 
 };
 

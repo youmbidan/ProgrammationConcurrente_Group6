@@ -14,7 +14,7 @@ void Observable::unsubscribe(Observer *observer)
 }
 
 // Notify all observers
-void Observable::notify(const std::unordered_map<std::string, std::any>& data)
+void Observable::notify(const std::any& data)
 {
   for (Observer *observer : observers)
   {

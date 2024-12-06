@@ -3,21 +3,21 @@
 
 #include "../Observer/Observable.h"
 #include <QObject>
+#include <QGraphicsTextItem>
 
-class MobilePointModel : public QObject, public Observable {
+
+class MobilePointModel :public QObject, public Observable {
     Q_OBJECT
 public:
-    explicit MobilePointModel(int x = 0, int y = 0, QObject* parent = nullptr);
+    explicit MobilePointModel(const QString& labelText, int x = 0, int y = 0, QObject* parent = nullptr);
     ~MobilePointModel() override;
 
     void move();
 
-    signals:
-        void movementFinished();  // Signal pour indiquer la fin du mouvement
-
 private:
     int x;
     int y;
+    QGraphicsTextItem* label;
 };
 
 #endif // MOBILEPOINTMODEL_H

@@ -16,16 +16,16 @@
 #include "../../Views/MobilePointView.h"
 
 /**
- * @class MobileElementController
+ * @class CharacterElementController
  *
  * @brief Class for handling mobile element instantiation and some others stuffs
  */
 
-class MobileElementController {
+class CharacterElementController {
  public:
- MobileElementController();
- MobileElementController(MainView mainview);
- ~MobileElementController();
+ CharacterElementController();
+ CharacterElementController(MainView mainview);
+ ~CharacterElementController();
 
 
  private:

@@ -2,11 +2,10 @@
 #include <QGraphicsEllipseItem>
 #include <iostream>
 
-MainView::MainView(QWidget* parent, MobilePointView* mobilePoint)
+MainView::MainView(QWidget* parent)
     : QMainWindow(parent),
       graphicsView(new QGraphicsView(this)),
-      graphicsScene(new QGraphicsScene(this)),
-      mobilePoint(mobilePoint)
+      graphicsScene(new QGraphicsScene(this))
 {
     setFixedSize(500, 500);
     setWindowTitle("Main Application");
@@ -15,19 +14,19 @@ MainView::MainView(QWidget* parent, MobilePointView* mobilePoint)
     graphicsView->setRenderHint(QPainter::Antialiasing);
     graphicsView->setGeometry(0, 0, 500, 500);
     graphicsScene->setSceneRect(0, 0, 500, 500);
-
-
-    if (mobilePoint) {
-        graphicsScene->addItem(mobilePoint);
-        // connect(mobilePoint, &MobilePoint::positionUpdated, this, &MainView::onPositionUpdated);;
-        std::cout << "Mobile point added to scene " << std::endl;
-    }
 }
 
 void MainView::start() {
     show();
     std::cout << "View has started." << std::endl;
 }
+
+void MainView::addToScene(QGraphicsEllipseItem *item) {
+    graphicsScene->addItem(item);
+    // connect(mobilePoint, &MobilePoint::positionUpdated, this, &MainView::onPositionUpdated);;
+    std::cout << "Mobile point added to scene " << std::endl;
+}
+
 
 // void MainView::refreshView() {
 //     graphicsView->viewport()->update();  // Rafraîchit la vue

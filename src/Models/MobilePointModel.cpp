@@ -4,6 +4,8 @@
 #include <any>
 #include <iostream>
 
+#include "../Structs/PointStruct.h"
+
 MobilePointModel::MobilePointModel(int x, int y, QObject* parent)
     : QObject(parent), x(x), y(y) {}
 
@@ -17,9 +19,7 @@ void MobilePointModel::move() {
         500) {
             x++;
             y++;
-            std::unordered_map<std::string, std::any> data;
-            data["x"] = x;
-            data["y"] = y;
+            PointStruct data = {x, y};
             notify(data);
 
             std::cout << "Coordinates updated: x = " << x << ", y = " << y << std::endl;

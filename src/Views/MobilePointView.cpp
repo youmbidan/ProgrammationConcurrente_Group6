@@ -6,20 +6,30 @@
 #include <any>
 #include <iostream>
 #include <qbrush.h>
-#include <unordered_map>
+#include <qfont.h>
+
+#include "../Structs/PointStruct.h"
 
 
-MobilePointView::MobilePointView(const int initialX, const int initialY, QGraphicsItem* parent)
+MobilePointView::MobilePointView(const QString& labelText, const int initialX, const int initialY, QGraphicsItem* parent)
     : QGraphicsEllipseItem(0, 0, 10, 10, parent), x(initialX), y(initialY)
 {
     setBrush(QBrush(Qt::black));
     setPos(x, y);
+
+    this->label = new QGraphicsTextItem(labelText, this);
+    label->setDefaultTextColor(Qt::blue);
+    label->setFont(QFont("Arial", 10, QFont::Bold));
+    label->setPos(-label->boundingRect().width() / 2, -label->boundingRect().height() - 5);
 }
 
-void MobilePointView::update(const std::unordered_map<std::string, auto>& data) {
+void MobilePointView::update(const std::any& data) {
 
-    x = data.at("x");  // Mettre à jour x
-    y = data.at("y");  // Mettre à jour y
+    PointStruct coord = std::any_cast<PointStruct>(data);
+
+    x = coord.x;
+    y = coord.y;
+
     std::cout << "updating: newX = " << x << " newY = " << x << std::endl;
 
     setPos(x, x);
