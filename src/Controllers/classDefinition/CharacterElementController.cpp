@@ -5,7 +5,7 @@
 #include "../classDeclaration/CharacterElementController.h"
 
 
-CharacterElementController::CharacterElementController(MainView main_view) {
+CharacterElementController::CharacterElementController(MainView *mainview): main_view(mainview) {
     initializeEmployeesCharacter();
 
 };
@@ -22,12 +22,19 @@ void CharacterElementController::initializeEmployeesCharacter() {
     this->room_clerk_point_view = new CommonPointView("roomClerk",20, 20);
 
     //Objects instantiation
-    this->butler = new Butler(0, priority_table );
-    this->headWaiter = new HeadWaiter(head_waiter_point_view->getX(),head_waiter_point_view->getY());
-    this->second_headWaiter = new HeadWaiter(second_head_waiter_point_view->getX(),second_head_waiter_point_view->getY());
-    this->server = new Server(server_point_view->getX(),server_point_view->getY(),1,5);
-    this->second_server = new Server(second_server_point_view->getX(),second_server_point_view->getY(),1,5);
-    this->roomClerk = new RoomClerk(room_clerk_point_view->getX(),room_clerk_point_view->getY(),1,5);
+    butler = new Butler(0, priority_table );
+    headWaiter = new HeadWaiter(head_waiter_point_view->getX(),head_waiter_point_view->getY());
+    second_headWaiter = new HeadWaiter(second_head_waiter_point_view->getX(),second_head_waiter_point_view->getY());
+    server = new Server(server_point_view->getX(),server_point_view->getY(),1,5);
+    second_server = new Server(second_server_point_view->getX(),second_server_point_view->getY(),1,5);
+    roomClerk = new RoomClerk(room_clerk_point_view->getX(),room_clerk_point_view->getY(),1,5);
+
+    //Attach ours graphics element to ours models instances
+    headWaiter->subscribe(this->head_waiter_point_view);
+    second_headWaiter->subscribe(this->second_head_waiter_point_view);
+    server->subscribe(this->server_point_view);
+    second_server->subscribe(this->second_server_point_view);
+    roomClerk->subscribe(this->room_clerk_point_view);
 }
 
 void CharacterElementController::initializeClientsCharacter() {

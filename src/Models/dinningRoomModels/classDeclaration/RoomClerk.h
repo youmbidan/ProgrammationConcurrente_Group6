@@ -14,7 +14,7 @@ using namespace std;
  *
  * @brief a subsitute server
  */
-class RoomClerk : Server
+class RoomClerk : public Server
 {
 public:
     /**

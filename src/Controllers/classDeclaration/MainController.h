@@ -11,16 +11,9 @@
 #include <QTimer>// Pour std::thread
 
 
+
 class MainController
 {
-private:
-    //DBController dbController;
-    //MotionlessElementController motionlessElementController;
-    MainView &mainView;
-    CommonPointView* mobile_point;  // Référence à MobilePoint
-    CommonPointView* second_mobile_point;  // Référence à MobilePoint
-    MobilePointModel* mobile_point_model;  // Pointeur vers MobilePointModel
-    MobilePointModel* second_mobile_point_model;  // Pointeur vers MobilePointModel
 
 public:
     explicit MainController(MainView &mainView);

@@ -29,27 +29,29 @@ public:
   *
   * @param mainview
   */
- explicit CharacterElementController(MainView mainview);
+ explicit CharacterElementController(MainView *mainview);
 
+// made all these attributes static in purpose to access them all over the project
+ static Butler *butler;
+ static HeadWaiter *headWaiter;
+ static HeadWaiter *second_headWaiter;
+ static Server *server;
+ static Server *second_server;
+ static RoomClerk *roomClerk;
 
- private:
- Butler *butler;
- HeadWaiter *headWaiter;
- HeadWaiter *second_headWaiter;
- Server *server;
- Server *second_server;
- RoomClerk *roomClerk;
+ static ClientGroupModel *clientGroup;
 
- ClientGroupModel *clientGroup;
-
- CommonPointView *butler_point_view;
- CommonPointView *head_waiter_point_view;
- CommonPointView *second_head_waiter_point_view;
- CommonPointView *server_point_view;
- CommonPointView *second_server_point_view;
- CommonPointView *room_clerk_point_view;
+ static CommonPointView *butler_point_view;
+ static CommonPointView *head_waiter_point_view;
+ static CommonPointView *second_head_waiter_point_view;
+ static CommonPointView *server_point_view;
+ static CommonPointView *second_server_point_view;
+ static CommonPointView *room_clerk_point_view;
 
  CommonPointView *client_group_point_view;
+
+ private:
+ MainView main_view;
 
  /**
   * @brief initialize employees/clients and associate them with
@@ -58,8 +60,6 @@ public:
   */
  void initializeEmployeesCharacter();
  void initializeClientsCharacter();
-
-
 
 
 };

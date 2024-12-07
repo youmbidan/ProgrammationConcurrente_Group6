@@ -55,6 +55,8 @@ add_executable(masterchef_info main.cpp
         src/Factories/classDeclaration/ClientGroupFactory.h
         src/Utilities/ThreadPoolManager.cpp
         src/Utilities/ThreadPoolManager.h
+        src/Models/dinningRoomModels/classDefinition/HeadWaiter.cpp
+        src/Models/commonModels/classDefinition/MobileElementModel.cpp
 )
 
 # Lier l'exécutable aux bibliothèques Qt nécessaires

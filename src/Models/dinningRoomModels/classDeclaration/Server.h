@@ -13,7 +13,7 @@
  *
  * @brief the class that manage the server
  */
-class Server : MobileElementModel{
+class Server : public MobileElementModel{
 public:
     /**
      * @brief the constructor of the server class

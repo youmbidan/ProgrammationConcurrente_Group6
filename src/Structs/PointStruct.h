@@ -2,8 +2,8 @@
 #define POINTSTRUCT_H
 
 struct PointStruct {
-    int x;
-    int y;
+    double x;
+    double y;
 };
 
 #endif // POINTSTRUCT_H
