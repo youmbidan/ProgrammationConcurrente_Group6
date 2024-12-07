@@ -8,7 +8,7 @@
 #include <vector>
 #include "Recipe.h"
 #include "Order.h"
-#include "Human.h"
+#include "MobileElementModel.h"
 using namespace std;
 
 /**
@@ -18,28 +18,20 @@ using namespace std;
  * the clientModel class is used to create the different instance of the client,
  * they are the one with the different methods of the client
  */
-class ClientModel : Human{
+class ClientModel {
 public:
     /**
      *@brief constructor of the Client class
      *
-     * @param abscice
-     * @param intercept
-     * @param type
-     * @param id
      * @param has_odered
-     * @param order_time_left
      * @param has_ordered_entree
      * @param has_ordered_main_course
      * @param has_ordered_dessert
      */
-    ClientModel(double abscice, double intercept, const string &type, int id, bool has_odered,
-                int order_time_left, bool has_ordered_entree, bool has_ordered_main_course, bool has_ordered_dessert)
-        : Human(abscice, intercept),
-          type(type),
-          id(id),
+    ClientModel(bool has_odered = false, bool has_ordered_entree = false, bool has_ordered_main_course = false,
+     bool has_ordered_dessert = false)
+        :
           hasOdered(has_odered),
-          orderTimeLeft(order_time_left),
           hasOrderedEntree(has_ordered_entree),
           hasOrderedMainCourse(has_ordered_main_course),
           hasOrderedDessert(has_ordered_dessert) {

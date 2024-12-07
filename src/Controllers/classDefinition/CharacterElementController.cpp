@@ -6,23 +6,36 @@
 
 
 CharacterElementController::CharacterElementController(MainView main_view) {
+    initializeEmployeesCharacter();
 
-    vector priority_table {2, 4, 6, 8, 10};
+};
 
-    //On déclare les éléments graphiques associés
-    this->butler_point_view = new MobilePointView("butler",20, 20);
-    this->head_waiter_point_view = new MobilePointView("headWaiter",20, 20);
-    this->second_head_waiter_point_view = new MobilePointView("headWaiter2",20, 20);
-    this->server_point_view = new MobilePointView("server",20, 20);
-    this->second_server_point_view = new MobilePointView("server2",20, 20);
-    this->room_clerk_point_view = new MobilePointView("roomClerk",20, 20);
+void CharacterElementController::initializeEmployeesCharacter() {
+    const vector priority_table {2, 4, 6, 8, 10};
 
-    //instanciation des objets
+    //Graphic elements creation
+    this->butler_point_view = new CommonPointView("butler",20, 20);
+    this->head_waiter_point_view = new CommonPointView("headWaiter",20, 20);
+    this->second_head_waiter_point_view = new CommonPointView("headWaiter2",20, 20);
+    this->server_point_view = new CommonPointView("server",20, 20);
+    this->second_server_point_view = new CommonPointView("server2",20, 20);
+    this->room_clerk_point_view = new CommonPointView("roomClerk",20, 20);
+
+    //Objects instantiation
     this->butler = new Butler(0, priority_table );
     this->headWaiter = new HeadWaiter(head_waiter_point_view->getX(),head_waiter_point_view->getY());
     this->second_headWaiter = new HeadWaiter(second_head_waiter_point_view->getX(),second_head_waiter_point_view->getY());
     this->server = new Server(server_point_view->getX(),server_point_view->getY(),1,5);
     this->second_server = new Server(second_server_point_view->getX(),second_server_point_view->getY(),1,5);
     this->roomClerk = new RoomClerk(room_clerk_point_view->getX(),room_clerk_point_view->getY(),1,5);
-};
+}
+
+void CharacterElementController::initializeClientsCharacter() {
+    this->client_group_point_view = new CommonPointView("client_group",20, 20);
+
+}
+
+
+
+
 

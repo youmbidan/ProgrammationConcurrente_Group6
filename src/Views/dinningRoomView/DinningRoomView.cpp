@@ -32,15 +32,14 @@ DinningRoomView::DinningRoomView(QWidget *parent)
     }
 )");
 
-    // Calcul de la taille de la scène
     const int tableSize = 80;
     const int cols = 5;
     const int rows = 5;
 
-    const int sectionWidth = (cols * tableSize) + (cols + 1) * 30; // Diminué l'espacement horizontal
-    const int sectionHeight = (rows * tableSize) + (rows + 1) * 30; // Diminué l'espacement vertical
+    const int sectionWidth = (cols * tableSize) + (cols + 1) * 30;
+    const int sectionHeight = (rows * tableSize) + (rows + 1) * 30;
     const int totalWidth = 2 * sectionWidth;
-    const int totalHeight = sectionHeight + 50; // Ajout d'un espace supplémentaire en bas pour ajuster
+    const int totalHeight = sectionHeight + 50;
 
     scene->setSceneRect(0, 0, totalWidth, totalHeight);
 

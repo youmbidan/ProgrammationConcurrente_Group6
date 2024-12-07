@@ -30,15 +30,12 @@ add_executable(masterchef_info main.cpp
 #        src/Models/kitchenModels/classDeclaration/WashingMachine.h
         src/Views/mainView.h
         src/Views/mainView.cpp
-        src/Views/MobilePointView.cpp
-        src/Views/MobilePointView.h
-        src/Models/MobilePointModel.cpp
-        src/Models/MobilePointModel.h
+        src/Views/CommonPointView.cpp
+        src/Views/CommonPointView.h
         src/Observer/Observable.cpp
         src/Structs/PointStruct.h
-#        src/Controllers/classDefinition/CharacterElementController.cpp
-#        src/Controllers/classDeclaration/CharacterElementController.h
-#        src/Controllers/classDefinition/CharacterElementController.cpp
+        src/Controllers/classDefinition/CharacterElementController.cpp
+        src/Controllers/classDeclaration/CharacterElementController.h
 #        src/Models/dinningRoomModels/classDefinition/HeadWaiter.cpp
 #        src/Models/dinningRoomModels/classDefinition/Server.cpp
 #        src/Models/dinningRoomModels/classDefinition/RoomClerk.cpp
@@ -51,6 +48,13 @@ add_executable(masterchef_info main.cpp
         src/Views/dinningRoomView/dinningRoomView.cpp
 
         ${RESOURCES}
+        src/Controllers/classDefinition/CharacterElementController.cpp
+        src/Models/commonModels/classDefinition/ClientGroupModel.cpp
+        src/Models/commonModels/classDeclaration/ClientGroupModel.h
+        src/Factories/classDefinition/ClientGroupFactory.cpp
+        src/Factories/classDeclaration/ClientGroupFactory.h
+        src/Utilities/ThreadPoolManager.cpp
+        src/Utilities/ThreadPoolManager.h
 )
 
 # Lier l'exécutable aux bibliothèques Qt nécessaires

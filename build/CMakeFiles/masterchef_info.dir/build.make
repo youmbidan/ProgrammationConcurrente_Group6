@@ -192,41 +192,26 @@ CMakeFiles/masterchef_info.dir/src/Views/MainView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/masterchef_info.dir/src/Views/MainView.cpp.s"
 	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/MainView.cpp" -o CMakeFiles/masterchef_info.dir/src/Views/MainView.cpp.s
 
-CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.obj: CMakeFiles/masterchef_info.dir/flags.make
-CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.obj: CMakeFiles/masterchef_info.dir/includes_CXX.rsp
-CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.obj: C:/Users/seand/Documents/X3\ Djissou\ Happi/Module\ 2\ -\ Programmation\ concourrente/projet\ programmation\ concourrante/masterchef_info/src/Views/MobilePointView.cpp
-CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.obj: CMakeFiles/masterchef_info.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.obj"
-	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.obj -MF CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.obj.d -o CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.obj -c "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/MobilePointView.cpp"
+CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.obj: CMakeFiles/masterchef_info.dir/flags.make
+CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.obj: CMakeFiles/masterchef_info.dir/includes_CXX.rsp
+CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.obj: C:/Users/seand/Documents/X3\ Djissou\ Happi/Module\ 2\ -\ Programmation\ concourrente/projet\ programmation\ concourrante/masterchef_info/src/Views/CommonPointView.cpp
+CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.obj: CMakeFiles/masterchef_info.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.obj"
+	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.obj -MF CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.obj.d -o CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.obj -c "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/CommonPointView.cpp"
 
-CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.i"
-	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/MobilePointView.cpp" > CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.i
+CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.i"
+	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/CommonPointView.cpp" > CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.i
 
-CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.s"
-	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/MobilePointView.cpp" -o CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.s
-
-CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.obj: CMakeFiles/masterchef_info.dir/flags.make
-CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.obj: CMakeFiles/masterchef_info.dir/includes_CXX.rsp
-CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.obj: C:/Users/seand/Documents/X3\ Djissou\ Happi/Module\ 2\ -\ Programmation\ concourrente/projet\ programmation\ concourrante/masterchef_info/src/Models/MobilePointModel.cpp
-CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.obj: CMakeFiles/masterchef_info.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.obj"
-	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.obj -MF CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.obj.d -o CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.obj -c "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Models/MobilePointModel.cpp"
-
-CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.i"
-	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Models/MobilePointModel.cpp" > CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.i
-
-CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.s"
-	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Models/MobilePointModel.cpp" -o CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.s
+CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.s"
+	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/CommonPointView.cpp" -o CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.s
 
 CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.obj: CMakeFiles/masterchef_info.dir/flags.make
 CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.obj: CMakeFiles/masterchef_info.dir/includes_CXX.rsp
 CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.obj: C:/Users/seand/Documents/X3\ Djissou\ Happi/Module\ 2\ -\ Programmation\ concourrente/projet\ programmation\ concourrante/masterchef_info/src/Observer/Observable.cpp
 CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.obj: CMakeFiles/masterchef_info.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.obj"
 	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.obj -MF CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.obj.d -o CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.obj -c "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Observer/Observable.cpp"
 
 CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.i: cmake_force
@@ -236,6 +221,21 @@ CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.i: cmake_force
 CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.s"
 	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Observer/Observable.cpp" -o CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.s
+
+CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.obj: CMakeFiles/masterchef_info.dir/flags.make
+CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.obj: CMakeFiles/masterchef_info.dir/includes_CXX.rsp
+CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.obj: C:/Users/seand/Documents/X3\ Djissou\ Happi/Module\ 2\ -\ Programmation\ concourrente/projet\ programmation\ concourrante/masterchef_info/src/Controllers/classDefinition/CharacterElementController.cpp
+CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.obj: CMakeFiles/masterchef_info.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.obj"
+	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.obj -MF CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.obj.d -o CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.obj -c "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Controllers/classDefinition/CharacterElementController.cpp"
+
+CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.i"
+	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Controllers/classDefinition/CharacterElementController.cpp" > CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.i
+
+CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.s"
+	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Controllers/classDefinition/CharacterElementController.cpp" -o CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.s
 
 CMakeFiles/masterchef_info.dir/src/Views/kitchenView/KitchenView.cpp.obj: CMakeFiles/masterchef_info.dir/flags.make
 CMakeFiles/masterchef_info.dir/src/Views/kitchenView/KitchenView.cpp.obj: CMakeFiles/masterchef_info.dir/includes_CXX.rsp
@@ -282,6 +282,36 @@ CMakeFiles/masterchef_info.dir/qrc_ressources.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/masterchef_info.dir/qrc_ressources.cpp.s"
 	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/qrc_ressources.cpp" -o CMakeFiles/masterchef_info.dir/qrc_ressources.cpp.s
 
+CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.obj: CMakeFiles/masterchef_info.dir/flags.make
+CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.obj: CMakeFiles/masterchef_info.dir/includes_CXX.rsp
+CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.obj: C:/Users/seand/Documents/X3\ Djissou\ Happi/Module\ 2\ -\ Programmation\ concourrente/projet\ programmation\ concourrante/masterchef_info/src/Models/commonModels/classDefinition/ClientGroupModel.cpp
+CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.obj: CMakeFiles/masterchef_info.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.obj"
+	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.obj -MF CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.obj.d -o CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.obj -c "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Models/commonModels/classDefinition/ClientGroupModel.cpp"
+
+CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.i"
+	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Models/commonModels/classDefinition/ClientGroupModel.cpp" > CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.i
+
+CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.s"
+	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Models/commonModels/classDefinition/ClientGroupModel.cpp" -o CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.s
+
+CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.obj: CMakeFiles/masterchef_info.dir/flags.make
+CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.obj: CMakeFiles/masterchef_info.dir/includes_CXX.rsp
+CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.obj: C:/Users/seand/Documents/X3\ Djissou\ Happi/Module\ 2\ -\ Programmation\ concourrente/projet\ programmation\ concourrante/masterchef_info/src/Factories/classDefinition/ClientGroupFactory.cpp
+CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.obj: CMakeFiles/masterchef_info.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.obj"
+	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.obj -MF CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.obj.d -o CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.obj -c "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Factories/classDefinition/ClientGroupFactory.cpp"
+
+CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.i"
+	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Factories/classDefinition/ClientGroupFactory.cpp" > CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.i
+
+CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.s"
+	C:/gcc-14.2.0-no-debug/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Factories/classDefinition/ClientGroupFactory.cpp" -o CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.s
+
 # Object files for target masterchef_info
 masterchef_info_OBJECTS = \
 "CMakeFiles/masterchef_info.dir/masterchef_info_autogen/mocs_compilation.cpp.obj" \
@@ -289,12 +319,14 @@ masterchef_info_OBJECTS = \
 "CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/MainController.cpp.obj" \
 "CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/DBController.cpp.obj" \
 "CMakeFiles/masterchef_info.dir/src/Views/MainView.cpp.obj" \
-"CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.obj" \
-"CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.obj" \
+"CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.obj" \
 "CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.obj" \
+"CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.obj" \
 "CMakeFiles/masterchef_info.dir/src/Views/kitchenView/KitchenView.cpp.obj" \
 "CMakeFiles/masterchef_info.dir/src/Views/dinningRoomView/DinningRoomView.cpp.obj" \
-"CMakeFiles/masterchef_info.dir/qrc_ressources.cpp.obj"
+"CMakeFiles/masterchef_info.dir/qrc_ressources.cpp.obj" \
+"CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.obj" \
+"CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.obj"
 
 # External object files for target masterchef_info
 masterchef_info_EXTERNAL_OBJECTS =
@@ -304,19 +336,21 @@ masterchef_info.exe: CMakeFiles/masterchef_info.dir/main.cpp.obj
 masterchef_info.exe: CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/MainController.cpp.obj
 masterchef_info.exe: CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/DBController.cpp.obj
 masterchef_info.exe: CMakeFiles/masterchef_info.dir/src/Views/MainView.cpp.obj
-masterchef_info.exe: CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.obj
-masterchef_info.exe: CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.obj
+masterchef_info.exe: CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.obj
 masterchef_info.exe: CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.obj
+masterchef_info.exe: CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.obj
 masterchef_info.exe: CMakeFiles/masterchef_info.dir/src/Views/kitchenView/KitchenView.cpp.obj
 masterchef_info.exe: CMakeFiles/masterchef_info.dir/src/Views/dinningRoomView/DinningRoomView.cpp.obj
 masterchef_info.exe: CMakeFiles/masterchef_info.dir/qrc_ressources.cpp.obj
+masterchef_info.exe: CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.obj
+masterchef_info.exe: CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.obj
 masterchef_info.exe: CMakeFiles/masterchef_info.dir/build.make
 masterchef_info.exe: C:/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a
 masterchef_info.exe: C:/Qt/6.8.0/mingw_64/lib/libQt6Gui.a
 masterchef_info.exe: C:/Qt/6.8.0/mingw_64/lib/libQt6Core.a
 masterchef_info.exe: CMakeFiles/masterchef_info.dir/linkLibs.rsp
 masterchef_info.exe: CMakeFiles/masterchef_info.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable masterchef_info.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable masterchef_info.exe"
 	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/masterchef_info.dir/objects.a
 	C:/gcc-14.2.0-no-debug/bin/ar.exe qc CMakeFiles/masterchef_info.dir/objects.a @CMakeFiles/masterchef_info.dir/objects1.rsp
 	C:/gcc-14.2.0-no-debug/bin/g++.exe -g -Wl,--whole-archive CMakeFiles/masterchef_info.dir/objects.a -Wl,--no-whole-archive -o masterchef_info.exe -Wl,--out-implib,libmasterchef_info.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/masterchef_info.dir/linkLibs.rsp

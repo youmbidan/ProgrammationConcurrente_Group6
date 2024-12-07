@@ -214,6 +214,30 @@ qrc_ressources.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/qrc_ressources.cpp.s
 .PHONY : qrc_ressources.cpp.s
 
+src/Controllers/classDefinition/CharacterElementController.obj: src/Controllers/classDefinition/CharacterElementController.cpp.obj
+.PHONY : src/Controllers/classDefinition/CharacterElementController.obj
+
+# target to build an object file
+src/Controllers/classDefinition/CharacterElementController.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.obj
+.PHONY : src/Controllers/classDefinition/CharacterElementController.cpp.obj
+
+src/Controllers/classDefinition/CharacterElementController.i: src/Controllers/classDefinition/CharacterElementController.cpp.i
+.PHONY : src/Controllers/classDefinition/CharacterElementController.i
+
+# target to preprocess a source file
+src/Controllers/classDefinition/CharacterElementController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.i
+.PHONY : src/Controllers/classDefinition/CharacterElementController.cpp.i
+
+src/Controllers/classDefinition/CharacterElementController.s: src/Controllers/classDefinition/CharacterElementController.cpp.s
+.PHONY : src/Controllers/classDefinition/CharacterElementController.s
+
+# target to generate assembly for a file
+src/Controllers/classDefinition/CharacterElementController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/CharacterElementController.cpp.s
+.PHONY : src/Controllers/classDefinition/CharacterElementController.cpp.s
+
 src/Controllers/classDefinition/DBController.obj: src/Controllers/classDefinition/DBController.cpp.obj
 .PHONY : src/Controllers/classDefinition/DBController.obj
 
@@ -262,29 +286,53 @@ src/Controllers/classDefinition/MainController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/MainController.cpp.s
 .PHONY : src/Controllers/classDefinition/MainController.cpp.s
 
-src/Models/MobilePointModel.obj: src/Models/MobilePointModel.cpp.obj
-.PHONY : src/Models/MobilePointModel.obj
+src/Factories/classDefinition/ClientGroupFactory.obj: src/Factories/classDefinition/ClientGroupFactory.cpp.obj
+.PHONY : src/Factories/classDefinition/ClientGroupFactory.obj
 
 # target to build an object file
-src/Models/MobilePointModel.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.obj
-.PHONY : src/Models/MobilePointModel.cpp.obj
+src/Factories/classDefinition/ClientGroupFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.obj
+.PHONY : src/Factories/classDefinition/ClientGroupFactory.cpp.obj
 
-src/Models/MobilePointModel.i: src/Models/MobilePointModel.cpp.i
-.PHONY : src/Models/MobilePointModel.i
+src/Factories/classDefinition/ClientGroupFactory.i: src/Factories/classDefinition/ClientGroupFactory.cpp.i
+.PHONY : src/Factories/classDefinition/ClientGroupFactory.i
 
 # target to preprocess a source file
-src/Models/MobilePointModel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.i
-.PHONY : src/Models/MobilePointModel.cpp.i
+src/Factories/classDefinition/ClientGroupFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.i
+.PHONY : src/Factories/classDefinition/ClientGroupFactory.cpp.i
 
-src/Models/MobilePointModel.s: src/Models/MobilePointModel.cpp.s
-.PHONY : src/Models/MobilePointModel.s
+src/Factories/classDefinition/ClientGroupFactory.s: src/Factories/classDefinition/ClientGroupFactory.cpp.s
+.PHONY : src/Factories/classDefinition/ClientGroupFactory.s
 
 # target to generate assembly for a file
-src/Models/MobilePointModel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Models/MobilePointModel.cpp.s
-.PHONY : src/Models/MobilePointModel.cpp.s
+src/Factories/classDefinition/ClientGroupFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Factories/classDefinition/ClientGroupFactory.cpp.s
+.PHONY : src/Factories/classDefinition/ClientGroupFactory.cpp.s
+
+src/Models/commonModels/classDefinition/ClientGroupModel.obj: src/Models/commonModels/classDefinition/ClientGroupModel.cpp.obj
+.PHONY : src/Models/commonModels/classDefinition/ClientGroupModel.obj
+
+# target to build an object file
+src/Models/commonModels/classDefinition/ClientGroupModel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.obj
+.PHONY : src/Models/commonModels/classDefinition/ClientGroupModel.cpp.obj
+
+src/Models/commonModels/classDefinition/ClientGroupModel.i: src/Models/commonModels/classDefinition/ClientGroupModel.cpp.i
+.PHONY : src/Models/commonModels/classDefinition/ClientGroupModel.i
+
+# target to preprocess a source file
+src/Models/commonModels/classDefinition/ClientGroupModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.i
+.PHONY : src/Models/commonModels/classDefinition/ClientGroupModel.cpp.i
+
+src/Models/commonModels/classDefinition/ClientGroupModel.s: src/Models/commonModels/classDefinition/ClientGroupModel.cpp.s
+.PHONY : src/Models/commonModels/classDefinition/ClientGroupModel.s
+
+# target to generate assembly for a file
+src/Models/commonModels/classDefinition/ClientGroupModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Models/commonModels/classDefinition/ClientGroupModel.cpp.s
+.PHONY : src/Models/commonModels/classDefinition/ClientGroupModel.cpp.s
 
 src/Observer/Observable.obj: src/Observer/Observable.cpp.obj
 .PHONY : src/Observer/Observable.obj
@@ -310,6 +358,30 @@ src/Observer/Observable.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Observer/Observable.cpp.s
 .PHONY : src/Observer/Observable.cpp.s
 
+src/Views/CommonPointView.obj: src/Views/CommonPointView.cpp.obj
+.PHONY : src/Views/CommonPointView.obj
+
+# target to build an object file
+src/Views/CommonPointView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.obj
+.PHONY : src/Views/CommonPointView.cpp.obj
+
+src/Views/CommonPointView.i: src/Views/CommonPointView.cpp.i
+.PHONY : src/Views/CommonPointView.i
+
+# target to preprocess a source file
+src/Views/CommonPointView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.i
+.PHONY : src/Views/CommonPointView.cpp.i
+
+src/Views/CommonPointView.s: src/Views/CommonPointView.cpp.s
+.PHONY : src/Views/CommonPointView.s
+
+# target to generate assembly for a file
+src/Views/CommonPointView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Views/CommonPointView.cpp.s
+.PHONY : src/Views/CommonPointView.cpp.s
+
 src/Views/MainView.obj: src/Views/MainView.cpp.obj
 .PHONY : src/Views/MainView.obj
 
@@ -333,30 +405,6 @@ src/Views/MainView.s: src/Views/MainView.cpp.s
 src/Views/MainView.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Views/MainView.cpp.s
 .PHONY : src/Views/MainView.cpp.s
-
-src/Views/MobilePointView.obj: src/Views/MobilePointView.cpp.obj
-.PHONY : src/Views/MobilePointView.obj
-
-# target to build an object file
-src/Views/MobilePointView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.obj
-.PHONY : src/Views/MobilePointView.cpp.obj
-
-src/Views/MobilePointView.i: src/Views/MobilePointView.cpp.i
-.PHONY : src/Views/MobilePointView.i
-
-# target to preprocess a source file
-src/Views/MobilePointView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.i
-.PHONY : src/Views/MobilePointView.cpp.i
-
-src/Views/MobilePointView.s: src/Views/MobilePointView.cpp.s
-.PHONY : src/Views/MobilePointView.s
-
-# target to generate assembly for a file
-src/Views/MobilePointView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/masterchef_info.dir/build.make CMakeFiles/masterchef_info.dir/src/Views/MobilePointView.cpp.s
-.PHONY : src/Views/MobilePointView.cpp.s
 
 src/Views/dinningRoomView/DinningRoomView.obj: src/Views/dinningRoomView/DinningRoomView.cpp.obj
 .PHONY : src/Views/dinningRoomView/DinningRoomView.obj
@@ -425,24 +473,30 @@ help:
 	@echo "... qrc_ressources.obj"
 	@echo "... qrc_ressources.i"
 	@echo "... qrc_ressources.s"
+	@echo "... src/Controllers/classDefinition/CharacterElementController.obj"
+	@echo "... src/Controllers/classDefinition/CharacterElementController.i"
+	@echo "... src/Controllers/classDefinition/CharacterElementController.s"
 	@echo "... src/Controllers/classDefinition/DBController.obj"
 	@echo "... src/Controllers/classDefinition/DBController.i"
 	@echo "... src/Controllers/classDefinition/DBController.s"
 	@echo "... src/Controllers/classDefinition/MainController.obj"
 	@echo "... src/Controllers/classDefinition/MainController.i"
 	@echo "... src/Controllers/classDefinition/MainController.s"
-	@echo "... src/Models/MobilePointModel.obj"
-	@echo "... src/Models/MobilePointModel.i"
-	@echo "... src/Models/MobilePointModel.s"
+	@echo "... src/Factories/classDefinition/ClientGroupFactory.obj"
+	@echo "... src/Factories/classDefinition/ClientGroupFactory.i"
+	@echo "... src/Factories/classDefinition/ClientGroupFactory.s"
+	@echo "... src/Models/commonModels/classDefinition/ClientGroupModel.obj"
+	@echo "... src/Models/commonModels/classDefinition/ClientGroupModel.i"
+	@echo "... src/Models/commonModels/classDefinition/ClientGroupModel.s"
 	@echo "... src/Observer/Observable.obj"
 	@echo "... src/Observer/Observable.i"
 	@echo "... src/Observer/Observable.s"
+	@echo "... src/Views/CommonPointView.obj"
+	@echo "... src/Views/CommonPointView.i"
+	@echo "... src/Views/CommonPointView.s"
 	@echo "... src/Views/MainView.obj"
 	@echo "... src/Views/MainView.i"
 	@echo "... src/Views/MainView.s"
-	@echo "... src/Views/MobilePointView.obj"
-	@echo "... src/Views/MobilePointView.i"
-	@echo "... src/Views/MobilePointView.s"
 	@echo "... src/Views/dinningRoomView/DinningRoomView.obj"
 	@echo "... src/Views/dinningRoomView/DinningRoomView.i"
 	@echo "... src/Views/dinningRoomView/DinningRoomView.s"

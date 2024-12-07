@@ -13,7 +13,7 @@
  *
  * @brief the guys who lead the client to his table
  */
-class HeadWaiter : public Human {
+class HeadWaiter : public MobileElementModel {
     queue<Order> orderQueue;
 public:
 

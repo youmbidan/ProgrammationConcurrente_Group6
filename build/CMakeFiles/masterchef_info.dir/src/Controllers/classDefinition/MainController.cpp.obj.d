@@ -386,21 +386,6 @@ CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/MainController.cp
  C:/Qt/6.8.0/mingw_64/include/QtGui/qimage.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qpixelformat.h \
  C:/Users/seand/Documents/X3\ Djissou\ Happi/Module\ 2\ -\ Programmation\ concourrente/projet\ programmation\ concourrante/masterchef_info/src/Views/MainView.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/QApplication \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qapplication.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qcoreapplication.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qcoreevent.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qdeadlinetimer.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qelapsedtimer.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qeventloop.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qnativeinterface.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qcursor.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qbitmap.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qguiapplication.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qinputmethod.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qlocale.h \
- C:/Qt/6.8.0/mingw_64/include/QtGui/qguiapplication_platform.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qwidget.h \
@@ -414,6 +399,8 @@ CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/MainController.cp
  C:/Qt/6.8.0/mingw_64/include/QtGui/qfontmetrics.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qfontinfo.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
+ C:/Qt/6.8.0/mingw_64/include/QtGui/qcursor.h \
+ C:/Qt/6.8.0/mingw_64/include/QtGui/qbitmap.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtabwidget.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QTabWidget \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -424,6 +411,32 @@ CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/MainController.cp
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qboxlayout.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgridlayout.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QHBoxLayout \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/QPushButton \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/qpushbutton.h \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/QLCDNumber \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlcdnumber.h \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/qframe.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/QTimer \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qtimer.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qbasictimer.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/QTime \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qdatetime.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qcalendar.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qlocale.h \
+ C:/Users/seand/Documents/X3\ Djissou\ Happi/Module\ 2\ -\ Programmation\ concourrente/projet\ programmation\ concourrante/masterchef_info/src/Views/kitchenView/KitchenView.h \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/QApplication \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/qapplication.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qcoreapplication.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qcoreevent.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qelapsedtimer.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qeventloop.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qnativeinterface.h \
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ C:/Qt/6.8.0/mingw_64/include/QtGui/qguiapplication.h \
+ C:/Qt/6.8.0/mingw_64/include/QtGui/qinputmethod.h \
+ C:/Qt/6.8.0/mingw_64/include/QtGui/qguiapplication_platform.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGraphicsScene \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
  C:/Qt/6.8.0/mingw_64/include/QtGui/qpen.h \
@@ -433,12 +446,8 @@ CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/MainController.cp
  C:/Qt/6.8.0/mingw_64/include/QtGui/qtextoption.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qscrollarea.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qframe.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/QPushButton \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qpushbutton.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractbutton.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QLabel \
@@ -454,15 +463,6 @@ CMakeFiles/masterchef_info.dir/src/Controllers/classDefinition/MainController.cp
  C:/Qt/6.8.0/mingw_64/include/QtCore/qeasingcurve.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QStyle \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qstyle.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/QLCDNumber \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlcdnumber.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/QTimer \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qtimer.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qbasictimer.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/QTime \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qdatetime.h \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qcalendar.h \
- C:/Users/seand/Documents/X3\ Djissou\ Happi/Module\ 2\ -\ Programmation\ concourrente/projet\ programmation\ concourrante/masterchef_info/src/Views/kitchenView/KitchenView.h \
  C:/Users/seand/Documents/X3\ Djissou\ Happi/Module\ 2\ -\ Programmation\ concourrente/projet\ programmation\ concourrante/masterchef_info/src/Views/dinningRoomView/DinningRoomView.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QWidget \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qwidget.h \

@@ -13,7 +13,7 @@ src/Controllers/classDefinition/CharacterElementController.cpp \
     src/Models/commonModels/classDefinition/ClientGroupCreator.cpp \
     src/Models/commonModels/classDefinition/ClientModel.cpp \
     src/Models/commonModels/classDefinition/DinningRoom.cpp \
-    src/Models/commonModels/classDefinition/Human.cpp \
+    src/Models/commonModels/classDefinition/MobileElementModel.cpp \
     src/Models/commonModels/classDefinition/KitchenCounter.cpp \
     src/Models/commonModels/classDefinition/MaterialModel.cpp \
     src/Models/commonModels/classDefinition/Order.cpp \
@@ -53,7 +53,7 @@ src/Controllers/classDeclaration/CharacterElementController.h \
     src/Models/commonModels/classDeclaration/ClientGroupCreator.h \
     src/Models/commonModels/classDeclaration/ClientModel.h \
     src/Models/commonModels/classDeclaration/DinningRoom.h \
-    src/Models/commonModels/classDeclaration/Human.h \
+    src/Models/commonModels/classDeclaration/MobileElementModel.h \
     src/Models/commonModels/classDeclaration/Order.h \
     src/Models/commonModels/classDeclaration/Recipe.h \
     src/Models/dinningRoomModels/classDeclaration/Butler.h \

@@ -13,7 +13,7 @@
  *
  * @brief the class that manage the server
  */
-class Server : Human{
+class Server : MobileElementModel{
 public:
     /**
      * @brief the constructor of the server class
@@ -26,7 +26,7 @@ public:
 
 
     Server(double abscice, double intercept, int area, int max_ready_order)
-     : Human(abscice, intercept),
+     : MobileElementModel(abscice, intercept),
        area(area),
        maxReadyOrder(max_ready_order){
     }

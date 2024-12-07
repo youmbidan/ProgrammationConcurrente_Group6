@@ -29,5 +29,5 @@ void MobilePointModel::move() {
             std::cout << "Movement finished." << std::endl;
         }
     });
-    timer->start(50);  // Déclenche le timer toutes les 100 ms
+    timer->start(50);
 }

@@ -227,6 +227,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Controllers/classDeclaration/CharacterElementController.h",
+			"Mu",
+			"3OO62SW2CZ/moc_CharacterElementController.cpp",
+			null
+		],
+		[
 			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Controllers/classDeclaration/DBController.h",
 			"Mu",
 			"3OO62SW2CZ/moc_DBController.cpp",
@@ -245,9 +251,15 @@
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Models/MobilePointModel.h",
+			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Factories/classDeclaration/ClientGroupFactory.h",
 			"Mu",
-			"3WFUWCBZX3/moc_MobilePointModel.cpp",
+			"B3EDV3MAKV/moc_ClientGroupFactory.cpp",
+			null
+		],
+		[
+			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Models/commonModels/classDeclaration/ClientGroupModel.h",
+			"Mu",
+			"SWJ2KL2J4R/moc_ClientGroupModel.cpp",
 			null
 		],
 		[
@@ -263,15 +275,15 @@
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/MainView.h",
+			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/CommonPointView.h",
 			"Mu",
-			"DAGTZI5CW3/moc_MainView.cpp",
+			"DAGTZI5CW3/moc_CommonPointView.cpp",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/MobilePointView.h",
+			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/MainView.h",
 			"Mu",
-			"DAGTZI5CW3/moc_MobilePointView.cpp",
+			"DAGTZI5CW3/moc_MainView.cpp",
 			null
 		],
 		[
@@ -366,6 +378,11 @@
 			null
 		],
 		[
+			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Controllers/classDefinition/CharacterElementController.cpp",
+			"Mu",
+			null
+		],
+		[
 			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Controllers/classDefinition/DBController.cpp",
 			"Mu",
 			null
@@ -376,7 +393,12 @@
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Models/MobilePointModel.cpp",
+			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Factories/classDefinition/ClientGroupFactory.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Models/commonModels/classDefinition/ClientGroupModel.cpp",
 			"Mu",
 			null
 		],
@@ -386,12 +408,12 @@
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/MainView.cpp",
+			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/CommonPointView.cpp",
 			"Mu",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/MobilePointView.cpp",
+			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/MainView.cpp",
 			"Mu",
 			null
 		],
