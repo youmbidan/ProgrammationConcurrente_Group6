@@ -16,7 +16,7 @@ class CommonPointView : public QObject, public QGraphicsEllipseItem, public Obse
 public:
     ~CommonPointView() override;
 
-    CommonPointView(const QString &labelText, int initialX, int initialY, int weight = 1, QGraphicsItem *parent);
+    CommonPointView(const QString &labelText, int initialX, int initialY, QGraphicsItem *parent, int weight = 1);
 
     void update(const std::any& data) override;
     int getX() const;

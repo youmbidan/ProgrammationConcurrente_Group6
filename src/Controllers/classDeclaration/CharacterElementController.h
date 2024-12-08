@@ -31,7 +31,7 @@ public:
   */
  explicit CharacterElementController(MainView *mainview);
 
-// made all these attributes static in purpose to access them all over the project
+// all these attributes are made static in purpose to be accessed all over the project
  static Butler *butler;
  static HeadWaiter *headWaiter;
  static HeadWaiter *second_headWaiter;

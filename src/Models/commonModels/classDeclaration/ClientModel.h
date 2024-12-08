@@ -4,6 +4,8 @@
 
 #ifndef CLIENTMODEL_H
 #define CLIENTMODEL_H
+
+
 #include <iostream>
 #include <vector>
 #include "Recipe.h"
@@ -36,6 +38,7 @@ public:
           hasOrderedMainCourse(has_ordered_main_course),
           hasOrderedDessert(has_ordered_dessert) {
     }
+    ClientModel();
     /**
      * @brief this function is use for the client to make a choice
      *
@@ -60,7 +63,7 @@ public:
      * @brief client method eat
      * @param order
      */
-    void eat(vector<Order> &order);
+    //void eat(vector<Order> order);
 
 private:
     string type;

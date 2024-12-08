@@ -3,8 +3,7 @@
 
 #include "DBController.h"
 #include "MotionlessElementController.h"
-#include "../../Models/MobilePointModel.h"
-#include "../../Views/mainView.h"
+#include "../../Views/MainView.h"
 #include "../../Views/CommonPointView.h"
 #include <QThread>
 #include <QObject>
@@ -15,6 +14,7 @@
 class MainController
 {
 
+    MainView *mainView;
 public:
     explicit MainController(MainView &mainView);
     void startMainView();

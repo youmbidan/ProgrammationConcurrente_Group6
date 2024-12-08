@@ -18,12 +18,12 @@ class ClientGroupFactory {
     /**
      * @brief create group according to generated client number
      */
-    void createGroup();
+    // void createGroup();
 
     /**
    *@brief generate number that will be used as value for our variable "clientNumber"
     */
-    static int generateClientNumber();
+    // static int generateClientNumber();
 
 
 

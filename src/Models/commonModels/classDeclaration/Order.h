@@ -24,10 +24,10 @@ public:
      * @param id
      * @param client
      */
-    Order(const vector<Recipe> &order_recipes, int id, ClientModel client)
+    Order(const vector<Recipe> &order_recipes, int id)
         : orderRecipes(order_recipes),
-          id(id),
-          client(std::move(client)) {
+          id(id)
+          {
     }
 
     /**
@@ -40,7 +40,7 @@ private:
     // declare a table attribute type : table
     vector<Recipe> orderRecipes;
     int id;
-    ClientModel client;
+    //ClientModel client;
 
 };
 #endif //ORDER_H

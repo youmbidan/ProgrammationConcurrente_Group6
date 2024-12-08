@@ -11,7 +11,7 @@
 #include "../Structs/PointStruct.h"
 
 
-CommonPointView::CommonPointView(const QString& labelText, const int initialX, const int initialY, const int weight, QGraphicsItem* parent)
+CommonPointView::CommonPointView(const QString& labelText, const int initialX, const int initialY, QGraphicsItem* parent, const int weight)
     : QGraphicsEllipseItem(0, 0, 5*weight, 5*weight, parent), x(initialX), y(initialY)
 {
     setBrush(QBrush(Qt::black));

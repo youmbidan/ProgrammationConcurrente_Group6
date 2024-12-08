@@ -23,11 +23,13 @@ public:
      * @param abscice
      * @param intercept
      * @param capacity
+     * @param area
      */
-    Table(double abscice, double intercept, int capacity)
+    Table(double abscice, double intercept, int capacity, int area)
         : abscice(abscice),
           intercept(intercept),
-          capacity(capacity){
+          capacity(capacity),
+            area(area){
     }
 
     /**
@@ -49,6 +51,7 @@ public:
 
 
 private:
+    int area;
     double abscice;
     double intercept;
     int capacity;

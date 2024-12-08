@@ -19,16 +19,18 @@ class TableFactory {
  int sixPlacesTablesLeft;
  int eightPlacesTablesLeft;
  int tenPlacesTablesLeft;
+ static Table* createTable(int abscice, int intercept, int area, int capacity);
 
 public:
  TableFactory();
  ~TableFactory();
 
- Table* getTableOftwo(int abscice, int intercept){};
- Table* getTableOfFour(int abscice, int intercept){};
- Table* getTableOfSix(int abscice, int intercept){};
- Table* getTableOfEight(int abscice, int intercept){};
- Table* getTableOfTen(int abscice, int intercept){};
+
+ static Table* getTableOfTwo(int abscice, int intercept, int area);
+ static Table* getTableOfFour(int abscice, int intercept, int area);
+ static Table* getTableOfSix(int abscice, int intercept, int area);
+ static Table* getTableOfEight(int abscice, int intercept, int area);
+ static Table* getTableOfTen(int abscice, int intercept, int area);
 
 
 };

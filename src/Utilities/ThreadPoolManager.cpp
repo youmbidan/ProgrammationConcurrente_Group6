@@ -4,6 +4,13 @@
 
 #include "ThreadPoolManager.h"
 
+
+// Define static members
+queue<function<void()>> ThreadPoolManager::tasks_;
+mutex ThreadPoolManager::queue_mutex_;
+condition_variable ThreadPoolManager::cv_;
+
+
 /**
  * @brief According to https://www.geeksforgeeks.org/thread-pool-in-cpp/
  *

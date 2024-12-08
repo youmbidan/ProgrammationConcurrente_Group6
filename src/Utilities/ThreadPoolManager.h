@@ -51,7 +51,6 @@ private:
     bool stop_ = false;
 };
 
-};
 
 
 

@@ -1,7 +1,7 @@
 #include "../classDeclaration/MainController.h"
 
 MainController::MainController(MainView &mainView)
-    : mainView(mainView)
+    : mainView(&mainView)
 {
 
 }
@@ -9,6 +9,6 @@ MainController::MainController(MainView &mainView)
 
 void MainController::startMainView()
 {
-    mainView.start();
+    mainView->start();
 }
 
