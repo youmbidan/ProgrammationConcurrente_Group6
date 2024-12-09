@@ -15,13 +15,20 @@ MotionlessElementController::MotionlessElementController(DinningRoomView *dinnin
     this->totalHeight = sectionHeight + 50;
     this->newSpacingX = (sectionWidth - (cols * tableSize)) / (cols + 1);
     this->newSpacingY = (sectionHeight - (rows * tableSize)) / (rows + 1);
+
+    //dinningRoomView->addTableTwoToDinningRoomScene(50, 50);
+
 };
 
 void MotionlessElementController::createAllTable() {
-    //create table for the first area
-    arrangeSection(0,0,15,1);
-    //create table for the second area
-    arrangeSection(sectionWidth,15,30,2);
+    
+    // create table for the first area
+     arrangeSection(0,0,15,1);
+    // create table for the second area
+     arrangeSection(sectionWidth,15,30,2);
+
+    // dinning_room_view.addTableTwoToDinningRoomScene(100, 100);
+
 
 }
 
@@ -32,22 +39,25 @@ void MotionlessElementController::createKitchenElements() {
 
 void MotionlessElementController::arrangeSection(int xOffset, int tableCountStart, int tableCountEnd, int area) {
     int row = 0, col = 0;
-    PointStruct coord = calculateCoordinate(newSpacingX, tableSize, col, row, xOffset);
     for (int i = tableCountStart; i < tableCountEnd; ++i) {
         if (i < tableCountStart + 5) {
+            PointStruct coord = calculateCoordinate(newSpacingX, tableSize, col, row, xOffset);
             //get a new instance of table via the factory
             TableFactory::getTableOfTwo(coord.x, coord.y, area);
             //use the addTable__ToDinningRoomScene() to insert new table on scene
-            dinning_room_view.addTableTwoToDinningRoomScene(coord.x, coord.y);
+            dinning_room_view->addTableTwoToDinningRoomScene(coord.x, coord.y);
         } else if (i < tableCountStart + 10) {
+            PointStruct coord = calculateCoordinate(newSpacingX, tableSize, col, row, xOffset);
             TableFactory::getTableOfTwo(coord.x, coord.y, area);
-            dinning_room_view.addTableFourToDinningRoomScene(coord.x, coord.y);
+            dinning_room_view->addTableFourToDinningRoomScene(coord.x, coord.y);
         } else if (i < tableCountStart + 12) {
+            PointStruct coord = calculateCoordinate(newSpacingX, tableSize, col, row, xOffset);
             TableFactory::getTableOfSix(coord.x, coord.y, area);
-            dinning_room_view.addTableSixToDinningRoomScene(coord.x, coord.y);
+            dinning_room_view->addTableSixToDinningRoomScene(coord.x, coord.y);
         } else {
+            PointStruct coord = calculateCoordinate(newSpacingX, tableSize, col, row, xOffset);
             TableFactory::getTableOfEight(coord.x, coord.y, area);
-            dinning_room_view.addTableHeightToDinningRoomScene(coord.x, coord.y);
+            dinning_room_view->addTableHeightToDinningRoomScene(coord.x, coord.y);
         }
 
         if (++col >= cols) {

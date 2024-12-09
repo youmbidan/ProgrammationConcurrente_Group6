@@ -1,5 +1,7 @@
 #include "DinningRoomView.h"
 
+#include <iostream>
+#include <ostream>
 
 
 DinningRoomView::DinningRoomView(QWidget *parent)
@@ -40,7 +42,6 @@ DinningRoomView::DinningRoomView(QWidget *parent)
     this->sectionHeight = (rows * tableSize) + (rows + 1) * 30;
     this->totalWidth = 2 * sectionWidth;
     this->totalHeight = sectionHeight + 50;
-
     scene->setSceneRect(0, 0, totalWidth, totalHeight);
 
     // Positionner la table de réception en haut à droite
@@ -79,50 +80,6 @@ DinningRoomView::DinningRoomView(QWidget *parent)
     QPixmap table6Pixmap(":/assets/table6.png");
     QPixmap table8Pixmap(":/assets/table8.png");
 
-    /**
-     * @brief
-     * logic for table creation is now on the MotionlessControllerElement
-     */
-
-    const int spacing = 30;  // Espacement entre les tables diminué
-    const int newSpacingX = (sectionWidth - (cols * tableSize)) / (cols + 1);
-    const int newSpacingY = (sectionHeight - (rows * tableSize)) / (rows + 1);
-    const int chefOffset = chefHeight + 10; // Diminué l'espacement pour ajuster
-
-    // auto addTable = [&](QPixmap pixmap, int row, int col, int xOffset, double scale = 1.0) {
-    //     int x = xOffset + col * (tableSize + newSpacingX);
-    //     int y = chefOffset + row * (tableSize + newSpacingY);
-    //     QGraphicsPixmapItem *table = scene->addPixmap(pixmap.scaled(tableSize * scale, tableSize * scale, Qt::KeepAspectRatio));
-    //
-    //     table->setFlag(QGraphicsItem::ItemIsMovable, false);
-    //     table->setFlag(QGraphicsItem::ItemIsSelectable, false);
-    //     table->setAcceptedMouseButtons(Qt::NoButton);  // Empêcher toute interaction avec la souris
-    //
-    //     table->setPos(x, y);
-    // };
-
-    // auto arrangeSection = [&](int xOffset, int tableCountStart, int tableCountEnd) {
-    //     int row = 0, col = 0;
-    //     for (int i = tableCountStart; i < tableCountEnd; ++i) {
-    //         if (i < tableCountStart + 5) {
-    //             addTable(table2Pixmap, row, col, xOffset);
-    //         } else if (i < tableCountStart + 10) {
-    //             addTable(table4Pixmap, row, col, xOffset, 1.1);
-    //         } else if (i < tableCountStart + 12) {
-    //             addTable(table6Pixmap, row, col, xOffset, 1.2);
-    //         } else {
-    //             addTable(table8Pixmap, row, col, xOffset, 1.3);
-    //         }
-    //
-    //         if (++col >= cols) {
-    //             col = 0;
-    //             row++;
-    //         }
-    //     }
-    // };
-    //
-    // arrangeSection(0, 0, 15);
-    // arrangeSection(sectionWidth, 15, 30);
 
     setLayout(mainLayout);
 }
@@ -156,12 +113,14 @@ QWidget* DinningRoomView::createControlBar() {
 
 void DinningRoomView::createTable(QPixmap pixmap, int x, int y) {
 
+
     QGraphicsPixmapItem *table = scene->addPixmap(pixmap.scaled(tableSize * 1, tableSize * 1, Qt::KeepAspectRatio));
 
     table->setFlag(QGraphicsItem::ItemIsMovable, false);
     table->setFlag(QGraphicsItem::ItemIsSelectable, false);
     table->setAcceptedMouseButtons(Qt::NoButton);  // Empêcher toute interaction avec la souris
     table->setPos(x, y);
+    std::cout << "table created at (" << x <<","<< y <<")"<< std::endl;
 }
 
 void DinningRoomView::addTableTwoToDinningRoomScene(int x, int y) {

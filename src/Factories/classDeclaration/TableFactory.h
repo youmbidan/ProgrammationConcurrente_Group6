@@ -22,6 +22,8 @@ class TableFactory {
  static Table* createTable(int abscice, int intercept, int area, int capacity);
 
 public:
+ static vector<Table *> dinningRommTables;
+
  TableFactory();
  ~TableFactory();
 
@@ -31,6 +33,8 @@ public:
  static Table* getTableOfSix(int abscice, int intercept, int area);
  static Table* getTableOfEight(int abscice, int intercept, int area);
  static Table* getTableOfTen(int abscice, int intercept, int area);
+
+ // static vector<Table*> dinningRoomTables;
 
 
 };

@@ -4,6 +4,8 @@
 
 #include "../classDeclaration/TableFactory.h"
 
+// vector<Table*> TableFactory::dinningRommTables {};
+
 TableFactory::TableFactory() {
     twoPlacesTablesLeft = 10;
     fourPlacesTablesLeft = 10;
@@ -17,6 +19,7 @@ TableFactory::~TableFactory() {
 
 Table *TableFactory::createTable(int abscice, int intercept, int area, int capacity) {
     Table *table = new Table(abscice, intercept, capacity, area);
+    // dinningRoomTables.push_back(table);
     return table;
 }
 

@@ -21,7 +21,7 @@ class MotionlessElementController {
 public:
     /**
      * 
-     * @param dinningRoomView 
+     * @param dinningRoomView
      */
     explicit MotionlessElementController(DinningRoomView *dinningRoomView);
 
@@ -49,7 +49,7 @@ private:
      */
     PointStruct calculateCoordinate(int newSpacingX, int tableSize, int col, int row, int xOffset) const;
 
-    DinningRoomView dinning_room_view;
+    DinningRoomView *dinning_room_view;
 
     int tableSize;
     int cols;
