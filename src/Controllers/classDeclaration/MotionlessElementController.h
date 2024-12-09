@@ -34,7 +34,9 @@ private:
      * @param xOffset 
      * @param tableCountStart 
      * @param tableCountEnd 
-     * @param area 
+     * @param area
+     *
+     * @brief generate table for a specific section/area
      */
     void arrangeSection(int xOffset, int tableCountStart, int tableCountEnd, int area);
 
@@ -45,7 +47,10 @@ private:
      * @param col 
      * @param row 
      * @param xOffset 
-     * @return 
+     * @return
+     *
+     * @brief  according to all his arguments, this function return coordinates for
+     * one table
      */
     PointStruct calculateCoordinate(int newSpacingX, int tableSize, int col, int row, int xOffset) const;
 

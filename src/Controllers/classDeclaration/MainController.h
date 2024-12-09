@@ -23,7 +23,6 @@ class MainController
 public:
     explicit MainController(MainView &mainView);
     void startMainView();
-    //void startMovementInThreads();
 };
 
 #endif // MAINCONTROLLER_H

@@ -13,5 +13,6 @@ void MainController::startMainView()
 {
     mainView->start();
     motionlessElementController->createAllTable();
+    characterElementController->initializeEmployeesCharacter();
 }
 

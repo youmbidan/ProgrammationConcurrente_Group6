@@ -120,7 +120,7 @@ void DinningRoomView::createTable(QPixmap pixmap, int x, int y) {
     table->setFlag(QGraphicsItem::ItemIsSelectable, false);
     table->setAcceptedMouseButtons(Qt::NoButton);  // Empêcher toute interaction avec la souris
     table->setPos(x, y);
-    std::cout << "table created at (" << x <<","<< y <<")"<< std::endl;
+    //std::cout << "table created at (" << x <<","<< y <<")"<< std::endl;
 }
 
 void DinningRoomView::addTableTwoToDinningRoomScene(int x, int y) {
@@ -145,6 +145,10 @@ void DinningRoomView::addTableHeightToDinningRoomScene(int x, int y) {
     QPixmap table8Pixmap(":/assets/table8.png");
     createTable(table8Pixmap, x, y);
 
+}
+
+void DinningRoomView::addCharacterToScene(QGraphicsItem *characterPoint) {
+    scene->addItem(characterPoint);
 }
 
 

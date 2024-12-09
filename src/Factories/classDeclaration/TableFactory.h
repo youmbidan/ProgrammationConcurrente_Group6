@@ -14,11 +14,11 @@
  */
 
 class TableFactory {
- int twoPlacesTablesLeft;
- int fourPlacesTablesLeft;
- int sixPlacesTablesLeft;
- int eightPlacesTablesLeft;
- int tenPlacesTablesLeft;
+ static int twoPlacesTablesLeft;
+ static int fourPlacesTablesLeft;
+ static int sixPlacesTablesLeft;
+ static int eightPlacesTablesLeft;
+ static int tenPlacesTablesLeft;
  static Table* createTable(int abscice, int intercept, int area, int capacity);
 
 public:
@@ -34,7 +34,7 @@ public:
  static Table* getTableOfEight(int abscice, int intercept, int area);
  static Table* getTableOfTen(int abscice, int intercept, int area);
 
- // static vector<Table*> dinningRoomTables;
+ static vector<Table*> dinningRoomTables;
 
 
 };

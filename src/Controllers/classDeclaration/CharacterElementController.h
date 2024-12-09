@@ -49,16 +49,18 @@ public:
  static CommonPointView *room_clerk_point_view;
 
  CommonPointView *client_group_point_view;
+ void initializeEmployeesCharacter();
 
  private:
- MainView main_view;
+ MainView *main_view;
+ DinningRoomView *dinningRoomView;
+ KitchenView *kitchenView;
 
  /**
   * @brief initialize employees/clients and associate them with
   * corresponding models.
   * Also add them to scene
   */
- void initializeEmployeesCharacter();
  void initializeClientsCharacter();
 
 

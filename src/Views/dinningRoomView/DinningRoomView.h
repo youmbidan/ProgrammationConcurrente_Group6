@@ -10,6 +10,8 @@
 #include <QtWidgets/QGraphicsPixmapItem>
 #include <QtWidgets/QPushButton>
 
+#include "../CommonPointView.h"
+
 
 class DinningRoomView : public QWidget {
     Q_OBJECT
@@ -21,6 +23,8 @@ public:
     void addTableSixToDinningRoomScene(int x, int y);
     void addTableHeightToDinningRoomScene(int x, int y);
 
+    void addCharacterToScene(QGraphicsItem *characterPoint);
+
 
 private:
     QWidget *createControlBar();
@@ -31,6 +35,11 @@ private:
     * @param pixmap
     * @param x
     * @param y
+    *
+    * @brief  core front-end function for create a new table graphic element
+    * and add it to scene
+    *
+    * used by all "addTable_____ToDinningRoomScene" functions
     */
     void createTable(QPixmap pixmap, int x, int y);
 
