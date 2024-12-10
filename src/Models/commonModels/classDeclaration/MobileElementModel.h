@@ -16,7 +16,7 @@
  * @brief this class regroup all MobileElementModels of the structure
  */
 class MobileElementModel : public QObject, public Observable {
-    Q_OBJECT
+    
 public:
     /**
      *@brief constructor of the MobileElementModel class

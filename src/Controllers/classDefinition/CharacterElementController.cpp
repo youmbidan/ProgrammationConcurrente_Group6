@@ -4,27 +4,6 @@
 
 #include "../classDeclaration/CharacterElementController.h"
 
-
-#include "../classDeclaration/CharacterElementController.h"
-
-// Initialisation des membres statiques
-Butler* CharacterElementController::butler = nullptr;
-HeadWaiter* CharacterElementController::headWaiter = nullptr;
-HeadWaiter* CharacterElementController::second_headWaiter = nullptr;
-Server* CharacterElementController::server = nullptr;
-Server* CharacterElementController::second_server = nullptr;
-RoomClerk* CharacterElementController::roomClerk = nullptr;
-
-ClientGroupModel* CharacterElementController::clientGroup = nullptr;
-
-CommonPointView* CharacterElementController::butler_point_view = nullptr;
-CommonPointView* CharacterElementController::head_waiter_point_view = nullptr;
-CommonPointView* CharacterElementController::second_head_waiter_point_view = nullptr;
-CommonPointView* CharacterElementController::server_point_view = nullptr;
-CommonPointView* CharacterElementController::second_server_point_view = nullptr;
-CommonPointView* CharacterElementController::room_clerk_point_view = nullptr;
-
-
 CharacterElementController::CharacterElementController(MainView *mainview): main_view(mainview) {
     kitchenView = mainview->getKitchenView();
     dinningRoomView = mainview->getDinningRoomView();
@@ -32,7 +11,6 @@ CharacterElementController::CharacterElementController(MainView *mainview): main
 };
 
 void CharacterElementController::initializeEmployeesCharacter() {
-    const vector<int> priority_table{2, 4, 6, 8, 10};
 
     // Création des éléments graphiques
     butler_point_view = new CommonPointView("butler", 20, 20, nullptr);
@@ -43,7 +21,7 @@ void CharacterElementController::initializeEmployeesCharacter() {
     room_clerk_point_view = new CommonPointView("roomClerk", 500, 500, nullptr);
 
     // Instanciation des objets
-    butler = new Butler(0, priority_table);
+    butler = new Butler();
     headWaiter = new HeadWaiter(head_waiter_point_view->getX(), head_waiter_point_view->getY());
     second_headWaiter = new HeadWaiter(second_head_waiter_point_view->getX(), second_head_waiter_point_view->getY());
     server = new Server(server_point_view->getX(), server_point_view->getY(), 1, 5);
@@ -67,9 +45,12 @@ void CharacterElementController::initializeEmployeesCharacter() {
 
 }
 
-
-void CharacterElementController::initializeClientsCharacter() {
-    // this->client_group_point_view = new CommonPointView("client_group",20, 20);
+void CharacterElementController::insertClientGroupOnScene(ClientGroupModel* clientGroup) {
+    const int nbr_client = clientGroup->getClientNumber();
+    const std::string clientLabel = "Clients(" + std::to_string(nbr_client) + ")";
+    client_point_view =  new CommonPointView(clientLabel.data(), 10, 20, nullptr, nbr_client );
+    dinningRoomView->addClientsToScene(client_point_view);
+    cout << "point cree, notifions la vue" << endl;
 
 }
 

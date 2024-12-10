@@ -23,15 +23,15 @@ public:
      * @param client_number
      * @param priority_table
      */
-    Butler(const int client_number, const vector<int> &priority_table)
-        : clientNUmber(client_number),
-          priorityTable(priority_table) {
-    }
+    Butler(){}
 
     /**
-     * @ brief to assign a table to a client
+     * @brief to assign a table to a group of client according
+     * to their number
+     *
+     * @param clientNumber
      */
-    void assignTable();
+    Table* assignTable(int clientNumber, vector<Table*> freeTableList);
 
     /**
      * @brief to notify a headwaiter tha he has to take a client
@@ -44,6 +44,6 @@ public:
 
 private:
     int clientNUmber;
-    vector<int> priorityTable;
+    const vector<int> priority_table {2, 4, 6, 8, 10};
 };
 #endif //BUTLE_H

@@ -3,6 +3,8 @@
 #include <iostream>
 #include <ostream>
 
+#include "../../Models/commonModels/classDeclaration/ClientGroupModel.h"
+
 
 DinningRoomView::DinningRoomView(QWidget *parent)
     : QWidget(parent) {
@@ -150,6 +152,15 @@ void DinningRoomView::addTableHeightToDinningRoomScene(int x, int y) {
 void DinningRoomView::addCharacterToScene(QGraphicsItem *characterPoint) {
     scene->addItem(characterPoint);
 }
+
+void DinningRoomView::addClientsToScene(QGraphicsItem *clientGroupPoint) {
+    QMetaObject::invokeMethod(this, [this, clientGroupPoint]() {
+                        addCharacterToScene(clientGroupPoint);
+                    }, Qt::QueuedConnection);
+}
+
+
+
 
 
 

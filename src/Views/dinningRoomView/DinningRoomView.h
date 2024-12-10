@@ -14,7 +14,7 @@
 
 
 class DinningRoomView : public QWidget {
-    Q_OBJECT
+    
 
 public:
     explicit DinningRoomView(QWidget *parent = nullptr);
@@ -25,6 +25,7 @@ public:
 
     void addCharacterToScene(QGraphicsItem *characterPoint);
 
+    void addClientsToScene(QGraphicsItem *clientGroupPoint);
 
 private:
     QWidget *createControlBar();

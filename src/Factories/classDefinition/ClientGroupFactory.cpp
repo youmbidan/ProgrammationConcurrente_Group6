@@ -7,27 +7,22 @@
 ClientGroupFactory::ClientGroupFactory() {};
 
 
-// void ClientGroupFactory::createGroup() {
-//     clientNumber = generateClientNumber();
-//     vector<ClientModel*> clients;
-//     for (int i = 0; i < clientNumber; i++) {
-//         clients[i] = new ClientModel();
-//     }
-//     auto* client_group_model = new ClientGroupModel(clients, clientNumber);
+ClientGroupModel* ClientGroupFactory::createGroup() {
+    clientNumber = generateClientNumber();
+    vector<ClientModel*> clients;
+    cout << "creation de " << clientNumber << " clients " << endl;
+    for (int i = 0; i <= clientNumber; i++) {
+        clients.push_back(new ClientModel());
+    }
+    auto* client_group_model = new ClientGroupModel(clients, clientNumber);
+    cout << "groupe cree... ajoutons a la queue " << endl;
 
-//     clientGroupQueue.emplace(client_group_model);
+    return client_group_model;
+}
 
-// }
+int ClientGroupFactory::generateClientNumber() {
 
-// int ClientGroupFactory::generateClientNumber() {
-//     constexpr int min = 1;
-//     constexpr int max = 10;
-
-//     random_device rd;
-//     mt19937 gen(rd());
-//     uniform_int_distribution<> distrib(min, max);
-
-//     const int randomValue = distrib(gen);
-
-//     return randomValue;
-// }
+    srand(time(0));
+    const int clientNumber = rand() % 10 + 1;
+    return clientNumber;
+}

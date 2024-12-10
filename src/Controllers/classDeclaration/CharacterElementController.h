@@ -12,7 +12,7 @@
 #include "../../Views/MainView.h"
 #include "../../Models/commonModels/classDeclaration/ClientGroupModel.h"
 
-#include <vector>
+#include <thread>
 
 #include "../../Views/CommonPointView.h"
 
@@ -32,24 +32,24 @@ public:
  explicit CharacterElementController(MainView *mainview);
 
 // all these attributes are made static in purpose to be accessed all over the project
- static Butler *butler;
- static HeadWaiter *headWaiter;
- static HeadWaiter *second_headWaiter;
- static Server *server;
- static Server *second_server;
- static RoomClerk *roomClerk;
+ Butler *butler;
+ HeadWaiter *headWaiter;
+ HeadWaiter *second_headWaiter;
+ Server *server;
+ Server *second_server;
+ RoomClerk *roomClerk;
 
- static ClientGroupModel *clientGroup;
-
- static CommonPointView *butler_point_view;
- static CommonPointView *head_waiter_point_view;
- static CommonPointView *second_head_waiter_point_view;
- static CommonPointView *server_point_view;
- static CommonPointView *second_server_point_view;
- static CommonPointView *room_clerk_point_view;
+ CommonPointView *butler_point_view;
+ CommonPointView *head_waiter_point_view;
+ CommonPointView *second_head_waiter_point_view;
+ CommonPointView *server_point_view;
+ CommonPointView *second_server_point_view;
+ CommonPointView *room_clerk_point_view;
+ CommonPointView *client_point_view ;
 
  CommonPointView *client_group_point_view;
  void initializeEmployeesCharacter();
+ void insertClientGroupOnScene(ClientGroupModel* clientGroup);
 
  private:
  MainView *main_view;
@@ -61,7 +61,7 @@ public:
   * corresponding models.
   * Also add them to scene
   */
- void initializeClientsCharacter();
+
 
 
 };

@@ -3,6 +3,7 @@
 //
 #include "../classDeclaration/ClientModel.h"
 
+
 void ClientModel::makeChoice(vector<Recipe> &recipes) {
     // TODO add instruction for randomly choose the dishes of the client
 }
@@ -25,8 +26,7 @@ void ClientModel::toogleHasOrderedEntree() {
 }
 
 
-// void ClientModel::eat(vector<Order> order) {
-//      * Manage the time by the type of dishes
-//     */
+// void ClientModel::eat(Order order) {
+    //  Manage the time by the type of dishes
 // }
 

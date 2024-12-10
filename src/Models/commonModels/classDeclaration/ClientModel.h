@@ -38,8 +38,8 @@ public:
           hasOrderedMainCourse(has_ordered_main_course),
           hasOrderedDessert(has_ordered_dessert) {
     }
-    ClientModel();
-    /**
+
+ /**
      * @brief this function is use for the client to make a choice
      *
      * @param recipes
@@ -63,7 +63,7 @@ public:
      * @brief client method eat
      * @param order
      */
-    //void eat(vector<Order> order);
+    // void eat(Order order);
 
 private:
     string type;

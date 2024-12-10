@@ -10,6 +10,7 @@
 #include <QTimer>// Pour std::thread
 
 #include "CharacterElementController.h"
+#include "DinningRoomController.h"
 
 
 class MainController
@@ -20,6 +21,9 @@ class MainController
     KitchenView *kitchenView;
     MotionlessElementController *motionlessElementController;
     CharacterElementController *characterElementController;
+    DinningRoomController *dinningRoomController;
+    ThreadPoolManager *threadPoolManager;
+
 public:
     explicit MainController(MainView &mainView);
     void startMainView();

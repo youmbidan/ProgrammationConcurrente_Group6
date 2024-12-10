@@ -3,5 +3,8 @@
 //
 #include "../classDeclaration/ClientGroupModel.h"
 
+int ClientGroupModel::getClientNumber() {
+    return clientNumber;
+}
 
 
