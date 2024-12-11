@@ -51,6 +51,8 @@ add_executable(masterchef_info main.cpp
         src/Views/kitchenView/kitchenView.cpp
         src/Views/dinningRoomView/dinningRoomView.cpp
         src/Views/dashboardView/Dashboard.cpp
+        src/Views/SetupView/SetupView.cpp
+        src/Views/SetupView/SetupView.h
 
         ${RESOURCES}
         main.cpp

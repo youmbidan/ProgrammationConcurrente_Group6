@@ -281,6 +281,12 @@
 			null
 		],
 		[
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Views/SetupView/SetupView.h",
+			"Mu",
+			"YAZERRXRUQ/moc_SetupView.cpp",
+			null
+		],
+		[
 			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Views/dashboardView/Dashboard.h",
 			"Mu",
 			"3FDC7YUJYN/moc_Dashboard.cpp",
@@ -480,6 +486,11 @@
 		],
 		[
 			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Views/MobilePointView.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Views/SetupView/SetupView.cpp",
 			"Mu",
 			null
 		],

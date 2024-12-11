@@ -6,26 +6,24 @@
 #include "../../Models/MobilePointModel.h"
 #include "../../Views/mainView.h"
 #include "../../Views/MobilePointView.h"
+#include "../../Views/SetupView/SetupView.h"
 #include <QThread>
 #include <QObject>
 #include <QTimer>// Pour std::thread
 
 
-class MainController
-{
-private:
-    //DBController dbController;
-    //MotionlessElementController motionlessElementController;
-    MainView &mainView;
-    MobilePointView* mobile_point;  // Référence à MobilePoint
-    MobilePointView* second_mobile_point;  // Référence à MobilePoint
-    MobilePointModel* mobile_point_model;  // Pointeur vers MobilePointModel
-    MobilePointModel* second_mobile_point_model;  // Pointeur vers MobilePointModel
+class MainController : public QObject {
+    Q_OBJECT
 
 public:
-    explicit MainController(MainView &mainView);
-    void startMainView();
-    //void startMovementInThreads();
-};
+    MainController(MainView& mainView);
 
-#endif // MAINCONTROLLER_H
+    void startMainView();
+
+public slots:
+    void onConfigurationValidated(int time, int clients, const QString& mode, const QString& additionalInfo); // Slot pour la validation de la configuration
+
+private:
+    MainView& m_mainView;
+};
+#endif 

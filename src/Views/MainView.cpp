@@ -22,13 +22,7 @@ public:
         setWindowTitle("Menu du Jour");
         setFixedSize(1024, 768); // Augmenter la taille de la fenêtre pour plus de contenu
 
-        // Utilisation des paramètres reçus
-    /* qDebug() << "Configuration reçue:";
-    qDebug() << "Temps:" << time;
-    qDebug() << "Clients:" << clients;
-    qDebug() << "Mode:" << mode;
-    qDebug() << "Infos supplémentaires:" << additionalInfo;
- */
+    
         QVBoxLayout* layout = new QVBoxLayout(this);
         layout->setSpacing(20);
         layout->setContentsMargins(20, 20, 20, 20);
@@ -151,6 +145,12 @@ MainView::MainView(QWidget* parent)
     : QMainWindow(parent) {
     setWindowTitle("Gestion du Restaurant");
     resize(1024, 768);
+
+// Timer
+    //timer = new QTimer(this);
+    //connect(timer, &QTimer::timeout, this, &MainView::updateElapsedTime);
+    //timer->start(1000); // Mise à jour toutes
+
 
     QTabWidget* tabWidget = new QTabWidget;
     tabWidget->addTab(new DinningRoomView, "Restaurant");

@@ -31,7 +31,18 @@ public:
 
 private:
     // Intégrer ici d'autres membres privés si nécessaire
-   
+   // QTimer* timer;
+    //QTime elapsedTime;
+    //QLabel* timerLabel;
+    //int speedFactor; // Facteur de vitesse (1x, 2x, etc.)
+    //bool isPaused;
+
+//private slots:
+    //void updateElapsedTime();
+    //void togglePauseResume();
+    //void increaseSpeed();
+    //void resetTimer();
+
 };
 
 #endif // MAINVIEW_H

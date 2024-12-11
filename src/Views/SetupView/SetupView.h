@@ -1,7 +1,16 @@
 #ifndef SETUPVIEW_H
 #define SETUPVIEW_H
 
+#include <QObject>
 #include <QWidget>
+#include <QVBoxLayout>
+#include <QFormLayout>
+#include <QLabel>
+#include <QLineEdit>
+#include <QSpinBox>
+#include <QComboBox>
+#include <QPushButton>
+#include <QMessageBox>
 
 class SetupView : public QWidget {
     Q_OBJECT

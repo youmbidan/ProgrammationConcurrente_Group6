@@ -79,6 +79,7 @@ DinningRoomView::DinningRoomView(QWidget *parent)
     QPixmap table4Pixmap(":/assets/table4.png");
     QPixmap table6Pixmap(":/assets/table6.png");
     QPixmap table8Pixmap(":/assets/table8.png");
+    QPixmap table10Pixmap(":/assets/table10.png");
 
     const int spacing = 30;  // Espacement entre les tables diminué
     const int newSpacingX = (sectionWidth - (cols * tableSize)) / (cols + 1);
@@ -96,6 +97,8 @@ DinningRoomView::DinningRoomView(QWidget *parent)
 
         table->setPos(x, y);
     };
+    addTable(table10Pixmap, 1, cols - 6.5, 0, 1.5); // Table de 10 à gauche
+    addTable(table10Pixmap, 1, cols - 0, sectionWidth, 1.5); // Table de 10 à droite
 
     auto arrangeSection = [&](int xOffset, int tableCountStart, int tableCountEnd) {
         int row = 0, col = 0;
