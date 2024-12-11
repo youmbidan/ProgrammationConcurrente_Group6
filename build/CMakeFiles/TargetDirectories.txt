@@ -1,3 +1,0 @@
-C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles/masterchef_info.dir
-C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles/edit_cache.dir
-C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles/rebuild_cache.dir

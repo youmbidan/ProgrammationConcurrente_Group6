@@ -1,9 +1,23 @@
-#include "Observer.cpp"
- 
-class Observable {
-public:
-    virtual ~Observable() = default;
-    virtual void subscribe(Observer* observer) = 0;
-    virtual void unsubscribe(Observer* observer) = 0;
-    virtual void notify() = 0;
-};
+
+#include "Observable.h"
+
+// Attach an observer
+void Observable::subscribe(Observer *observer)
+{
+  observers.push_back(observer);
+}
+
+// Detach an observer
+void Observable::unsubscribe(Observer *observer)
+{
+  // remove observer from the vector
+}
+
+// Notify all observers
+void Observable::notify(const std::any& data)
+{
+  for (Observer *observer : observers)
+  {
+    observer->update(data);
+  }
+}
