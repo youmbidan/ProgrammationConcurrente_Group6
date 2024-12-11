@@ -34,7 +34,9 @@ void CookModel::assignOrder(const Order& order) {
 }
 
 void CookModel::processOrder() {
-    QTimer::singleShot(3000, this, [this]() { // Simule un délai de 3 secondes
+    int cookingTime = currentOrder.getTotalCookingTime()*1000;
+    qDebug() << "Temps total de la commande :" << cookingTime << "milli-secondes.";
+    QTimer::singleShot(cookingTime, this, [this]() {
         QMutexLocker locker(&mutex);
         available = true;
         emit orderCompleted(currentOrder.id);

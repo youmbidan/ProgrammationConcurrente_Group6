@@ -410,4 +410,5 @@ C:/Users/Donald/Documents/projets_qt/database/build/Desktop_Qt_6_8_0_MinGW_64_bi
   C:/Users/Donald/Documents/projets_qt/database/ChefController.h \
   C:/Users/Donald/Documents/projets_qt/database/ChefModel.h \
   C:/Users/Donald/Documents/projets_qt/database/CookModel.h \
-  C:/Users/Donald/Documents/projets_qt/database/Order.h
+  C:/Users/Donald/Documents/projets_qt/database/Order.h \
+  C:/Users/Donald/Documents/projets_qt/database/Recipe.h

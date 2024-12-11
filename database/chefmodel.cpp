@@ -28,7 +28,7 @@ void ChefModel::addCook(CookModel* cook) {
 
     // Connecter le signal du cuisinier pour savoir quand il est libre
     connect(cook, &CookModel::orderCompleted, this, [this](int orderId) {
-        qDebug() << "Commande" << orderId << "complétée.";
+        qDebug() << "Commande" << orderId << "complétée. Cuisinier libre";
         distributeOrders(); // Réattribuer les commandes en attente
     });
 }

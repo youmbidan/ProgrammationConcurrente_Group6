@@ -113,6 +113,14 @@ build CMakeFiles/database.dir/order.cpp.obj: CXX_COMPILER__database_unscanned_De
   OBJECT_DIR = CMakeFiles\database.dir
   OBJECT_FILE_DIR = CMakeFiles\database.dir
 
+build CMakeFiles/database.dir/recipe.cpp.obj: CXX_COMPILER__database_unscanned_Debug C$:/Users/Donald/Documents/projets_qt/database/recipe.cpp || cmake_object_order_depends_target_database
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\database.dir\recipe.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Donald/Documents/projets_qt/database/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/database_autogen/include -isystem C:/Qt/6.8.0/mingw_64/include/QtCore -isystem C:/Qt/6.8.0/mingw_64/include -isystem C:/Qt/6.8.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.0/mingw_64/include/QtGui -isystem C:/Qt/6.8.0/mingw_64/include/QtSql
+  OBJECT_DIR = CMakeFiles\database.dir
+  OBJECT_FILE_DIR = CMakeFiles\database.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target database
@@ -121,7 +129,7 @@ build CMakeFiles/database.dir/order.cpp.obj: CXX_COMPILER__database_unscanned_De
 #############################################
 # Link the executable database.exe
 
-build database.exe: CXX_EXECUTABLE_LINKER__database_Debug CMakeFiles/database.dir/database_autogen/mocs_compilation.cpp.obj CMakeFiles/database.dir/main.cpp.obj CMakeFiles/database.dir/mainwindow.cpp.obj CMakeFiles/database.dir/chefmodel.cpp.obj CMakeFiles/database.dir/cookmodel.cpp.obj CMakeFiles/database.dir/chefcontroller.cpp.obj CMakeFiles/database.dir/chefview.cpp.obj CMakeFiles/database.dir/order.cpp.obj | C$:/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Sql.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Core.a || database_autogen database_autogen_timestamp_deps
+build database.exe: CXX_EXECUTABLE_LINKER__database_Debug CMakeFiles/database.dir/database_autogen/mocs_compilation.cpp.obj CMakeFiles/database.dir/main.cpp.obj CMakeFiles/database.dir/mainwindow.cpp.obj CMakeFiles/database.dir/chefmodel.cpp.obj CMakeFiles/database.dir/cookmodel.cpp.obj CMakeFiles/database.dir/chefcontroller.cpp.obj CMakeFiles/database.dir/chefview.cpp.obj CMakeFiles/database.dir/order.cpp.obj CMakeFiles/database.dir/recipe.cpp.obj | C$:/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Sql.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Core.a || database_autogen database_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = C:/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.8.0/mingw_64/lib/libQt6Sql.a  C:/Qt/6.8.0/mingw_64/lib/libQt6Gui.a  -ld3d11  -ldxgi  -ldxguid  -ld3d12  C:/Qt/6.8.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\database.dir

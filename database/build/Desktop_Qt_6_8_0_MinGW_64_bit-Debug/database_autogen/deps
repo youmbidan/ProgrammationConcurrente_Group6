@@ -628,4 +628,6 @@ database_autogen/timestamp: \
 	C:/Users/Donald/Documents/projets_qt/database/mainwindow.h \
 	C:/Users/Donald/Documents/projets_qt/database/order.cpp \
 	C:/Users/Donald/Documents/projets_qt/database/order.h \
+	C:/Users/Donald/Documents/projets_qt/database/recipe.cpp \
+	C:/Users/Donald/Documents/projets_qt/database/recipe.h \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

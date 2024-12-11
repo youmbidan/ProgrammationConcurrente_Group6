@@ -329,6 +329,12 @@
 			"MU",
 			"EWIEGA46WW/moc_order.cpp",
 			null
+		],
+		[
+			"C:/Users/Donald/Documents/projets_qt/database/recipe.h",
+			"MU",
+			"EWIEGA46WW/moc_recipe.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -429,7 +435,12 @@
 			"MU",
 			null
 		],
-		[ "C:/Users/Donald/Documents/projets_qt/database/order.cpp", "MU", null ]
+		[ "C:/Users/Donald/Documents/projets_qt/database/order.cpp", "MU", null ],
+		[
+			"C:/Users/Donald/Documents/projets_qt/database/recipe.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -1,5 +1,6 @@
 C:/Users/Donald/Documents/projets_qt/database/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/database_autogen/EWIEGA46WW/moc_cookmodel.cpp: C:/Users/Donald/Documents/projets_qt/database/cookmodel.h \
   C:/Users/Donald/Documents/projets_qt/database/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/database_autogen/moc_predefs.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QList \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QMutex \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QObject \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QString \
@@ -319,4 +320,5 @@ C:/Users/Donald/Documents/projets_qt/database/build/Desktop_Qt_6_8_0_MinGW_64_bi
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Users/Donald/Documents/projets_qt/database/Order.h
+  C:/Users/Donald/Documents/projets_qt/database/Order.h \
+  C:/Users/Donald/Documents/projets_qt/database/Recipe.h

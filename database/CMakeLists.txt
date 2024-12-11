@@ -29,6 +29,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         chefcontroller.h chefcontroller.cpp
         chefview.h chefview.cpp
         order.h order.cpp
+        recipe.h recipe.cpp
 
     )
 else()
