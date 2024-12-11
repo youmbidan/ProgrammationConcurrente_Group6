@@ -1,17 +1,18 @@
 {
 	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
-	"BUILD_DIR" : "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/masterchef_info_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info",
+	"BUILD_DIR" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info",
 	"CMAKE_EXECUTABLE" : "C:/Program Files/CMake/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/CMakeLists.txt",
-		"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles/3.31.0/CMakeSystem.cmake",
+		"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/CMakeLists.txt",
+		"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/CMakeFiles/3.31.2/CMakeSystem.cmake",
+		"C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6/qt.toolchain.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake",
-		"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles/3.31.0/CMakeCXXCompiler.cmake",
+		"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/CMakeFiles/3.31.2/CMakeCXXCompiler.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake",
@@ -24,15 +25,14 @@
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake",
-		"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles/3.31.0/CMakeRCCompiler.cmake",
+		"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/CMakeFiles/3.31.2/CMakeRCCompiler.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake",
-		"C:/Program Files/CMake/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake",
-		"C:/Program Files/CMake/share/cmake-3.31/Modules/Linker/GNU.cmake",
+		"C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-CXX.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake",
@@ -218,83 +218,130 @@
 		"C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
 		"C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
-		"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/ressources.qrc"
+		"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/ressources.qrc"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info",
+	"CMAKE_SOURCE_DIR" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/masterchef_info_autogen/deps",
-	"DEP_FILE_RULE_NAME" : "masterchef_info_autogen/timestamp",
+	"DEP_FILE" : "",
+	"DEP_FILE_Debug" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/deps_Debug",
+	"DEP_FILE_RULE_NAME" : "",
+	"DEP_FILE_RULE_NAME_Debug" : "masterchef_info_autogen/timestamp_Debug",
+	"DEP_FILE_RULE_NAME_RelWithDebInfo" : "masterchef_info_autogen/timestamp_RelWithDebInfo",
+	"DEP_FILE_RULE_NAME_Release" : "masterchef_info_autogen/timestamp_Release",
+	"DEP_FILE_RelWithDebInfo" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/deps_RelWithDebInfo",
+	"DEP_FILE_Release" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/deps_Release",
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Controllers/classDeclaration/DBController.h",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Controllers/classDeclaration/DBController.h",
 			"Mu",
 			"3OO62SW2CZ/moc_DBController.cpp",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Controllers/classDeclaration/MainController.h",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Controllers/classDeclaration/MainController.h",
 			"Mu",
 			"3OO62SW2CZ/moc_MainController.cpp",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Controllers/classDeclaration/MotionlessElementController.h",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Controllers/classDeclaration/MotionlessElementController.h",
 			"Mu",
 			"3OO62SW2CZ/moc_MotionlessElementController.cpp",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Models/MobilePointModel.h",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Models/MobilePointModel.h",
 			"Mu",
 			"3WFUWCBZX3/moc_MobilePointModel.cpp",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Observer/Observable.h",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Observer/Observable.h",
 			"Mu",
 			"GGUJZW3VQS/moc_Observable.cpp",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Structs/PointStruct.h",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Structs/PointStruct.h",
 			"Mu",
 			"KEPRZ7RT3J/moc_PointStruct.cpp",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/MainView.h",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Views/MainView.h",
 			"Mu",
 			"DAGTZI5CW3/moc_MainView.cpp",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/MobilePointView.h",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Views/MobilePointView.h",
 			"Mu",
 			"DAGTZI5CW3/moc_MobilePointView.cpp",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/dinningRoomView/DinningRoomView.h",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Views/dashboardView/Dashboard.h",
+			"Mu",
+			"3FDC7YUJYN/moc_Dashboard.cpp",
+			null
+		],
+		[
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Views/dinningRoomView/DinningRoomView.h",
 			"Mu",
 			"L4ZK7KOUKG/moc_DinningRoomView.cpp",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/kitchenView/KitchenView.h",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Views/kitchenView/KitchenView.h",
 			"Mu",
 			"LSVJQDY5HU/moc_KitchenView.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/masterchef_info_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/masterchef_info_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : 
+	"INCLUDE_DIR" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/include",
+	"INCLUDE_DIR_Debug" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/include_Debug",
+	"INCLUDE_DIR_RelWithDebInfo" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/include_Release",
+	"MOC_COMPILATION_FILE" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/mocs_compilation.cpp",
+	"MOC_COMPILATION_FILE_Debug" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/mocs_compilation_Debug.cpp",
+	"MOC_COMPILATION_FILE_RelWithDebInfo" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/mocs_compilation_RelWithDebInfo.cpp",
+	"MOC_COMPILATION_FILE_Release" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/mocs_compilation_Release.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEFINITIONS_Debug" : 
 	[
 		"MINGW_HAS_SECURE_API=1",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
+		"QT_WIDGETS_LIB",
+		"UNICODE",
+		"WIN32",
+		"WIN64",
+		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
+		"_UNICODE",
+		"_WIN64"
+	],
+	"MOC_DEFINITIONS_RelWithDebInfo" : 
+	[
+		"MINGW_HAS_SECURE_API=1",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_WIDGETS_LIB",
+		"UNICODE",
+		"WIN32",
+		"WIN64",
+		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
+		"_UNICODE",
+		"_WIN64"
+	],
+	"MOC_DEFINITIONS_Release" : 
+	[
+		"MINGW_HAS_SECURE_API=1",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
 		"QT_WIDGETS_LIB",
 		"UNICODE",
 		"WIN32",
@@ -310,19 +357,48 @@
 			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
 		]
 	],
-	"MOC_INCLUDES" : 
+	"MOC_INCLUDES" : [],
+	"MOC_INCLUDES_Debug" : 
 	[
 		"C:/Qt/6.8.0/mingw_64/include/QtWidgets",
 		"C:/Qt/6.8.0/mingw_64/include",
 		"C:/Qt/6.8.0/mingw_64/include/QtCore",
 		"C:/Qt/6.8.0/mingw_64/mkspecs/win32-g++",
 		"C:/Qt/6.8.0/mingw_64/include/QtGui",
-		"C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++",
-		"C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32",
-		"C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward",
-		"C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include",
-		"C:/gcc-14.2.0-no-debug/lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed",
-		"C:/gcc-14.2.0-no-debug/x86_64-w64-mingw32/include"
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed",
+		"C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include"
+	],
+	"MOC_INCLUDES_RelWithDebInfo" : 
+	[
+		"C:/Qt/6.8.0/mingw_64/include/QtWidgets",
+		"C:/Qt/6.8.0/mingw_64/include",
+		"C:/Qt/6.8.0/mingw_64/include/QtCore",
+		"C:/Qt/6.8.0/mingw_64/mkspecs/win32-g++",
+		"C:/Qt/6.8.0/mingw_64/include/QtGui",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed",
+		"C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include"
+	],
+	"MOC_INCLUDES_Release" : 
+	[
+		"C:/Qt/6.8.0/mingw_64/include/QtWidgets",
+		"C:/Qt/6.8.0/mingw_64/include",
+		"C:/Qt/6.8.0/mingw_64/include/QtCore",
+		"C:/Qt/6.8.0/mingw_64/mkspecs/win32-g++",
+		"C:/Qt/6.8.0/mingw_64/include/QtGui",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed",
+		"C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include"
 	],
 	"MOC_MACRO_NAMES" : 
 	[
@@ -337,71 +413,88 @@
 	"MOC_PATH_PREFIX" : false,
 	"MOC_PREDEFS_CMD" : 
 	[
-		"C:/gcc-14.2.0-no-debug/bin/g++.exe",
+		"c:/Qt/Tools/mingw1310_64/bin/g++.exe",
 		"-std=gnu++17",
 		"-dM",
 		"-E",
 		"-c",
 		"C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/masterchef_info_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE_Debug" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/moc_predefs_Debug.h",
+	"MOC_PREDEFS_FILE_RelWithDebInfo" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/moc_predefs_RelWithDebInfo.h",
+	"MOC_PREDEFS_FILE_Release" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/masterchef_info_autogen/moc_predefs_Release.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/qrc_ressources.cpp"
+		"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/qrc_ressources.cpp"
 	],
-	"MULTI_CONFIG" : false,
-	"PARALLEL" : 4,
-	"PARSE_CACHE_FILE" : "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles/masterchef_info_autogen.dir/ParseCache.txt",
-	"QT_MOC_EXECUTABLE" : "C:/Qt/6.8.0/mingw_64/bin/moc.exe",
+	"MULTI_CONFIG" : true,
+	"PARALLEL" : 10,
+	"PARSE_CACHE_FILE" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/CMakeFiles/masterchef_info_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE_Debug" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/CMakeFiles/masterchef_info_autogen.dir/ParseCache_Debug.txt",
+	"PARSE_CACHE_FILE_RelWithDebInfo" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/CMakeFiles/masterchef_info_autogen.dir/ParseCache_RelWithDebInfo.txt",
+	"PARSE_CACHE_FILE_Release" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/CMakeFiles/masterchef_info_autogen.dir/ParseCache_Release.txt",
+	"QT_MOC_EXECUTABLE" : "",
+	"QT_MOC_EXECUTABLE_Debug" : "C:/Qt/6.8.0/mingw_64/bin/moc.exe",
+	"QT_MOC_EXECUTABLE_RelWithDebInfo" : "C:/Qt/6.8.0/mingw_64/bin/moc.exe",
+	"QT_MOC_EXECUTABLE_Release" : "C:/Qt/6.8.0/mingw_64/bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 8,
-	"SETTINGS_FILE" : "C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/build/CMakeFiles/masterchef_info_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/CMakeFiles/masterchef_info_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE_Debug" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/CMakeFiles/masterchef_info_autogen.dir/AutogenUsed_Debug.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/CMakeFiles/masterchef_info_autogen.dir/AutogenUsed_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/build/CMakeFiles/masterchef_info_autogen.dir/AutogenUsed_Release.txt",
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/main.cpp",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/main.cpp",
 			"Mu",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Controllers/classDefinition/DBController.cpp",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Controllers/classDefinition/DBController.cpp",
 			"Mu",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Controllers/classDefinition/MainController.cpp",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Controllers/classDefinition/MainController.cpp",
 			"Mu",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Models/MobilePointModel.cpp",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Models/MobilePointModel.cpp",
 			"Mu",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Observer/Observable.cpp",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Observer/Observable.cpp",
 			"Mu",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/MainView.cpp",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Views/MainView.cpp",
 			"Mu",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/MobilePointView.cpp",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Views/MobilePointView.cpp",
 			"Mu",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/dinningRoomView/DinningRoomView.cpp",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Views/dashboardView/Dashboard.cpp",
 			"Mu",
 			null
 		],
 		[
-			"C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/Views/kitchenView/KitchenView.cpp",
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Views/dinningRoomView/DinningRoomView.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/Danielle/Desktop/Projet_ProConcu/masterchef_info/src/Views/kitchenView/KitchenView.cpp",
 			"Mu",
 			null
 		]

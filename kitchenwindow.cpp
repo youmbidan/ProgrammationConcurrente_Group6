@@ -1,20 +1,20 @@
-#include "kitchenwindow.h"
+#include "kitchenView.h"
 #include <QtWidgets/QApplication>
-#include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <QGraphicsScene>
-#include <QGraphicsView>
-#include <QGraphicsPixmapItem>
-#include <QPushButton>
-#include <QGraphicsDropShadowEffect>
-#include <QLabel>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QGraphicsScene>
+#include <QtWidgets/QGraphicsView>
+#include <QtWidgets/QGraphicsPixmapItem>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QGraphicsDropShadowEffect>
+#include <QtWidgets/QLabel>
 #include <QPropertyAnimation>
-#include <QStyle>
-#include <QLCDNumber>
+#include <QtWidgets/QStyle>
+#include <QtWidgets/QLCDNumber>
 #include <QTimer>
 #include <QTime>
 
-Kitchenwindow::Kitchenwindow(QWidget *parent)
+kitchenView::kitchenView(QWidget *parent)
     : QWidget(parent), elapsedSeconds(0) {
 
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
@@ -40,7 +40,7 @@ Kitchenwindow::Kitchenwindow(QWidget *parent)
     view->setStyleSheet(R"(
         QGraphicsView {
             border: none;
-            background-image: url(':/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/sol.jpeg');
+            background-image: url(':/assets/sol.jpeg');
             border-radius: 15px;
         }
     )");
@@ -55,12 +55,12 @@ Kitchenwindow::Kitchenwindow(QWidget *parent)
     mainLayout->addWidget(view);
 }
 
-void Kitchenwindow::addImagesToScene(QGraphicsScene *scene) {
+void kitchenView::addImagesToScene(QGraphicsScene *scene) {
     // Charger les images
-    QPixmap image1(":/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/kitchen.png");
-    QPixmap image2(":/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/kitchen-shelves.png");
-    QPixmap image3(":/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/machine.png");
-    QPixmap image4(":/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/counter.png");
+    QPixmap image1(":/assets/kitchen.png");
+    QPixmap image2(":/assets/kitchen-shelves.png");
+    QPixmap image3(":/assets/frigo.png");
+    QPixmap image4(":/assets/lav.png");
 
     // Ajouter les images à la scène avec des positions adaptées
     QGraphicsPixmapItem *item1 = scene->addPixmap(image1.scaled(200, 200, Qt::KeepAspectRatio));
@@ -69,16 +69,16 @@ void Kitchenwindow::addImagesToScene(QGraphicsScene *scene) {
     QGraphicsPixmapItem *item2 = scene->addPixmap(image2.scaled(100, 100, Qt::KeepAspectRatio));
     item2->setPos(1300, 10);  // Position (centre de la scène)
 
-    QGraphicsPixmapItem *item3 = scene->addPixmap(image3.scaled(100, 100, Qt::KeepAspectRatio));
-    item3->setPos(1200, 10);  // Position (coin inférieur droit)
+    QGraphicsPixmapItem *item3 = scene->addPixmap(image3.scaled(150, 150, Qt::KeepAspectRatio));
+    item3->setPos(1200, 7);  // Position (coin inférieur droit)
 
     QGraphicsPixmapItem *item4 = scene->addPixmap(image4.scaled(100, 100, Qt::KeepAspectRatio));
     item4->setPos(5, 10);  // Position (coin inférieur droit)
 }
 
-QWidget* Kitchenwindow::createControlBar() {
+QWidget* kitchenView::createControlBar() {
     QWidget *controlBar = new QWidget();
-    QHBoxLayout *layout = new QHBoxLayout(controlBar);
+    //QHBoxLayout *layout = new QHBoxLayout(controlBar);
 
     auto createButton = [](const QStyle::StandardPixmap iconType, const QString &tooltip) -> QPushButton * {
         QPushButton *btn = new QPushButton();

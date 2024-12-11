@@ -19,7 +19,6 @@
 #include <QTime>
 #include "kitchenView/KitchenView.h"
 #include "dinningRoomView/DinningRoomView.h"
-
 #include "MobilePointView.h"
 
 class MainView : public QMainWindow
@@ -28,14 +27,11 @@ class MainView : public QMainWindow
 
 public:
     explicit MainView(QWidget* parent = nullptr);
-    //void refreshView();
-    void start();
-    // void addToScene(QGraphicsEllipseItem* item);
-    // public slots:
-    //     void onPositionUpdated();
+    void start();  // Méthode pour afficher la fenêtre et commencer le comptage du temps
+
 private:
-    //QGraphicsView* graphicsView;
-    //QGraphicsScene* graphicsScene;
+    // Intégrer ici d'autres membres privés si nécessaire
+   
 };
 
 #endif // MAINVIEW_H

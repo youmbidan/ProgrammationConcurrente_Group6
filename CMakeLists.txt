@@ -6,6 +6,7 @@ project(masterchef_info LANGUAGES CXX)
 # Définit la version minimale de Qt requise
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_PREFIX_PATH "C:\\Qt\\6.8.0\\mingw_64\\")
 
 # Rechercher les modules nécessaires de Qt
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
@@ -49,8 +50,10 @@ add_executable(masterchef_info main.cpp
 #        src/Factories/classDefinition/ServerFactory.cpp
         src/Views/kitchenView/kitchenView.cpp
         src/Views/dinningRoomView/dinningRoomView.cpp
+        src/Views/dashboardView/Dashboard.cpp
 
         ${RESOURCES}
+        main.cpp
 )
 
 # Lier l'exécutable aux bibliothèques Qt nécessaires

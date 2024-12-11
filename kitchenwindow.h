@@ -1,18 +1,18 @@
-#ifndef KITCHENWINDOW_H
-#define KITCHENWINDOW_H
+#ifndef kitchenView_H
+#define kitchenView_H
 
-#include <QWidget>
-#include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <QPushButton>
-#include <QLCDNumber>
-#include <QGraphicsScene>
-#include <QGraphicsView>
+#include <QtWidgets/QWidget>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QLCDNumber>
+#include <QtWidgets/QGraphicsScene>
+#include <QtWidgets/QGraphicsView>
 #include <QTimer>
 
-class Kitchenwindow : public QWidget {
+class kitchenView : public QWidget {
 public:
-    explicit Kitchenwindow(QWidget *parent = nullptr);
+    explicit kitchenView(QWidget *parent = nullptr);
     void updateImagePosition(int index, int x, int y);
 private:
     QLCDNumber *lcdTimer;
@@ -24,4 +24,4 @@ private:
     void setupTimer();
 };
 
-#endif // KITCHENWINDOW_H
+#endif // kitchenView_H

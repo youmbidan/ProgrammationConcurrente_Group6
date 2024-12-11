@@ -1,7 +1,8 @@
 #ifndef RESTAURANTTAB_H
 #define RESTAURANTTAB_H
 
-#include <QWidget>
+#include "QtWidgets/qwidget.h"
+
 
 class RestaurantTab : public QWidget {
     Q_OBJECT

@@ -4,7 +4,12 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/Qt/6.8.0/mingw_64/include/**"
+                "C:/Qt/6.8.0/mingw_64/include/QtCore",
+                "C:/Qt/6.8.0/mingw_64/include/QtWidgets",
+                "C:/Qt/6.8.0/mingw_64/include/QtGui",
+                "C:/Qt/6.8.0/mingw_64/include",
+                "${workspaceFolder}/src/Views/dasboardView",
+                "${workspaceFolder}/src/Views/dashboardView"
             ],
             "defines": [
                 "_DEBUG",

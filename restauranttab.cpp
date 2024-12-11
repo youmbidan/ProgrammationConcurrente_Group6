@@ -1,11 +1,11 @@
 #include "restauranttab.h"
 #include <QtWidgets/QApplication>
-#include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <QGraphicsScene>
-#include <QGraphicsView>
-#include <QGraphicsPixmapItem>
-#include <QPushButton>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QGraphicsScene>
+#include <QtWidgets/QGraphicsView>
+#include <QtWidgets/QGraphicsPixmapItem>
+#include <QtWidgets/QPushButton>
 
 RestaurantTab::RestaurantTab(QWidget *parent)
     : QWidget(parent) {
@@ -32,7 +32,7 @@ RestaurantTab::RestaurantTab(QWidget *parent)
     view->setStyleSheet(R"(
     QGraphicsView {
         border: none;
-        background-image: url(':/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/planch2.jpg');
+        background-image: url(':/assets/planch2.jpg');
         border-radius: 15px;
     }
 )");
@@ -50,7 +50,7 @@ RestaurantTab::RestaurantTab(QWidget *parent)
     scene->setSceneRect(0, 0, totalWidth, totalHeight);
 
     // Positionner la table de réception en haut à droite
-    QPixmap receptionPixmap(":/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/reception-table.png");
+    QPixmap receptionPixmap(":/assets/comptoir.png");
     QPixmap scaledReceptionPixmap = receptionPixmap.scaled(120, 80, Qt::KeepAspectRatio);
     int receptionX = totalWidth - scaledReceptionPixmap.width() - 5;
     int receptionY = 5;
@@ -62,7 +62,7 @@ RestaurantTab::RestaurantTab(QWidget *parent)
     receptionItem->setAcceptedMouseButtons(Qt::NoButton);
 
     // Ajouter l'image du chef
-    QPixmap chefPixmap(":/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/tapis.png");
+    QPixmap chefPixmap(":/assets/tapis.png");
     int chefWidth = 100;
     int chefHeight = 200;
     QPixmap scaledChefPixmap = chefPixmap.scaled(chefWidth, chefHeight, Qt::KeepAspectRatio);
@@ -70,7 +70,7 @@ RestaurantTab::RestaurantTab(QWidget *parent)
     chefItem->setPos(0, -2);
 
     // Ajouter l'image du maître d'hôtel
-    QPixmap maîtrePixmap(":/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/maitre.png");
+    QPixmap maîtrePixmap(":/assets/maitre.png");
     int maîtreWidth = 100;
     int maîtreHeight = 200;
     QPixmap scaledMaîtrePixmap = maîtrePixmap.scaled(maîtreWidth, maîtreHeight, Qt::KeepAspectRatio);
@@ -80,10 +80,10 @@ RestaurantTab::RestaurantTab(QWidget *parent)
     mainLayout->addWidget(view);
 
     // Chargement des images des tables
-    QPixmap table2Pixmap(":/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/table2.png");
-    QPixmap table4Pixmap(":/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/table4.png");
-    QPixmap table6Pixmap(":/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/table6.png");
-    QPixmap table8Pixmap(":/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/Assets/table8.png");
+    QPixmap table2Pixmap(":/assets/table2.png");
+    QPixmap table4Pixmap(":/assets/table4.png");
+    QPixmap table6Pixmap(":/assets/table6.png");
+    QPixmap table8Pixmap(":/assets/table8.png");
 
     const int spacing = 30;  // Espacement entre les tables diminué
     const int newSpacingX = (sectionWidth - (cols * tableSize)) / (cols + 1);

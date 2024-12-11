@@ -45,8 +45,8 @@ DinningRoomView::DinningRoomView(QWidget *parent)
     scene->setSceneRect(0, 0, totalWidth, totalHeight);
 
     // Positionner la table de réception en haut à droite
-    QPixmap receptionPixmap(":/assets/reception-table.png");
-    QPixmap scaledReceptionPixmap = receptionPixmap.scaled(120, 80, Qt::KeepAspectRatio);
+    QPixmap receptionPixmap(":/assets/etage.png");
+    QPixmap scaledReceptionPixmap = receptionPixmap.scaled(150, 150, Qt::KeepAspectRatio);
     int receptionX = totalWidth - scaledReceptionPixmap.width() - 5;
     int receptionY = 5;
 
