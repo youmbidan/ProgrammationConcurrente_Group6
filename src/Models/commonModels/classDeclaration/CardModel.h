@@ -17,10 +17,10 @@ public:
     /**
      * @brief constructor of the class cardModel
      *
-     * @param currentCard
      */
-    explicit CardModel(const vector<Recipe> &currentCard)
-        : currentCard(currentCard) {}
+
+    explicit CardModel();
+
     virtual ~CardModel() = default; /* TODO: faire la méthode pour
                                      * réincrémenter le compteur
                                      * des cartes actueles */
@@ -29,7 +29,9 @@ public:
      *
      * @return currentCard
      */
-    vector<Recipe> getCurrentCard();
+    vector<Recipe> &getCurrentCard();
+
+    void initializeCard();
 
 private:
     vector<Recipe> currentCard;

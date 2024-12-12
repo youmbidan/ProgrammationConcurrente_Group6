@@ -11,20 +11,19 @@ using namespace std;
 /**
  * @class UstensilModel
  *
- * @brief the mmodel to create the differents ustensil (cutlery and others)
+ * @brief the model to create the different utensils (cutlery and others)
  */
 class UstensilModel {
 public:
     /**
-     *@brief the constructor of the ustensil class
+     *@brief the constructor of the utensil class
      *
-     * @param is_clean
      * @param name
      * @param wash_time
      */
-    UstensilModel(bool is_clean, string name, int wash_time)
-        : isClean(is_clean),
-          name(std::move(name)),
+    UstensilModel(string name, int wash_time)
+        : isClean(true),
+          name(name),
           washTime(wash_time) {
     }
     //to get the wash time i have to pass this comment into a docstring comment

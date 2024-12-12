@@ -15,40 +15,35 @@ using namespace std;
  *
  * @brief the generations of clients group
  */
-class ClientGroupModel {
+class ClientGroupModel : public MobileElementModel {
 public:
     /**
      * @brief the clientGroup class constructor
      *
+     * @param abscice
+     * @param intercept
      * @param client_group
      * @param client_number
      */
-    ClientGroupModel(const vector<ClientModel*> &client_group, int client_number)
-        : clientGroup(client_group)
-         {}
+    ClientGroupModel(double abscice, double intercept, const vector<ClientModel*> client_group, int client_number);
 
     /**
      * @brief setters and guetters
      */
-    void setClientGroup(const vector<ClientModel> &client_group);
 
-    int getClientNumber();
+    int getClientNumber() const;
 
-    vector<ClientModel> getClientGroup();
+    vector<ClientModel*> getClientGroup();
 
-    int getIntercept();
+    void setCoords(PointStruct newCoords);
 
-    int getAbscice();
-
-    void setAbscice(int abscice);
-
-    void setIntercept(int intercept);
+    void move(PointStruct finalCoords);
 
 private:
     vector<ClientModel*> clientGroup;
     int clientNumber;
-    int abscice;
-    int intercept;
+    double abscice;
+    double intercept;
 
 };
 #endif //CLIENTGROUPMODEL_H

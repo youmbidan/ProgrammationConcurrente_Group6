@@ -4,6 +4,7 @@ MainController::MainController(MainView &mainView)
     : mainView(&mainView)
 {
     dinningRoomView = mainView.getDinningRoomView();
+    kitchenView = mainView.getKitchenView();
     motionlessElementController = new MotionlessElementController(dinningRoomView);
     characterElementController = new CharacterElementController(&mainView);
     threadPoolManager = new ThreadPoolManager();
@@ -15,8 +16,12 @@ void MainController::startMainView()
 {
     mainView->start();
     motionlessElementController->createAllTable();
+    dinningRoomController->setFreeTablesList();
     characterElementController->initializeEmployeesCharacter();
     dinningRoomController->startClientGroupCreation();
     dinningRoomController->startToWelcomeClientGroups();
+    dinningRoomController->makeHeadWaiterLeadClientsGroup();
+    dinningRoomController->startTakingOrders();
+    dinningRoomController->startCollectingOrders();
 }
 

@@ -25,11 +25,11 @@ public:
      * @param capacity
      * @param area
      */
-    Table(double abscice, double intercept, int capacity, int area)
+    Table(double abscice, double intercept, int capacity, int area, int id)
         : abscice(abscice),
           intercept(intercept),
           capacity(capacity),
-            area(area){
+            area(area), id(id){
     }
 
     /**
@@ -37,7 +37,7 @@ public:
      *
      * @param clients
      */
-    void addClientsToTable(vector<ClientModel> clients);
+    void addClientsToTable(vector<ClientModel*> clients);
 
     /**
      * @brief to move the client when they have finished eating
@@ -47,16 +47,24 @@ public:
     void setAbscice(double abscice);
     void setIntercept(double intercept);
     void setOccuped(int occuped);
-    void setClientList(vector<ClientModel> clientList);
+    void setClientList(vector<ClientModel*> clientList);
+
+    vector<ClientModel*> getClientsOnTable();
+
+    int getCapacity();
+    double getAbscice();
+    double getIntercept();
+    int getTableId();
 
 
 private:
+    int id;
     int area;
     double abscice;
     double intercept;
     int capacity;
     int occuped;
-    vector<ClientModel> clientList;
+    vector<ClientModel*> clientList;
     int breadCartNeeded;
 
 };

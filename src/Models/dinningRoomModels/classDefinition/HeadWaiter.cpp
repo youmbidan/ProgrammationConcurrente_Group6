@@ -6,7 +6,7 @@
 #include "../classDeclaration/headWaiter.h"
 
 
-HeadWaiter::HeadWaiter(int abscice, int intercept) : MobileElementModel(abscice, intercept){}
+HeadWaiter::HeadWaiter(double abscice, double intercept) : MobileElementModel(abscice, intercept){}
 
 void HeadWaiter::passOrdersTochief() {
     // TODO: add few instructions to manage it

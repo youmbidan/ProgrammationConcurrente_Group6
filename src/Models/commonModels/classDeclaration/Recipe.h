@@ -7,6 +7,9 @@
 #include <iostream>
 #include <utility>
 #include <vector>
+
+#include "../../../Enums/RecipesNames.h"
+#include "../../../Enums/RecipesTypes.h"
 #include "../../kitchenModels/classDeclaration/UstensilModel.h"
 using namespace std;
 
@@ -29,13 +32,14 @@ public:
      * @param eating_ustensil
      */
 
-    Recipe(const string &name, const string &type, int cooking_time, bool is_makable,
-        const vector<string> &ingredients_list, const vector<UstensilModel> &cooking_ustensils_list,
-        const vector<UstensilModel> &eating_ustensil)
+    Recipe(const RecipesNames &name, const RecipesType &type, int cooking_time,
+       const vector<string> &ingredients_list,
+       const vector<UstensilModel> &cooking_ustensils_list,
+       const vector<UstensilModel> &eating_ustensil)
         : name(name),
           type(type),
           cookingTime(cooking_time),
-          isMakable(is_makable),
+          isMakable(true),
           ingredientsList(ingredients_list),
           cookingUstensilsList(cooking_ustensils_list),
           eatingUstensil(eating_ustensil) {
@@ -46,8 +50,8 @@ public:
      */
     void toogleIsMakable();
 private:
-    string name;
-    string type;
+    RecipesNames name;
+    RecipesType type;
     int cookingTime;
     bool isMakable;
     vector<string> ingredientsList;

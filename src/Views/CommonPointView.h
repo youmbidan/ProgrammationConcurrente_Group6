@@ -12,7 +12,7 @@
 
 
 class CommonPointView : public QObject, public QGraphicsEllipseItem, public Observer {
-    
+    Q_OBJECT
 public:
     ~CommonPointView() override;
 

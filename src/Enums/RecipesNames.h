@@ -1,0 +1,18 @@
+//
+// Created by seand on 12/12/2024.
+//
+
+#ifndef RECIPESNAMES_H
+#define RECIPESNAMES_H
+
+
+enum RecipesNames {
+    GAUFRES,
+    CREPES,
+    BOULINADES_DANGUILLE_OU_DE_POISSON,
+    BOLES_DE_PICOULATS,
+    GASPATCHO,
+    PATE_DE_SANGLIER
+};
+
+#endif //RECIPESNAMES_H

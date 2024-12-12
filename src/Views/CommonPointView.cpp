@@ -24,18 +24,24 @@ CommonPointView::CommonPointView(const QString& labelText, const int initialX, c
 }
 
 void CommonPointView::update(const std::any& data) {
+    try {
+        // Assurez-vous que 'data' contient un PointStruct
+        auto coord = std::any_cast<PointStruct>(data);
 
-    PointStruct coord = std::any_cast<PointStruct>(data);
+        // Utilisation directe des types corrects de PointStruct
+        int newX = static_cast<int>(coord.x);
+        int newY = static_cast<int>(coord.y);
 
-    x = coord.x;
-    y = coord.y;
 
-    std::cout << "updating: newX = " << x << " newY = " << x << std::endl;
+        // Mise à jour des coordonnées graphiques
+            setPos(newX, newY);
 
-    setPos(x, x);
-    //emit positionUpdated();  // Émet un signal
-
+    } catch (const std::bad_any_cast& e) {
+        std::cerr << "Error in CommonPointView::update: " << e.what() << std::endl;
+    }
 }
+
+
 
 CommonPointView::~CommonPointView() = default;
 

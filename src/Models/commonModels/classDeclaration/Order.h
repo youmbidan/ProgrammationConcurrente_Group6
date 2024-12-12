@@ -4,16 +4,14 @@
 
 #ifndef ORDER_H
 #define ORDER_H
-#include <utility>
 #include <vector>
 
-#include "ClientModel.h"
-#include "Recipe.h"
+#include "../../../Structs/OrderRecipe.h"
 using namespace std;
 
 /**
  *@class Order
- *@brief the Order class is use to save the differents order of the clients
+ *@brief the Order class is used to save the differents order of the clients
  */
 class Order {
 public:
@@ -24,9 +22,9 @@ public:
      * @param id
      * @param client
      */
-    Order(const vector<Recipe> &order_recipes, int id)
+    Order(const vector<OrderRecipe*> order_recipes, int tableId)
         : orderRecipes(order_recipes),
-          id(id)
+          tableId(tableId)
           {
     }
 
@@ -38,9 +36,9 @@ public:
 
 private:
     // declare a table attribute type : table
-    vector<Recipe> orderRecipes;
+    vector<OrderRecipe*> orderRecipes;
+    int tableId;
     int id;
-    //ClientModel client;
 
 };
 #endif //ORDER_H

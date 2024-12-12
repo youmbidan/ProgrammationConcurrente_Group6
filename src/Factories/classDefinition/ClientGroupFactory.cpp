@@ -9,20 +9,21 @@ ClientGroupFactory::ClientGroupFactory() {};
 
 ClientGroupModel* ClientGroupFactory::createGroup() {
     clientNumber = generateClientNumber();
+    cout << "creation d'un groupe de : " << clientNumber << " clients (ClientGroupFactory::createGroup())" << endl;
     vector<ClientModel*> clients;
-    cout << "creation de " << clientNumber << " clients " << endl;
     for (int i = 0; i <= clientNumber; i++) {
         clients.push_back(new ClientModel());
     }
-    auto* client_group_model = new ClientGroupModel(clients, clientNumber);
-    cout << "groupe cree... ajoutons a la queue " << endl;
+    auto* client_group_model = new ClientGroupModel(0,0, clients, clientNumber);
 
     return client_group_model;
 }
 
 int ClientGroupFactory::generateClientNumber() {
 
-    srand(time(0));
-    const int clientNumber = rand() % 10 + 1;
-    return clientNumber;
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dis(1, 10);
+
+    return dis(gen);
 }

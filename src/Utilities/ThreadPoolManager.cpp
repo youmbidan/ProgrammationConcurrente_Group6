@@ -18,7 +18,7 @@ condition_variable ThreadPoolManager::cv_;
 
 ThreadPoolManager::ThreadPoolManager() {
     const size_t num_threads = thread::hardware_concurrency();
-    cout << "num_threads: " << num_threads << endl;
+    cout << "threads in the pool: " << num_threads << endl;
 
     for (size_t i = 0; i < num_threads; ++i) {
         threads_.emplace_back([this] {
@@ -77,10 +77,10 @@ ThreadPoolManager::~ThreadPoolManager() {
 
 void ThreadPoolManager::enqueue(function<void()> task) {
     {
+        cout << "new task queued" << endl;
         unique_lock lock(queue_mutex_);
         tasks_.emplace(move(task));
     }
-    cout << "Task enqueued" << endl;
     cv_.notify_one();
 }
 

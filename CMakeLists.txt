@@ -66,6 +66,12 @@ add_executable(masterchef_info
         src/Models/commonModels/classDeclaration/DinningRoom.h
         src/Models/commonModels/classDefinition/DinningRoom.cpp
         src/Models/dinningRoomModels/classDefinition/Butler.cpp
+        src/Structs/Attribution.h
+        src/Enums/RecipesNames.h
+        src/Enums/RecipesTypes.h
+        src/Models/commonModels/classDefinition/CardModel.cpp
+        src/Models/commonModels/classDefinition/Recipe.cpp
+        src/Structs/orderRecipe.h
 )
 
 # Lier l'exécutable aux bibliothèques Qt nécessaires

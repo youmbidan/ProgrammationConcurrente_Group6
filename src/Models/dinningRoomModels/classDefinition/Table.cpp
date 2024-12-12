@@ -16,13 +16,36 @@ void Table::setIntercept(double intercept) {
 void Table::setOccuped(int occuped) {
     this->occuped = occuped;
 }
-void Table::addClientsToTable(vector<ClientModel> clients) {
+void Table::addClientsToTable(vector<ClientModel*> clients) {
     // TODO: add a method for adding client on the table
     setClientList(clients);
 }
-void Table::setClientList(vector<ClientModel> clientList) {
+void Table::setClientList(vector<ClientModel*> clientList) {
     this->clientList = clientList;
 }
+
+int Table::getCapacity() {
+    return capacity;
+}
+
+double Table::getAbscice() {
+    return abscice;
+}
+
+double Table::getIntercept() {
+    return intercept;
+}
+
+vector<ClientModel*> Table::getClientsOnTable() {
+    return clientList;
+}
+
+int Table::getTableId() {
+    return id;
+}
+
+
+
 
 
 

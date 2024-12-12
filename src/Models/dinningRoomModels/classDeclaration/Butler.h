@@ -19,19 +19,17 @@ class Butler {
 public:
     /**
      * @brief Constructor of the class Butler
-     *
-     * @param client_number
-     * @param priority_table
      */
-    Butler(){}
+    Butler()= default;
 
     /**
      * @brief to assign a table to a group of client according
      * to their number
      *
      * @param clientNumber
+     * @param freeTableList
      */
-    Table* assignTable(int clientNumber, vector<Table*> freeTableList);
+    Table* assignTable(int clientNumber, vector<Table*>& freeTableList);
 
     /**
      * @brief to notify a headwaiter tha he has to take a client
@@ -43,7 +41,8 @@ public:
     void notifyHeadWaiter(Table table, ClientModel client);
 
 private:
-    int clientNUmber;
-    const vector<int> priority_table {2, 4, 6, 8, 10};
+    const vector<int> priority_table {10, 8, 6, 4, 2};
+    std::mutex freeTablesMutex;
+
 };
 #endif //BUTLE_H

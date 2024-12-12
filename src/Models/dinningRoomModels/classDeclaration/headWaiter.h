@@ -17,7 +17,7 @@ class HeadWaiter : public MobileElementModel {
     queue<Order> orderQueue;
 public:
 
-    HeadWaiter(int abscice, int intercept);
+    HeadWaiter(double abscice, double intercept);
     /**
      * @brief the function to lead the clients to their table
      *

@@ -46,11 +46,34 @@ void CharacterElementController::initializeEmployeesCharacter() {
 }
 
 void CharacterElementController::insertClientGroupOnScene(ClientGroupModel* clientGroup) {
+    // Récupérer le nombre de clients et définir un label descriptif
     const int nbr_client = clientGroup->getClientNumber();
     const std::string clientLabel = "Clients(" + std::to_string(nbr_client) + ")";
-    client_point_view =  new CommonPointView(clientLabel.data(), 10, 20, nullptr, nbr_client );
-    dinningRoomView->addClientsToScene(client_point_view);
-    cout << "point cree, notifions la vue" << endl;
+
+    // Créer un point graphique représentant le groupe de clients
+    CommonPointView* client_point_view = new CommonPointView(QString::fromStdString(clientLabel), 0, 20, nullptr, nbr_client);
+
+    // Synchroniser les coordonnées entre le modèle et la vue
+    PointStruct clientGroupCoord = {
+        static_cast<double>(client_point_view->getX()),
+        static_cast<double>(client_point_view->getY())
+    };
+    clientGroup->setCoords(clientGroupCoord);
+
+    // Inscrire la vue comme observateur du modèle
+    clientGroup->subscribe(client_point_view);
+    std::cout << "Point graphique du client inscrit a son modele" << std::endl;
+
+    // Ajouter le groupe de clients à la scène de la salle à manger
+    QMetaObject::invokeMethod(dinningRoomView, [client_point_view, this]() {
+        dinningRoomView->addClientsToScene(client_point_view);
+    }, Qt::QueuedConnection);
+    // dinningRoomView->addClientsToScene(client_point_view);
+    std::cout << "Nouveau groupe de clients ajouté a la scene" << std::endl;
+
+    clientPointViews.push_back(client_point_view);
+
+    cout << "taille du tableau de points : " << clientPointViews.size() << endl;
 
 }
 

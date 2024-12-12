@@ -4,8 +4,8 @@
 
 #ifndef MobileElementModel_H
 #define MobileElementModel_H
-#include <QObject>
 #include <QTimer>
+#include <QThread>
 #include "../../../Structs/PointStruct.h"
 #include <iostream>
 #include "../../../Observer/Observable.h"
@@ -27,7 +27,9 @@ public:
     MobileElementModel(double abscice, double intercept, QObject* parent = nullptr)
         :   QObject(parent),
             abscice(abscice),
-            intercept(intercept) {
+            intercept(intercept),
+            initialAbscice(abscice),
+            initialIntercept(intercept){
     }
 
     /**
@@ -36,11 +38,15 @@ public:
      * @param finalX
      * @param finalY
      */
-    void move(double finalX, double finalY);
+    void move(PointStruct finalCoords);
+    void backToInitialPosition();
 
 private:
     double abscice;/** <L'abscice de chaque humain à un instant T */
     double intercept;/** <L'ordonnée de chaque humain à un instant T */
+    double initialAbscice;
+    double initialIntercept;
+
 
 };
 #endif //MobileElementModel_H

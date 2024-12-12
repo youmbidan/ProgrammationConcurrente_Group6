@@ -11,9 +11,12 @@
 #include "CharacterElementController.h"
 #include "MotionlessElementController.h"
 #include "../../Factories/classDeclaration/ClientGroupFactory.h"
+#include "../../Factories/classDeclaration/TableFactory.h"
+#include "../../Models/commonModels/classDeclaration/CardModel.h"
 #include "../../Models/commonModels/classDeclaration/ClientGroupModel.h"
 #include "../../Models/dinningRoomModels/classDeclaration/Table.h"
 #include "../../Utilities/ThreadPoolManager.h"
+#include "../../Structs/Attribution.h"
 
 
 class DinningRoomController {
@@ -21,10 +24,19 @@ class DinningRoomController {
     queue<ClientGroupModel*> clientGroupsFormed;
 
     //queue de groupes assignés à une table
-    queue<ClientGroupModel*> clientGroupsAssigned;
+    queue<Attribution> clientGroupsAssigned;
 
     //Tableau de tables libres de la salle
     vector<Table*> freeTablesList;
+
+    // Nombre de cartes de restaurant disponibles
+    int cardLeft = 40;
+
+    // queue de groupe de clients installés sans avoir passé commande
+    queue<Table*> orderingTables;
+
+    // queue de tables ayant déjà commandée
+    queue<Table*> orderedTables;
 
     //pour pouvoir récupérer les instances des personnages
     CharacterElementController *characterElementController;
@@ -37,30 +49,59 @@ class DinningRoomController {
 
     std::mutex clientGroupFormedMutex;
 
-    std::condition_variable clientGroupformedCond;
+    std::condition_variable clientGroupFormedCond;
 
+    std::mutex clientGroupAssignedMutex;
 
+    std::condition_variable clientGroupAssignedCond;
+
+    std::mutex orderingTablesMutex;
+
+    std::condition_variable orderingTablesCond;
+
+    std::mutex orderedTablesMutex;
+
+    std::condition_variable orderedTablesCond;
+
+    CardModel *currentCard;
+
+    std::mutex cardMutex;
+
+    std::mutex characterControllerMutex;
+
+    std::condition_variable characterControllerCond;
 
     public:
     /**
      *
      * @param characterElementController
      * @param motionlessElementController
-     * @param threadPoolManager
      */
     DinningRoomController(
         CharacterElementController *characterElementController, MotionlessElementController *motionlessElementController
         )
         : characterElementController(characterElementController),
             clientGroupFactory(new ClientGroupFactory()),
-            motionlessElementController(motionlessElementController)
+            motionlessElementController(motionlessElementController),
+            currentCard(new CardModel())
     {};
 
     ~DinningRoomController();
 
+    void setFreeTablesList();
+
     void startClientGroupCreation();
 
     void startToWelcomeClientGroups();
+
+    void makeHeadWaiterLeadClientsGroup();
+
+    void startTakingOrders();
+
+    void startCollectingOrders();
+
+
+
 
 };
 

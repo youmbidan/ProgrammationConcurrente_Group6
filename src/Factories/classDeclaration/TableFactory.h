@@ -19,11 +19,10 @@ class TableFactory {
  static int sixPlacesTablesLeft;
  static int eightPlacesTablesLeft;
  static int tenPlacesTablesLeft;
- static Table* createTable(int abscice, int intercept, int area, int capacity);
+ static int idCursor;
+ static Table* createTable(int abscice, int intercept, int area, int capacity, int id);
 
 public:
- static vector<Table *> dinningRommTables;
-
  TableFactory();
  ~TableFactory();
 

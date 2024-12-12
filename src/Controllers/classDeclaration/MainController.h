@@ -5,9 +5,6 @@
 #include "MotionlessElementController.h"
 #include "../../Views/MainView.h"
 #include "../../Views/CommonPointView.h"
-#include <QThread>
-#include <QObject>
-#include <QTimer>// Pour std::thread
 
 #include "CharacterElementController.h"
 #include "DinningRoomController.h"
@@ -15,7 +12,7 @@
 
 class MainController
 {
-
+    // Voici les instances des controlleurs qui seron utilisées tout au long de l'exécution du programme
     MainView *mainView;
     DinningRoomView *dinningRoomView;
     KitchenView *kitchenView;

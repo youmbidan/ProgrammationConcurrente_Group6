@@ -11,6 +11,8 @@
 #include "Recipe.h"
 #include "Order.h"
 #include "MobileElementModel.h"
+#include <random>
+
 using namespace std;
 
 /**
@@ -51,13 +53,13 @@ public:
      * @brief change the hasOrdered state
      */
     void toogleHasOrdered();
-
-    /**
-     * C
-     */
     void toogleHasOrderedMainCourse();
     void toogleHasOrderedDessert();
     void toogleHasOrderedEntree();
+
+    void setChoice(Recipe* choiceMade);
+
+    Recipe* getChoice();
 
     /**
      * @brief client method eat
@@ -73,7 +75,7 @@ private:
     bool hasOrderedEntree;
     bool hasOrderedMainCourse;
     bool hasOrderedDessert;
-    vector<Recipe> choices;
+    Recipe* choice;
 };
 
 

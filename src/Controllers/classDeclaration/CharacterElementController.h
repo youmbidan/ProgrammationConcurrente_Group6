@@ -55,6 +55,7 @@ public:
  MainView *main_view;
  DinningRoomView *dinningRoomView;
  KitchenView *kitchenView;
+ std::vector<CommonPointView*> clientPointViews; // Conteneur pour stocker les points de vue
 
  /**
   * @brief initialize employees/clients and associate them with

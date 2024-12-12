@@ -3,32 +3,47 @@
 //
 #include "../classDeclaration/MobileElementModel.h"
 
-void MobileElementModel::move(double finalX, double finalY) {
-    auto* timer = new QTimer(this);  // Associe le timer au modèle pour une gestion automatique
+#include <QApplication>
+
+void MobileElementModel::move(PointStruct finalCoords) {
+    // Attacher l'objet au thread principal si nécessaire
+    QMetaObject::invokeMethod(this, [this, finalCoords]() {
+
+    auto* timer = new QTimer(this); // Créé dans le thread principal
+    double finalX = finalCoords.x;
+    double finalY = finalCoords.y;
+
     connect(timer, &QTimer::timeout, [this, timer, finalX, finalY]() {
-        if (abscice <
-
-        finalX) {
+        // Incrémentation ou décrémentation des abscisses et ordonnées
+        if (abscice < finalX) {
             abscice++;
-            PointStruct data = {abscice, intercept};
-            notify(data);
+        } else if (abscice > finalX) {
+            abscice--;
+        }
 
-        } else if (intercept <
-
-        finalY) {
+        if (intercept < finalY) {
             intercept++;
-            PointStruct data = {abscice, intercept};
-            notify(data);
+        } else if (intercept > finalY) {
+            intercept--;
+        }
 
-        } else  {
-            std::cout << "Coordinates updated: x = " << abscice << ", y = " << intercept << std::endl;
+        // Création de la structure de données pour la mise à jour
+        PointStruct data = {abscice, intercept};
+        notify(data); // Mise à jour des observateurs, par exemple, CommonPointView
+
+        // Si les coordonnées sont atteintes ou dépassées, on arrête le timer
+        if ((abscice >= finalX && abscice <= finalX) && (intercept >= finalY && intercept <= finalY)) {
             timer->stop();
-            // timer->deleteLater();
-            std::cout << "Movement finished." << std::endl;
+            timer->deleteLater();
         }
     });
-    timer->start(50);
 
-    //ressource deallocation for our QTimer
-    delete timer;
+    timer->start(5);
+    }, Qt::QueuedConnection);
+
+}
+
+
+void MobileElementModel::backToInitialPosition() {
+    move({initialAbscice, initialIntercept});
 }
