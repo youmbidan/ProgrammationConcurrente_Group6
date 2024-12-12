@@ -1,0 +1,66 @@
+-- Insertion des types
+INSERT INTO Type (Name, Wash_time)
+VALUES 
+    ('Assiette', 2),
+    ('Casserole', 5),
+    ('Poêle', 5),
+    ('Verre', 2),
+    ('Cuillère', 1);
+
+-- Insertion des matériaux communs
+INSERT INTO Common_material (Type_id, Name, Quantity)
+VALUES 
+    (1, 'Assiette plate', 150),
+    (1, 'Assiette creuse', 50),
+    (2, 'Casserole moyenne', 10),
+    (3, 'Poêle antiadhésive', 8),
+    (4, 'Verre à vin', 100),
+    (5, 'Cuillère à soupe', 200);
+
+-- Insertion des ustensiles de cuisine
+INSERT INTO Ustensils_kitchen (Type_id, Name, Quantity)
+VALUES 
+    (2, 'Grande casserole', 5),
+    (3, 'Poêle profonde', 5),
+    (5, 'Spatule en bois', 10),
+    (5, 'Fouet', 3);
+
+-- Insertion des emplacements (zones de stock)
+INSERT INTO Location (Name, Validity)
+VALUES 
+    ('Congélateur', 30), -- validité en jours
+    ('Chambre froide', 3),
+    ('Réserve', 180);
+
+-- Insertion des ingrédients
+INSERT INTO Ingredients (Location_id, Name, Quantity, Drop_date)
+VALUES 
+    (1, 'Poulet', 50, '2024-12-10 12:00:00'),
+    (2, 'Tomate', 30, '2024-12-05 09:00:00'),
+    (3, 'Farine', 100, '2024-12-01 15:00:00'),
+    (3, 'Sel', 20, '2024-12-01 15:00:00');
+
+-- Insertion des ingrédients utilisés
+-- Assurez-vous que les `Ingredient_id` correspondent aux identifiants générés dans la table `Ingredients`.
+INSERT INTO Ingredient_used (Ingredient_id, Quantity_used, Date_used)
+VALUES 
+    (1, 5, '2024-12-06 13:00:00'), -- Utilisation de poulet
+    (2, 3, '2024-12-06 13:05:00'), -- Utilisation de tomates
+    (3, 10, '2024-12-06 13:10:00'); -- Utilisation de farine
+
+-- Insertion des réservations
+INSERT INTO Reservation (ClientNumber, ReservationTime)
+VALUES 
+    (4, '2024-12-06 19:00:00'),
+    (2, '2024-12-06 19:30:00'),
+    (6, '2024-12-06 20:00:00');
+
+-- Insertion des statistiques quotidiennes
+-- Assurez-vous que `NbReservation` correspond au nombre d'enregistrements dans la table `Reservation`.
+INSERT INTO Daily_stats (
+    First_client_arrival, Last_client_left, Plates_served, Avg_client_time, 
+    DOTD, DOTD_served, Revenue, NbReservation
+)
+VALUES 
+    ('2024-12-06 12:00:00', '2024-12-06 22:00:00', 150, 45.5, 
+    'Poulet rôti', 50, 750.0, 3);
