@@ -53,12 +53,6 @@ DinningRoomView::DinningRoomView(QWidget *parent)
     int receptionY = 5;
 
 
-    // Positionner la table de réception en haut à droite
-    QPixmap receptionPixmap(":/assets/reception-table.png");
-    QPixmap scaledReceptionPixmap = receptionPixmap.scaled(120, 80, Qt::KeepAspectRatio);
-    int receptionX = totalWidth - scaledReceptionPixmap.width() - 5;
-    int receptionY = 5;
-
     QGraphicsPixmapItem *receptionItem = scene->addPixmap(scaledReceptionPixmap);
     receptionItem->setPos(receptionX, receptionY);
     receptionItem->setFlag(QGraphicsItem::ItemIsMovable, false);
@@ -83,16 +77,6 @@ DinningRoomView::DinningRoomView(QWidget *parent)
 
     mainLayout->addWidget(view);
 
-    // Chargement des images des tables
-    QPixmap table2Pixmap(":/assets/table2.png");
-    QPixmap table4Pixmap(":/assets/table4.png");
-    QPixmap table6Pixmap(":/assets/table6.png");
-    QPixmap table8Pixmap(":/assets/table8.png");
-    QPixmap table10Pixmap(":/assets/table10.png");
-
-
-    addTable(table10Pixmap, 1, cols - 6.5, 0, 1.5); // Table de 10 à gauche
-    addTable(table10Pixmap, 1, cols - 0, sectionWidth, 1.5);
     setLayout(mainLayout);
 }
 
@@ -159,6 +143,12 @@ void DinningRoomView::addTableHeightToDinningRoomScene(int x, int y) {
 
 }
 
+void DinningRoomView::addTableTenToDinningRoomScene(int x, int y) {
+    QPixmap table10Pixmap(":/assets/table10.png");
+    createTable(table10Pixmap, x, y);
+
+}
+
 void DinningRoomView::addCharacterToScene(QGraphicsItem *characterPoint) {
     scene->addItem(characterPoint);
 }
@@ -168,6 +158,7 @@ void DinningRoomView::addClientsToScene(QGraphicsItem *clientGroupPoint) {
                         addCharacterToScene(clientGroupPoint);
                     }, Qt::QueuedConnection);
 }
+
 
 
 

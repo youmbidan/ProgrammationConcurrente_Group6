@@ -23,9 +23,9 @@ MotionlessElementController::MotionlessElementController(DinningRoomView *dinnin
 void MotionlessElementController::createAllTable() {
     
     // create table for the first area
-     arrangeSection(0,0,15,1);
+     arrangeSection(0,0,16,1);
     // create table for the second area
-     arrangeSection(sectionWidth,15,30,2);
+     arrangeSection(sectionWidth,16,32,2);
 
     // dinning_room_view.addTableTwoToDinningRoomScene(100, 100);
 
@@ -54,10 +54,14 @@ void MotionlessElementController::arrangeSection(int xOffset, int tableCountStar
             PointStruct coord = calculateCoordinate(newSpacingX, tableSize, col, row, xOffset);
             TableFactory::getTableOfSix(coord.x, coord.y, area);
             dinning_room_view->addTableSixToDinningRoomScene(coord.x, coord.y);
-        } else {
+        } else if (i < tableCountStart + 14) {
             PointStruct coord = calculateCoordinate(newSpacingX, tableSize, col, row, xOffset);
             TableFactory::getTableOfEight(coord.x, coord.y, area);
             dinning_room_view->addTableHeightToDinningRoomScene(coord.x, coord.y);
+        } else {
+            PointStruct coord = calculateCoordinate(newSpacingX, tableSize, col, row, xOffset);
+            TableFactory::getTableOfEight(coord.x, coord.y, area);
+            dinning_room_view->addTableTenToDinningRoomScene(coord.x, coord.y);
         }
 
         if (++col >= cols) {

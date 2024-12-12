@@ -45,7 +45,7 @@ void CookModel::assignOrder(const Order& order) {
 
 bool CookModel::checkResources(const Order& order) {
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("C:/Users/Donald/Documents/projets_qt/database/masterchef.db");
+    db.setDatabaseName("C:/Users/seand/Documents/X3 Djissou Happi/Module 2 - Programmation concourrente/projet programmation concourrante/masterchef_info/src/kitchen/masterchef.db");
 
     if (!db.open()) {
         qCritical() << "Erreur : Impossible d'ouvrir la base de données" << db.lastError().text();

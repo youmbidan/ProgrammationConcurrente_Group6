@@ -143,7 +143,9 @@ public:
 };
 MainView::MainView(QWidget* parent)
     : QMainWindow(parent),
-      chefModel(new ChefModel()) {
+      chefModel(new ChefModel()),
+        kitchenView(new KitchenView),
+        dinningRoomView(new DinningRoomView){
     setWindowTitle("Gestion du Restaurant");
     resize(1024, 768);
 
@@ -154,8 +156,8 @@ MainView::MainView(QWidget* parent)
 
 
     QTabWidget* tabWidget = new QTabWidget;
-    tabWidget->addTab(new DinningRoomView, "Restaurant");
-    tabWidget->addTab(new KitchenView, "Cuisine");
+    tabWidget->addTab(dinningRoomView, "Restaurant");
+    tabWidget->addTab(kitchenView, "Cuisine");
 
     QFrame* mainFrame = new QFrame;
     mainFrame->setStyleSheet("background-color: #e0e0e0; border-radius: 10px; padding: 20px;");
@@ -244,3 +246,13 @@ MainView::MainView(QWidget* parent)
 void MainView::start() {
     show();
 }
+
+
+KitchenView *MainView::getKitchenView() {
+    return kitchenView;
+}
+
+DinningRoomView *MainView::getDinningRoomView() {
+    return dinningRoomView;
+}
+

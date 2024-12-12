@@ -4,7 +4,6 @@
 #include "DBController.h"
 #include "MotionlessElementController.h"
 #include "../../Views/MainView.h"
-#include "../../Views/CommonPointView.h"
 #include "../../Views/SetupView/SetupView.h"
 
 #include "CharacterElementController.h"
@@ -30,8 +29,5 @@ public:
     void startMainView();
     public slots:
     void onConfigurationValidated(int time, int clients, const QString& mode, const QString& additionalInfo); // Slot pour la validation de la configuration
-
-private:
-    MainView& m_mainView;
 };
 #endif 

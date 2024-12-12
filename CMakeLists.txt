@@ -72,10 +72,22 @@ add_executable(masterchef_info
         src/Models/commonModels/classDefinition/CardModel.cpp
         src/Models/commonModels/classDefinition/Recipe.cpp
         src/Structs/orderRecipe.h
+        src/kitchen/chefcontroller.cpp
+        src/kitchen/chefview.h
+        src/kitchen/mysqlconnection.h
+        src/kitchen/cookmodel.cpp
+        src/kitchen/chefview.cpp
+        src/kitchen/chefmodel.cpp
+        src/kitchen/order.cpp
+        src/kitchen/recipe.cpp
+        src/kitchen/ustensilmodel.cpp
+        src/Views/SetupView/SetupView.cpp
+        src/Views/dashboardView/Dashboard.cpp
 )
 
 # Lier l'exécutable aux bibliothèques Qt nécessaires
 target_link_libraries(masterchef_info PRIVATE Qt6::Widgets
+        Qt6::Sql
         Threads::Threads)
 
 target_link_libraries(masterchef_info PRIVATE winpthread)

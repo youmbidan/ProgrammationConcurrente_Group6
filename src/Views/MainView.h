@@ -19,7 +19,6 @@
 #include <QTime>
 #include "kitchenView/KitchenView.h"
 #include "dinningRoomView/DinningRoomView.h"
-#include "MobilePointView.h"
 #include "../kitchen/ChefModel.h"
 
 class MainView : public QMainWindow
@@ -38,6 +37,8 @@ private:
     QGraphicsView* graphicsView;
     QGraphicsScene* graphicsScene;
     ChefModel* chefModel;
+    KitchenView* kitchenView;
+    DinningRoomView* dinningRoomView;
 
 };
 
