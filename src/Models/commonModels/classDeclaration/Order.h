@@ -6,8 +6,9 @@
 #define ORDER_H
 #include <utility>
 #include <vector>
-#include "Recipe.h"
+
 #include "ClientModel.h"
+#include "Recipe.h"
 using namespace std;
 
 /**

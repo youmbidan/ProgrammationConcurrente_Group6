@@ -14,6 +14,7 @@ directories_to_scan = [
     "src/Models/kitchenModels/classDefinition",
     "src/Views/dinningRoomView",
     "src/Views/kitchenView",
+    "src/Views",
     "src/Structs",
     "src/Observer",
     "src/Factories",

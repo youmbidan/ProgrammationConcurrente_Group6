@@ -26,7 +26,6 @@ void MobilePointModel::move() {
         } else {
             timer->stop();
             timer->deleteLater();
-            emit movementFinished();  // Émet un signal pour indiquer que le mouvement est terminé
             std::cout << "Movement finished." << std::endl;
         }
     });
