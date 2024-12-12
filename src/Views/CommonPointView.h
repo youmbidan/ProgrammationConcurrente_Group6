@@ -18,6 +18,8 @@ public:
 
     CommonPointView(const QString &labelText, int initialX, int initialY, QGraphicsItem *parent, int weight = 1);
 
+    MobilePointView(const QString &labelText, int initialX, int initialY, QGraphicsItem *parent);
+
     void update(const std::any& data) override;
     int getX() const;
     int getY() const;

@@ -5,8 +5,9 @@
 #ifndef ORDER_H
 #define ORDER_H
 #include <vector>
-
+#include "Recipe.h"
 #include "../../../Structs/OrderRecipe.h"
+
 using namespace std;
 
 /**

@@ -14,7 +14,7 @@
 
 
 class DinningRoomView : public QWidget {
-    
+    Q_OBJECT
 
 public:
     explicit DinningRoomView(QWidget *parent = nullptr);
