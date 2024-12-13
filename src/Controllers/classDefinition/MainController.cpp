@@ -25,7 +25,7 @@ void MainController::startMainView() {
 
 void MainController::onConfigurationValidated(int time, int clients, const QString& mode, const QString& additionalInfo) {
     // Une fois la configuration validée, afficher la vue principale
-    mainView.show();
+    mainView->show();
     //m_mainView.updateConfiguration(time, clients, mode, additionalInfo); // Mise à jour de la vue principale avec les informations
     motionlessElementController->createAllTable();
     dinningRoomController->setFreeTablesList();

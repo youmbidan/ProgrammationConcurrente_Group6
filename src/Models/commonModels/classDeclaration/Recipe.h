@@ -1,61 +1,37 @@
-//
-// Created by franck on 12/2/24.
-//
-
 #ifndef RECIPE_H
 #define RECIPE_H
-#include <iostream>
-#include <utility>
-#include <vector>
 
-#include "../../../Enums/RecipesNames.h"
-#include "../../../Enums/RecipesTypes.h"
+#include <QString>
+#include <QStringList>
+#include <QVector>
 #include "../../kitchenModels/classDeclaration/UstensilModel.h"
-using namespace std;
+#include "../../../Enums/RecipeName.h"
+#include "../../../Enums/RecipeType.h"
 
-/**
- * @class Recipe
- *
- * @brief this class has the differents dishes of the card
- */
+
 class Recipe {
 public:
-    /**
-     *@brief the constructor of the class Recipe
-     *
-     * @param name
-     * @param type
-     * @param cooking_time
-     * @param is_makable
-     * @param ingredients_list
-     * @param cooking_ustensils_list
-     * @param eating_ustensil
-     */
+ RecipeName name;
+ RecipeType type;
+ int cookingTime; // Temps de cuisson en minutes
 
-    Recipe(const RecipesNames &name, const RecipesType &type, int cooking_time,
-       const vector<string> &ingredients_list,
-       const vector<UstensilModel> &cooking_ustensils_list,
-       const vector<UstensilModel> &eating_ustensil)
-        : name(name),
-          type(type),
-          cookingTime(cooking_time),
-          isMakable(true),
-          ingredientsList(ingredients_list),
-          cookingUstensilsList(cooking_ustensils_list),
-          eatingUstensil(eating_ustensil) {
-    }
+ QStringList ingredientList; // Liste des ingrédients
+ QVector<UstensilModel> cookingUstensilsList; // Ustensiles pour cuisiner
+ QVector<UstensilModel> eatingUstensils; // Ustensiles pour manger
 
-    /**
-     * @brief to change the feasibility of a dishes if it isn't feasible anymore
-     */
-    void toogleIsMakable();
-private:
-    RecipesNames name;
-    RecipesType type;
-    int cookingTime;
-    bool isMakable;
-    vector<string> ingredientsList;
-    vector<UstensilModel> cookingUstensilsList;
-    vector<UstensilModel> eatingUstensil;
+ Recipe(); // Constructeur par défaut
+ Recipe(RecipeName name, RecipeType type, int cookingTime,
+        QStringList ingredientList, QVector<UstensilModel> cookingUstensilsList,
+        QVector<UstensilModel> eatingUstensils);
+
+ QString toString() const; // Pour un affichage lisible
+ QStringList getIngredients() const;
+ QStringList getUstensils() const;
+ int getCookingTime() const;
+ bool operator<(const Recipe& other) const {
+  return static_cast<int>(name) < static_cast<int>(other.name);
+ }
+
 };
-#endif //RECIPE_H
+
+#endif // RECIPE_H

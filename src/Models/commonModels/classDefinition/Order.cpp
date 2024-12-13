@@ -1,9 +1,10 @@
-//
-// Created by franck on 12/2/24.
-//
 #include "../classDeclaration/Order.h"
 
-
-void Order::CreateCutlery() {
-    // TODO add a method to create the differents cutlery on demand
+int Order::getTotalCookingTime() const {
+    int totalTime = 0;
+    for (const auto& orderRecipe : orderRecipes) {
+        int subTotal = orderRecipe->recipe->getCookingTime()*orderRecipe->quantity;
+        totalTime += subTotal ; // Supposons que chaque recette a une méthode getCookingTime()
+    }
+    return totalTime;
 }

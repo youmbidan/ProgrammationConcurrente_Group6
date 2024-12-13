@@ -1,23 +1,55 @@
 #include "../classDeclaration/Chief.h"
-//
-// Created by franck on 12/2/24.
-//
-Order Chief::checkOrderlist() {
-    // TODO: add few instructions to manage it
+#include <QDebug>
+
+ChiefModel::ChiefModel() {
+    // Lancer un thread pour surveiller les commandes en attente
+    QThread* distributorThread = QThread::create([this]() {
+        while (true) {
+            distributeOrders();
+            QThread::msleep(500); // Pause pour réduire l'utilisation du CPU
+        }
+    });
+    distributorThread->start();
 }
 
-Order Chief::organiseOrders() {
-    // TODO: add few instructions to manage it
+ChiefModel::~ChiefModel() {
+    // Nettoyage (si nécessaire)
 }
 
-void Chief::DistributeTask() {
-    // TODO: add few instructions to manage it
+void ChiefModel::addOrder(const Order& order) {
+    QMutexLocker locker(&mutex);
+    pendingOrders.enqueue(order);
+    qDebug() << "Commande" << order.getTableId() << "ajoutée à la file d'attente.";
 }
 
-void Chief::setCurrentCard(CardModel card) {
-    // TODO: add few instructions to manage it
+void ChiefModel::addCook(CookModel* cook) {
+    QMutexLocker locker(&mutex);
+    cooks.append(cook);
+
+    // Connecter le signal du cuisinier pour savoir quand il est libre
+    connect(cook, &CookModel::orderCompleted, this, [this](int orderId) {
+        qDebug() << "Commande" << orderId << "complétée. Cuisinier libre";
+        distributeOrders(); // Réattribuer les commandes en attente
+    });
 }
 
+void ChiefModel::distributeOrders() {
+    QMutexLocker locker(&mutex);
 
+    for (auto* cook : cooks) {
+        if (!cook->isAvailable() || pendingOrders.isEmpty()) {
+            continue; // Passer si le cuisinier est occupé ou si aucune commande n'est en attente
+        }
 
+        Order order = pendingOrders.dequeue();
+        cook->assignOrder(&order);
+
+        // Connecter le signal du cuisinier pour notifier que la commande est terminée
+        connect(cook, &CookModel::orderCompleted, this, [this](int orderId) {
+            emit orderCompleted(orderId); // Notifie que la commande est terminée
+        });
+
+        qDebug() << "Commande" << order.getTableId() << "attribuée à un cuisinier.";
+    }
+}
 

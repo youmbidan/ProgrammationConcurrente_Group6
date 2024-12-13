@@ -69,14 +69,21 @@ set(SOURCES
     src/Models/commonModels/classDefinition/DinningRoom.cpp
     src/Models/dinningRoomModels/classDefinition/Butler.cpp
     src/Structs/Attribution.h
-    src/Enums/RecipesNames.h
-    src/Enums/RecipesTypes.h
+        src/Enums/RecipeName.h
+        src/Enums/RecipeType.h
     src/Models/commonModels/classDefinition/CardModel.cpp
     src/Models/commonModels/classDefinition/Recipe.cpp
     src/Structs/orderRecipe.h
     src/Views/dashboardView/Dashboard.cpp
         src/Views/SetupView/SetupView.cpp
         src/Views/SetupView/SetupView.h
+        src/Models/kitchenModels/classDeclaration/Chief.h
+        src/Models/kitchenModels/classDefinition/Chief.cpp
+        src/Models/kitchenModels/classDeclaration/CookModel.h
+        src/Models/kitchenModels/classDefinition/CookModel.cpp
+        src/Models/kitchenModels/classDefinition/UstensilModel.cpp
+        #        src/Controllers/classDeclaration/SocketController.h
+#        src/Controllers/classDefinition/SocketController.cpp
 )
 
 # Ajouter l'exécutable
