@@ -109,15 +109,11 @@ void DinningRoomController::makeHeadWaiterLeadClientsGroup() {
             // cout << "nombre de clients du groupe : " << currentAttribution.clientGroup->getClientNumber() << endl;
             //
             ClientGroupModel* currentClientGroup = currentAttribution.clientGroup;
-            QMetaObject::invokeMethod(currentClientGroup, [currentClientGroup, associatedTableCoord]() {
-                currentClientGroup->move(associatedTableCoord);
-            }, Qt::QueuedConnection);
+            currentClientGroup->move(associatedTableCoord);
             cout << "On s'en va vers la table..." << endl;
             {
                 std::unique_lock lock(characterControllerMutex);
                 characterElementController->headWaiter->move(associatedTableCoord);
-                std::this_thread::sleep_for(std::chrono::milliseconds(500));
-                characterElementController->headWaiter->backToInitialPosition();
             }
             cout << "On revient à la position initiale" << endl;
 
@@ -219,22 +215,19 @@ void DinningRoomController::startCollectingOrders() {
 
         cout << "APPORTONS LES COMMANDES DE LA TABLE " << currentOrderedTable->getTableId()<< " AU COMPTOIR" << endl;
 
-        {
-            std::unique_lock lock(cardMutex);
-            int neededCards = 1;
+        int neededCards = 1;
 
-            if(currentOrderedTable->getClientsOnTable().size() > 4) {
-                neededCards = 2;
-            }
-            cardLeft += neededCards;
+        if(currentOrderedTable->getClientsOnTable().size() > 4) {
+            neededCards = 2;
         }
+        cardLeft += neededCards;
 
 
         // on part déposer les la commande de la table
         {
             std::unique_lock lock(characterControllerMutex);
             characterElementController->second_headWaiter->move({currentOrderedTable->getAbscice(),currentOrderedTable->getIntercept()});
-            std::this_thread::sleep_for(std::chrono::seconds(3));
+            std::this_thread::sleep_for(std::chrono::milliseconds(500));
             characterElementController->second_headWaiter->move({1000,100});
         }
 

@@ -45,5 +45,6 @@ void MobileElementModel::move(PointStruct finalCoords) {
 
 
 void MobileElementModel::backToInitialPosition() {
+    std::cout << "coordonées initiales" << initialAbscice << std::endl;
     move({initialAbscice, initialIntercept});
 }
