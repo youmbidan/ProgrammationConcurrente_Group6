@@ -1,65 +1,36 @@
-//
-// Created by franck on 12/2/24.
-//
+#ifndef CHEFMODEL_H
+#define CHEFMODEL_H
 
-#ifndef CHUEF_H
-#define CHUEF_H
-#include "CardModel.h"
-#include "Order.h"
-using namespace std;
+#include <QObject>
+#include <QQueue>
+#include <QThread>
+#include <QList>
+#include <QMutex>
+#include <QWaitCondition>
+#include "../../commonModels/classDeclaration/Order.h"
+#include "CookModel.h"
 
-/**
- * @class Chief
- *
- * @brief the actuel class to manage the chief
- */
-class Chief {
+class ChiefModel : public QObject {
+ Q_OBJECT
+
 public:
-    /**
-     * @brief the constructor of the class Chief
-     *
-     * @param actual_card
-     * @param order_list
-     * @param organised_order_list
-     * @param invalid_order_list
-     */
-    Chief(const CardModel &actual_card, const vector<Order> &order_list, const vector<Order> &organised_order_list,
-          const vector<Order> &invalid_order_list)
-        : actualCard(actual_card),
-          orderList(order_list),
-          organisedOrderList(organised_order_list),
-          invalidOrderList(invalid_order_list) {
-    }
+ ChiefModel();
+ ~ChiefModel();
 
-    /**
-     * @brief the function to change the actual card
-     *
-     * @param card the actual card use by clients
-     */
-    void setCurrentCard(CardModel card); // maybe this should have a return statement
-
-    /**
-     *
-     * @return organiseListOrders
-     */
-    Order organiseOrders();
-
-    /**
-     *
-     * @return orderList (maybe)
-     */
-    Order checkOrderlist();
-
-    /**
-     * @brief to distribute task to others
-     */
-    void DistributeTask();
+ void addOrder(const Order* order);
+ void addCook(CookModel* cook);
 
 private:
-    CardModel actualCard;
-    vector<Order> orderList;
-    vector<Order> organisedOrderList;
-    vector<Order> invalidOrderList;
+ QQueue<Order> pendingOrders;
+ QList<CookModel*> cooks;
+ QMutex mutex;
+ QWaitCondition ordersAvailable;
+
+ void distributeOrders();
+
+ signals:
+     void orderCompleted(int orderId);
 
 };
-#endif //CHUEF_H
+
+#endif // CHEFMODEL_H

@@ -8,26 +8,37 @@
 
 #include "CharacterElementController.h"
 #include "DinningRoomController.h"
+#include <QThread>
+#include <QObject>
+#include <QTimer>
+
+#include "KitchenController.h"
 
 
 class MainController : public QObject {
     Q_OBJECT
-
-private:
-        // Voici les instances des controlleurs qui seron utilisées tout au long de l'exécution du programme
     MainView *mainView;
     DinningRoomView *dinningRoomView;
     KitchenView *kitchenView;
     MotionlessElementController *motionlessElementController;
     CharacterElementController *characterElementController;
     DinningRoomController *dinningRoomController;
+    KitchenController *kitchenController;
     ThreadPoolManager *threadPoolManager;
+    std::queue<Order*> ordersOnCounterQueue;
+
+    std::queue<Order*> ordersReadyOnCounterQueue;
 
 public:
     MainController(MainView& mainView);
 
     void startMainView();
+
+    void startOrderProcessing();
+
+    // void connectControllers();
+
     public slots:
-    void onConfigurationValidated(int time, int clients, const QString& mode, const QString& additionalInfo); // Slot pour la validation de la configuration
+        void onConfigurationValidated(int time, int clients, const QString& mode, const QString& additionalInfo);// Slot pour la validation de la configuration
 };
 #endif 

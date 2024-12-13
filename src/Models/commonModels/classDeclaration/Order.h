@@ -1,45 +1,42 @@
-//
-// Created by franck on 12/2/24.
-//
-
 #ifndef ORDER_H
 #define ORDER_H
-#include <vector>
-#include "Recipe.h"
-#include "../../../Structs/OrderRecipe.h"
 
-using namespace std;
+#include <vector>
+#include <iostream>
+#include "../../../Structs/OrderRecipe.h"
 
 /**
  *@class Order
- *@brief the Order class is used to save the differents order of the clients
+ *@brief Represents a client's order with associated recipes and table ID.
  */
 class Order {
 public:
     /**
-     *@brief Order class constructor
+     *@brief Constructor
      *
-     * @param order_recipes
-     * @param id
-     * @param client
+     * @param id Unique identifier for the order.
+     * @param order_recipes Vector of recipes associated with the order.
+     * @param tableId The table ID that placed the order.
      */
-    Order(const vector<OrderRecipe*> order_recipes, int tableId)
-        : orderRecipes(order_recipes),
-          tableId(tableId)
-          {
-    }
+    Order(const std::vector<OrderRecipe*>& order_recipes, int tableId)
+        : orderRecipes(order_recipes), tableId(tableId) {}
 
     /**
-     * @brief this method create cutlery for the current order
-     *
+     * @brief Calculates the total cooking time for the order.
+     * @return Total time in seconds.
      */
-    void CreateCutlery();
+    int getTotalCookingTime() const;
+
+    /**
+     * @brief Get the table ID for the order.
+     * @return Table ID.
+     */
+    int getTableId() const { return tableId; }
+
 
 private:
-    // declare a table attribute type : table
-    vector<OrderRecipe*> orderRecipes;
+    std::vector<OrderRecipe*> orderRecipes;
     int tableId;
-    int id;
-
 };
-#endif //ORDER_H
+
+#endif // ORDER_H

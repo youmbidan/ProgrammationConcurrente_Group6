@@ -17,9 +17,9 @@ condition_variable ThreadPoolManager::cv_;
  */
 
 ThreadPoolManager::ThreadPoolManager() {
-    // const size_t num_threads = thread::hardware_concurrency();
-    const size_t num_threads = 5;
-    cout << "threads in the pool: " << num_threads << endl;
+    // const size_t num_threads = 5;
+    const size_t num_threads = thread::hardware_concurrency();
+    // cout << "threads in the pool: " << num_threads << endl;
 
     for (size_t i = 0; i < num_threads; ++i) {
         threads_.emplace_back([this] {

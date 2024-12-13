@@ -6,6 +6,7 @@
 #include <iostream>
 #include <QLabel>
 #include <QVBoxLayout>
+
 #include <QPushButton>
 #include <QGridLayout>
 #include <QScrollArea>
@@ -19,8 +20,7 @@ class MenuView : public QWidget {
 public:
     MenuView(QWidget* parent = nullptr) : QWidget(parent) {
         setWindowTitle("Menu du Jour");
-        //setFixedSize(1024, 768);
-        setFixedSize(1000, 700);        // Augmenter la taille de la fenêtre pour plus de contenu
+        setFixedSize(1024, 768); // Augmenter la taille de la fenêtre pour plus de contenu
 
     
         QVBoxLayout* layout = new QVBoxLayout(this);
@@ -142,21 +142,15 @@ public:
     }
 };
 MainView::MainView(QWidget* parent)
-    : QMainWindow(parent),
-      chefModel(new ChefModel()),
-        kitchenView(new KitchenView),
-        dinningRoomView(new DinningRoomView){
+    : QMainWindow(parent) {
     setWindowTitle("Gestion du Restaurant");
     resize(1024, 768);
 
-// Timer
-    //timer = new QTimer(this);
-    //connect(timer, &QTimer::timeout, this, &MainView::updateElapsedTime);
-    //timer->start(1000); // Mise à jour toutes
-
-
-    QTabWidget* tabWidget = new QTabWidget;
-    tabWidget->addTab(dinningRoomView, "Restaurant");
+    kitchenView = new  KitchenView();
+    dinningRoomView = new  DinningRoomView();
+    // Création des onglets
+    QTabWidget *tabWidget = new QTabWidget(this);
+    tabWidget->addTab(dinningRoomView, "Restaurant"); // Remplacez par vos vues réelles
     tabWidget->addTab(kitchenView, "Cuisine");
 
     QFrame* mainFrame = new QFrame;
@@ -245,14 +239,31 @@ MainView::MainView(QWidget* parent)
 
 void MainView::start() {
     show();
+    std::cout << "View has started." << std::endl;
 }
 
-
-KitchenView *MainView::getKitchenView() {
+KitchenView* MainView::getKitchenView() {
     return kitchenView;
 }
 
-DinningRoomView *MainView::getDinningRoomView() {
+DinningRoomView* MainView::getDinningRoomView() {
     return dinningRoomView;
 }
+// void MainView::addToScene(QGraphicsEllipseItem *item) {
+//     graphicsScene->addItem(item);
+//     // connect(mobilePoint, &MobilePoint::positionUpdated, this, &MainView::onPositionUpdated);;
+//     std::cout << "Mobile point added to scene " << std::endl;
+// }
 
+
+// void MainView::refreshView() {
+//     graphicsView->viewport()->update();  // Rafraîchit la vue
+//     graphicsScene->update();             // Met à jour la scène
+//     std::cout << "View refreshed." << std::endl;
+// }
+
+// void MainView::onPositionUpdated() {
+//      refreshView();  // Appelle la méthode de rafraîchissement
+//     //std::cout << "Position updated, relying on Qt's automatic refresh." << std::endl;
+//
+// }
