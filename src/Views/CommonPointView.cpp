@@ -18,7 +18,8 @@ CommonPointView::CommonPointView(const QString& labelText, const int initialX, c
     }
 
     // Définir l'image comme contenu graphique
-    setPixmap(pixmap);
+    setPixmap(pixmap.scaled(72, 72, Qt::KeepAspectRatio, Qt::SmoothTransformation));
+
     setPos(x, y);
 
     // Ajouter une étiquette

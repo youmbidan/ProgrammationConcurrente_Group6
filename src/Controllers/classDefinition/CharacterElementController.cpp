@@ -13,12 +13,12 @@ CharacterElementController::CharacterElementController(MainView *mainview): main
 void CharacterElementController::initializeEmployeesCharacter() {
 
     // Création des éléments graphiques
-    butler_point_view = new CommonPointView("butler", 20, 20, "/assets/maitrehotel.png", nullptr);
-    head_waiter_point_view = new CommonPointView("headWaiter", 100, 100,"/assets/maitrehotel.png", nullptr);
-    second_head_waiter_point_view = new CommonPointView("headWaiter2", 120, 120, "/assets/maitrehotel.png", nullptr);
-    server_point_view = new CommonPointView("server", 20, 500,"/assets/serveur1.png", nullptr);
-    second_server_point_view = new CommonPointView("server2", 100, 500, "/assets/serveur1.png",nullptr);
-    room_clerk_point_view = new CommonPointView("roomClerk", 500, 500, "/assets/commis.png", nullptr);
+    butler_point_view = new CommonPointView("butler", 20, 20, ":/assets/maitrehotel.png", nullptr);
+    head_waiter_point_view = new CommonPointView("headWaiter", 100, 100,":/assets/maitrehotel.png", nullptr);
+    second_head_waiter_point_view = new CommonPointView("headWaiter2", 120, 120, ":/assets/maitrehotel.png", nullptr);
+    server_point_view = new CommonPointView("server", 20, 500,":/assets/serveur1.png", nullptr);
+    second_server_point_view = new CommonPointView("server2", 100, 500, ":/assets/serveur1.png",nullptr);
+    room_clerk_point_view = new CommonPointView("roomClerk", 500, 500, ":/assets/commis.png", nullptr);
 
     // Instanciation des objets
     butler = new Butler();
@@ -51,7 +51,7 @@ void CharacterElementController::insertClientGroupOnScene(ClientGroupModel* clie
     const std::string clientLabel = "Clients(" + std::to_string(nbr_client) + ")";
 
     // Créer un point graphique représentant le groupe de clients
-    CommonPointView* client_point_view = new CommonPointView(QString::fromStdString(clientLabel), 0, 20,"/assets/group4.png", nullptr);
+    CommonPointView* client_point_view = new CommonPointView(QString::fromStdString(clientLabel), 0, 20,":/assets/group4.png", nullptr);
 
     // Synchroniser les coordonnées entre le modèle et la vue
     PointStruct clientGroupCoord = {
