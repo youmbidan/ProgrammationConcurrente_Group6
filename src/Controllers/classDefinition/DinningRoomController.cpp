@@ -4,6 +4,8 @@
 
 #include "../classDeclaration/DinningRoomController.h"
 
+DinningRoomController::~DinningRoomController() = default;
+
 void DinningRoomController::startClientGroupCreation() {
     /**
      * @brief Crée des groupes de clients en boucle et les ajoute à la file à traiter.
@@ -207,10 +209,14 @@ void DinningRoomController::startCollectingOrders() {
         }
 
         // Crée le vecteur final
-        std::vector<OrderRecipe> orderRecipes;
+        std::vector<OrderRecipe*> orderRecipes;
         for (const auto& [recipe, quantity] : recipeCounts) {
-            orderRecipes.emplace_back(OrderRecipe{recipe, quantity});
+            orderRecipes.emplace_back(new OrderRecipe{recipe, quantity});
         }
+
+
+        // créer la commande
+        Order *newOrder = new Order(orderRecipes, currentOrderedTable->getTableId());
 
 
         cout << "APPORTONS LES COMMANDES DE LA TABLE " << currentOrderedTable->getTableId()<< " AU COMPTOIR" << endl;
@@ -231,6 +237,8 @@ void DinningRoomController::startCollectingOrders() {
             characterElementController->second_headWaiter->move({1000,100});
         }
 
+        // emit newOrderReady(newOrder);
+
 
 
         ThreadPoolManager::enqueue([this]() {
@@ -238,6 +246,11 @@ void DinningRoomController::startCollectingOrders() {
         });
     });
 }
+
+
+// void DinningRoomController::handleOrderCompletion(Order *order) {
+//
+// }
 
 
 

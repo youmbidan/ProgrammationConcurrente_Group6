@@ -11,6 +11,7 @@ MainController::MainController(MainView &mainView)
     characterElementController = new CharacterElementController(&mainView);
     threadPoolManager = new ThreadPoolManager();
     dinningRoomController = new DinningRoomController(characterElementController, motionlessElementController);
+    KitchenController kitchenController(new ChiefModel());
 }
 
 
@@ -19,7 +20,7 @@ void MainController::startMainView() {
 
     // Connexion du signal de validation de la configuration au slot
     connect(setupView, &SetupView::configurationValidated, this, &MainController::onConfigurationValidated);
-    
+
     setupView->show(); // Affiche la vue de configuration
 }
 
@@ -36,3 +37,17 @@ void MainController::onConfigurationValidated(int time, int clients, const QStri
     dinningRoomController->startTakingOrders();
     dinningRoomController->startCollectingOrders();
 }
+
+// void MainController::connectControllers() {
+
+    // lors de l'envoi d'une commande
+    // connect(dinningRoomController, &DinningRoomController::newOrderReady,
+    //         kitchenController, &KitchenController::receiveOrder);
+
+    // commande prête
+    // connect(kitchenController, &KitchenController::orderCompleted,
+    //             dinningRoomController, &DinningRoomController::handleOrderCompletion);
+// }
+
+
+
