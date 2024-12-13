@@ -1,23 +1,28 @@
-//
-// Created by seand on 12/4/2024.
-//
-
 #include "CommonPointView.h"
 #include <any>
 #include <iostream>
-#include <qbrush.h>
-#include <qfont.h>
-
+#include <QBrush>
+#include <QFont>
+#include <QPixmap>
 #include "../Structs/PointStruct.h"
 
-
-CommonPointView::CommonPointView(const QString& labelText, const int initialX, const int initialY, QGraphicsItem* parent, const int weight)
-    : QGraphicsEllipseItem(0, 0, 5*weight, 5*weight, parent), x(initialX), y(initialY)
+CommonPointView::CommonPointView(const QString& labelText, const int initialX, const int initialY,
+                                 const QString& imagePath, QGraphicsItem* parent)
+    : QGraphicsPixmapItem(parent), x(initialX), y(initialY), imagePath(imagePath)
 {
-    setBrush(QBrush(Qt::black));
+    // Charger l'image depuis le chemin d'accès
+    QPixmap pixmap(imagePath);
+    if (pixmap.isNull()) {
+        std::cerr << "Error: Unable to load image from " << imagePath.toStdString() << std::endl;
+        return;
+    }
+
+    // Définir l'image comme contenu graphique
+    setPixmap(pixmap);
     setPos(x, y);
 
-    this->label = new QGraphicsTextItem(labelText, this);
+    // Ajouter une étiquette
+    label = new QGraphicsTextItem(labelText, this);
     label->setDefaultTextColor(Qt::blue);
     label->setFont(QFont("Arial", 10, QFont::Bold));
     label->setPos(-label->boundingRect().width() / 2, -label->boundingRect().height() - 5);
@@ -28,20 +33,13 @@ void CommonPointView::update(const std::any& data) {
         // Assurez-vous que 'data' contient un PointStruct
         auto coord = std::any_cast<PointStruct>(data);
 
-        // Utilisation directe des types corrects de PointStruct
-        int newX = static_cast<int>(coord.x);
-        int newY = static_cast<int>(coord.y);
-
-
         // Mise à jour des coordonnées graphiques
-            setPos(newX, newY);
+        setPos(coord.x, coord.y);
 
     } catch (const std::bad_any_cast& e) {
         std::cerr << "Error in CommonPointView::update: " << e.what() << std::endl;
     }
 }
-
-
 
 CommonPointView::~CommonPointView() = default;
 
@@ -52,11 +50,3 @@ int CommonPointView::getX() const {
 int CommonPointView::getY() const {
     return y;
 }
-
-
-void CommonPointView::setSize(int width, int height) {
-    setRect(0, 0, width, height);
-}
-
-
-
