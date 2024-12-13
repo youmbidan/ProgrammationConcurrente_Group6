@@ -31,6 +31,9 @@ class DinningRoomController {
     //Tableau de tables libres de la salle
     vector<Table*> freeTablesList;
 
+    //Tableau de tables libres de la salle
+    vector<Table*> allTablesList;
+
     // Nombre de cartes de restaurant disponibles
     int cardLeft = 40;
 
@@ -40,6 +43,11 @@ class DinningRoomController {
     // queue de tables ayant déjà commandée
     queue<Table*> orderedTables;
 
+    queue<Order> readyOrders;
+
+    std::mutex readyOrdersMutex;
+
+    std::condition_variable readyOrdersCond;
 
     //pour pouvoir récupérer les instances des personnages
     CharacterElementController *characterElementController;
@@ -99,6 +107,8 @@ class DinningRoomController {
 
     void setFreeTablesList();
 
+    void setAllTablesList();
+
     void startClientGroupCreation();
 
     void startToWelcomeClientGroups();
@@ -109,8 +119,11 @@ class DinningRoomController {
 
     void startCollectingOrders();
 
+    void startServeClients();
+
     void addOrder(const Order& order);
 
+    Table* findTableById(int id);
 
     // public slots:
     //     void handleOrderCompletion(Order* order);
@@ -122,6 +135,7 @@ class DinningRoomController {
 
 
 };
+
 
 
 

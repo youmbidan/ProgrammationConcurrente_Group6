@@ -38,7 +38,7 @@ void MobileElementModel::move(PointStruct finalCoords) {
         }
     });
 
-    timer->start(5);
+    timer->start(7);
     }, Qt::QueuedConnection);
 
 }

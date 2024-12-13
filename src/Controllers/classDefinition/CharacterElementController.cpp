@@ -61,7 +61,7 @@ void CharacterElementController::insertClientGroupOnScene(ClientGroupModel* clie
     const std::string clientLabel = "Clients(" + std::to_string(nbr_client) + ")";
 
     // Créer un point graphique représentant le groupe de clients
-    CommonPointView* client_point_view = new CommonPointView(QString::fromStdString(clientLabel), 200, 300,":/assets/group4.png", nullptr);
+    CommonPointView* client_point_view = new CommonPointView(QString::fromStdString(clientLabel), 50, 50,":/assets/group4.png", nullptr);
 
     // Synchroniser les coordonnées entre le modèle et la vue
     PointStruct clientGroupCoord = {

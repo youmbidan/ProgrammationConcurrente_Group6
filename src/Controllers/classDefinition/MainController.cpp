@@ -30,12 +30,14 @@ void MainController::onConfigurationValidated(int time, int clients, const QStri
     motionlessElementController->createAllTable();
     // kitchenController->processOrders();
     dinningRoomController->setFreeTablesList();
+    dinningRoomController->setAllTablesList();
     characterElementController->initializeEmployeesCharacter();
     dinningRoomController->startClientGroupCreation();
     dinningRoomController->startToWelcomeClientGroups();
     dinningRoomController->makeHeadWaiterLeadClientsGroup();
     dinningRoomController->startTakingOrders();
     dinningRoomController->startCollectingOrders();
+    dinningRoomController->startServeClients();
 }
 
 // void MainController::connectControllers() {
@@ -48,6 +50,7 @@ void MainController::onConfigurationValidated(int time, int clients, const QStri
     // connect(kitchenController, &KitchenController::orderCompleted,
     //             dinningRoomController, &DinningRoomController::handleOrderCompletion);
 // }
+
 
 
 

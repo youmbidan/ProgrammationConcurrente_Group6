@@ -196,16 +196,26 @@ void DinningRoomController::startCollectingOrders() {
             characterElementController->second_headWaiter->move({1000, 100});
         }
 
-        sharedOrdersQueue.addOrder(*newOrder);  // Ajouter la commande à la queue partagée
+        sharedOrdersQueue.addOrder(*newOrder);
+
+        {
+            std::unique_lock lock(readyOrdersMutex);
+            readyOrders.push(*newOrder);
+            readyOrdersCond.notify_one();
+        }
 
         ThreadPoolManager::enqueue([this]() {
-            this->startCollectingOrders();  // Re-enqueue pour la prochaine itération
+            this->startCollectingOrders();
         });
     });
 }
 
 void DinningRoomController::setFreeTablesList() {
     freeTablesList = TableFactory::dinningRoomTables;
+}
+
+void DinningRoomController::setAllTablesList() {
+    allTablesList = TableFactory::dinningRoomTables;
 }
 
 void DinningRoomController::addOrder(const Order& order) {
@@ -217,7 +227,46 @@ void DinningRoomController::addOrder(const Order& order) {
 //
 // }
 
+void DinningRoomController::startServeClients() {
+    // Lancer le travail de service des clients dans un thread du pool
+    ThreadPoolManager::enqueue([this]() {
+        while (true) {
+            // Attendre jusqu'à ce qu'il y ait des commandes prêtes à être servies
+            std::unique_lock lock(readyOrdersMutex);
+            readyOrdersCond.wait(lock, [this]() { return !readyOrders.empty(); });
 
+            // Récupérer la première commande prête
+            Order currentOrder = readyOrders.front();
+            Table* tableAssociate = findTableById(currentOrder.getTableId());
+
+            characterElementController->server->move({1000, 100});
+            std::this_thread::sleep_for(std::chrono::milliseconds(300)); // Exemple de pause
+
+            // Déplacer le serveur vers la table associée
+            characterElementController->server->move({tableAssociate->getAbscice(), tableAssociate->getIntercept()});
+
+            // Une fois le serveur arrivé à la table, retirer la commande de la file
+            readyOrders.pop();
+
+            // Vous pouvez ajouter des logs ou d'autres actions ici si nécessaire
+            std::cout << "Commande servie pour la table " << currentOrder.getTableId() << std::endl;
+
+            // Pause pour ne pas surcharger le thread pool
+            std::this_thread::sleep_for(std::chrono::milliseconds(300)); // Exemple de pause
+        }
+    });
+}
+
+
+Table* DinningRoomController::findTableById(int id) {
+    vector<Table*> alt = allTablesList; // Copie pour ne pas modifier la liste d'origine
+    for (const auto& table : alt) {
+        if (table->getTableId() == id) {
+            return table;
+        }
+    }
+    return nullptr;
+}
 
 
 
