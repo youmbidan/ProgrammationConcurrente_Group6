@@ -1,7 +1,7 @@
-#ifndef KITCHENWINDOW_H
-#define KITCHENWINDOW_H
+#ifndef KITCHEN_VIEW_H
+#define KITCHEN_VIEW_H
 
-#include <QtWidgets/QApplication>
+#include <QApplication>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QGraphicsScene>
@@ -30,4 +30,4 @@ private:
     void setupTimer();
 };
 
-#endif // KITCHENWINDOW_H
+#endif // kitchenView_H

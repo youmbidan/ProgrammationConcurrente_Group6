@@ -6,6 +6,7 @@ project(masterchef_info LANGUAGES CXX)
 # Définit les propriétés du compilateur
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_PREFIX_PATH "C:\\Qt\\6.8.0\\mingw_64\\")
 
 # Activer l'automatisation pour MOC
 set(CMAKE_AUTOMOC ON)
@@ -73,6 +74,9 @@ set(SOURCES
     src/Models/commonModels/classDefinition/CardModel.cpp
     src/Models/commonModels/classDefinition/Recipe.cpp
     src/Structs/orderRecipe.h
+    src/Views/dashboardView/Dashboard.cpp
+        src/Views/SetupView/SetupView.cpp
+        src/Views/SetupView/SetupView.h
 )
 
 # Ajouter l'exécutable

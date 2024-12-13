@@ -1,5 +1,5 @@
-#ifndef RESTAURANTTAB_H
-#define RESTAURANTTAB_H
+#ifndef DINNING_ROOM_H
+#define DINNING_ROOM_H
 
 #include "QWidget"
 #include <QtWidgets/QApplication>

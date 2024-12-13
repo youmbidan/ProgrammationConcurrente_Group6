@@ -3,40 +3,60 @@
     <file>assets/chef.png</file>
     <file>assets/cuisine.png</file>
     <file>assets/Menu-removebg-preview.png</file>
-    <file>assets/foret2.png</file>
-    <file>assets/foret.png</file>
-    <file>assets/pancarte-removebg-preview.png</file>
-    <file>assets/pancarte-removebg-preview.png</file>
-    <file>assets/plancher2.jpeg</file>
-    <file>assets/plancher3.jpg</file>
-    <file>assets/fleur-removebg-preview.png</file>
-    <file>assets/sol1.jpg</file>
-    <file>assets/Annotation_2024-12-01_230057-removebg-preview.png</file>
+
+  
+    
+    
+   
+   
+    
 
     <file>assets/carreau.jpeg</file>
     <file>assets/sol.jpeg</file>
     <file>assets/table2.png</file>
     <file>assets/table4.png</file>
-    <file>assets/plancher1.png</file>
+    
     <file>assets/planch.png</file>
     <file>assets/planch1.png</file>
     <file>assets/planch2.jpg</file>
     <file>assets/table6.png</file>
     <file>assets/table8.png</file>
     <file>assets/tapis.png</file>
+      <file>assets/table10.png</file>
     <file>assets/maitre.png</file>
      <file>assets/reception-table.png</file>
-         <file>assets/stove.png</file>
+         
              <file>assets/kitchen.png</file>
-                 <file>assets/machine.png</file>
+               
                      <file>assets/kitchen-shelves.png</file>
                          <file>assets/kitch.png</file>
-                          <file>assets/fridge.png</file>
+                          <file>assets/frigo.png</file>
                            <file>assets/counter.png</file>
+                           <file>assets/lav.png</file>
+                             <file>assets/car.jpeg</file>
+                              <file>assets/kit.png</file>
+                              <file>assets/machine.png</file>
+                                <file>assets/gaz.png</file>
+                                <file>assets/etagere.png</file>
+                                <file>assets/etage.png</file>
+                                   <file>assets/bois.jpg</file>
+                                   <file>assets/burger.png</file>
+                                   <file>assets/lasagne.png</file>
+                                   <file>assets/sushi.png</file>
+                                   <file>assets/menu.png</file>
+                                   <file>assets/poulet.png</file>
+                                   <file>assets/pizza.png</file>
+                                   <file>assets/armoire.png</file>
+                                     <file>assets/blanc.jpeg</file>
+                                     <file>assets/fri.png</file>
+                                        <file>assets/lave.png</file>
+                                         <file>assets/mach.png</file>
+                                         <file>assets/serviette.png</file>
 
 
 
 
-    <file>assets/plancher.jpeg</file>
+
+   
   </qresource>
 </RCC>

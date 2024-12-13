@@ -5,14 +5,18 @@
 #include "MotionlessElementController.h"
 #include "../../Views/MainView.h"
 #include "../../Views/CommonPointView.h"
+#include "../../Views/SetupView/SetupView.h"
 
 #include "CharacterElementController.h"
 #include "DinningRoomController.h"
+#include <QThread>
+#include <QObject>
+#include <QTimer>
 
 
-class MainController
-{
-    // Voici les instances des controlleurs qui seron utilisées tout au long de l'exécution du programme
+class MainController : public QObject {
+    Q_OBJECT
+private:
     MainView *mainView;
     DinningRoomView *dinningRoomView;
     KitchenView *kitchenView;
@@ -22,8 +26,11 @@ class MainController
     ThreadPoolManager *threadPoolManager;
 
 public:
-    explicit MainController(MainView &mainView);
-    void startMainView();
-};
+    MainController(MainView& mainView);
 
-#endif // MAINCONTROLLER_H
+    void startMainView();
+
+    public slots:
+        void onConfigurationValidated(int time, int clients, const QString& mode, const QString& additionalInfo);// Slot pour la validation de la configuration
+};
+#endif 

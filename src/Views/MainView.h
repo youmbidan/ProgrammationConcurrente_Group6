@@ -28,18 +28,18 @@ private:
     KitchenView *kitchenView;
     DinningRoomView *dinningRoomView;
 
-    QPushButton* createButton(QStyle::StandardPixmap iconType, const QString& tooltip);
-    void updateTimerDisplay();
+    // QPushButton* createButton(QStyle::StandardPixmap iconType, const QString& tooltip);
+    // void updateTimerDisplay();
 
-    void startTimer();
-    void pauseTimer();
-    void resetTimer();
+    // void startTimer();
+    // void pauseTimer();
+    // void resetTimer();
 
 
-    QTimer* timer;
-    QLCDNumber* lcdTimer;
-    bool timerRunning;
-    int elapsedSeconds;
+    // QTimer* timer;
+    // QLCDNumber* lcdTimer;
+    // bool timerRunning;
+    // int elapsedSeconds;
 };
 
 #endif
