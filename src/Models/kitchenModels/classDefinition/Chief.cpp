@@ -1,25 +1,24 @@
 #include "../classDeclaration/Chief.h"
-#include <QDebug>
+#include "../../../Utilities/ThreadPoolManager.h"  // Assurez-vous d'inclure votre gestionnaire de thread
 
 ChiefModel::ChiefModel() {
-    // Lancer un thread pour surveiller les commandes en attente
-    QThread* distributorThread = QThread::create([this]() {
+    // Remplacer QThread par une tâche gérée par ThreadPool
+    ThreadPoolManager::enqueue([this]() {
         while (true) {
             distributeOrders();
-            QThread::msleep(500); // Pause pour réduire l'utilisation du CPU
+            std::this_thread::sleep_for(std::chrono::milliseconds(500)); // Réduit l'utilisation du CPU
         }
     });
-    distributorThread->start();
 }
 
 ChiefModel::~ChiefModel() {
-    // Nettoyage (si nécessaire)
+    // Pas de nettoyage nécessaire
 }
 
-void ChiefModel::addOrder(const Order& order) {
+void ChiefModel::addOrder(const Order* order) {
     QMutexLocker locker(&mutex);
-    pendingOrders.enqueue(order);
-    qDebug() << "Commande" << order.getTableId() << "ajoutée à la file d'attente.";
+    pendingOrders.enqueue(*order);
+    qDebug() << "Commande" << order->getTableId() << "ajoutée à la file d'attente.";
 }
 
 void ChiefModel::addCook(CookModel* cook) {
@@ -52,4 +51,3 @@ void ChiefModel::distributeOrders() {
         qDebug() << "Commande" << order.getTableId() << "attribuée à un cuisinier.";
     }
 }
-

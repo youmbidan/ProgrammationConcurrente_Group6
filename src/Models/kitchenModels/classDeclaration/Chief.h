@@ -17,7 +17,7 @@ public:
  ChiefModel();
  ~ChiefModel();
 
- void addOrder(const Order& order);
+ void addOrder(const Order* order);
  void addCook(CookModel* cook);
 
 private:

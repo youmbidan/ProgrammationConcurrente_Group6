@@ -9,6 +9,7 @@
 #include <QtSql/QSqlQuery>
 #include <QtSql/QSqlError>
 #include "../../commonModels/classDeclaration/Order.h"
+#include "../../../Utilities/ThreadPoolManager.h"
 
 class CookModel : public QObject {
     Q_OBJECT
@@ -25,7 +26,6 @@ public:
     void orderFailed(int orderId);           // Signal pour indiquer l'échec de la commande
 
 private:
-    QThread* workerThread;
     const Order *currentOrder;
     bool available;
     QMutex mutex;

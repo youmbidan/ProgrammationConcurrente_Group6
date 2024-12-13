@@ -11,12 +11,13 @@
 #include "CharacterElementController.h"
 #include "MotionlessElementController.h"
 #include "../../Factories/classDeclaration/ClientGroupFactory.h"
-#include "../../Factories/classDeclaration/TableFactory.h"
 #include "../../Models/commonModels/classDeclaration/CardModel.h"
 #include "../../Models/commonModels/classDeclaration/ClientGroupModel.h"
 #include "../../Models/dinningRoomModels/classDeclaration/Table.h"
 #include "../../Utilities/ThreadPoolManager.h"
 #include "../../Structs/Attribution.h"
+#include "../../Factories/classDeclaration/TableFactory.h"
+
 
 
 class DinningRoomController {
@@ -71,6 +72,10 @@ class DinningRoomController {
 
     std::condition_variable characterControllerCond;
 
+    std::queue<Order*> ordersOnCounterQueue;
+
+    std::queue<Order*> ordersReadyOnCounterQueue;
+
     public:
     /**
      *
@@ -83,8 +88,7 @@ class DinningRoomController {
         : characterElementController(characterElementController),
             clientGroupFactory(new ClientGroupFactory()),
             motionlessElementController(motionlessElementController),
-            currentCard(new CardModel())
-    {};
+            currentCard(new CardModel()) {};
 
     ~DinningRoomController();
 
@@ -99,6 +103,12 @@ class DinningRoomController {
     void startTakingOrders();
 
     void startCollectingOrders();
+
+    // public slots:
+    //     void handleOrderCompletion(Order* order);
+
+    // signals:
+    //     void newOrderReady(Order* order);
 
 
 
