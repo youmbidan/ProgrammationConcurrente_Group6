@@ -84,6 +84,8 @@ set(SOURCES
         src/Models/kitchenModels/classDefinition/UstensilModel.cpp
         src/Controllers/classDeclaration/KitchenController.h
         src/Controllers/classDefinition/KitchenController.cpp
+        src/Controllers/classDeclaration/SharedOrdersQueue.h
+        src/Controllers/classDefinition/SharedOrdersQueue.cpp
         #        src/Controllers/classDeclaration/SocketController.h
 #        src/Controllers/classDefinition/SocketController.cpp
 )

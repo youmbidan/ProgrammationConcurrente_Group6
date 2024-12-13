@@ -7,16 +7,11 @@
 DinningRoomController::~DinningRoomController() = default;
 
 void DinningRoomController::startClientGroupCreation() {
-    /**
-     * @brief Crée des groupes de clients en boucle et les ajoute à la file à traiter.
-     * Cela utilise un thread d'arrière-plan via ThreadPoolManager.
-     */
-
     ThreadPoolManager::enqueue([this]() {
         while (true) {
             {
                 std::unique_lock lock(clientGroupFormedMutex);
-                clientGroupFormedCond.wait(lock, [this](){return clientGroupsFormed.empty();});
+                clientGroupFormedCond.wait(lock, [this]() { return clientGroupsFormed.empty(); });
                 ClientGroupModel* newGroup = clientGroupFactory->createGroup();
                 std::cout << "Groupe de clients cree (DinningRoomController::startClientGroupCreation())" << std::endl;
                 clientGroupsFormed.emplace(newGroup);
@@ -24,14 +19,9 @@ void DinningRoomController::startClientGroupCreation() {
                 clientGroupFormedCond.notify_one();
             }
 
-            // Pause pour limiter la fréquence de création des groupes.
-            std::this_thread::sleep_for(std::chrono::seconds(3));
+            std::this_thread::sleep_for(std::chrono::seconds(3));  // Limiter la fréquence de création des groupes
         }
     });
-}
-
-void DinningRoomController::setFreeTablesList() {
-    freeTablesList = TableFactory::dinningRoomTables;
 }
 
 void DinningRoomController::startToWelcomeClientGroups() {
@@ -41,21 +31,16 @@ void DinningRoomController::startToWelcomeClientGroups() {
 
             {
                 std::unique_lock lock(clientGroupFormedMutex);
-                clientGroupFormedCond.wait(lock, [this]() {
-                    return !clientGroupsFormed.empty();
-                });
+                clientGroupFormedCond.wait(lock, [this]() { return !clientGroupsFormed.empty(); });
                 newGroup = clientGroupsFormed.front();
                 clientGroupsFormed.pop();
             }
 
-
             if (!freeTablesList.empty()) {
                 Table* newOccupiedTable = characterElementController->butler->assignTable(newGroup->getClientNumber(), freeTablesList);
-                if(newOccupiedTable) {
-                    {
-                        std::unique_lock lock(characterControllerMutex);
-                        characterElementController->insertClientGroupOnScene(newGroup);
-                    }
+                if (newOccupiedTable) {
+                    std::unique_lock lock(characterControllerMutex);
+                    characterElementController->insertClientGroupOnScene(newGroup);
                     std::cout << "Table attribuée : (" << newOccupiedTable->getAbscice() << ", " << newOccupiedTable->getIntercept()
                               << ") de " << newOccupiedTable->getCapacity() << " places pour un groupe de " << newGroup->getClientNumber() << " personnes." << std::endl;
 
@@ -67,17 +52,11 @@ void DinningRoomController::startToWelcomeClientGroups() {
                         clientGroupAssignedCond.notify_one();
                     }
                 } else {
-                    cout << "AUCUNE TABLE TROUVEE !!" << endl;
+                    std::cout << "AUCUNE TABLE TROUVEE !!" << std::endl;
                 }
             }
 
-            // Ré-enqueue la tâche après une pause pour ne pas monopoliser un thread
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
-            ThreadPoolManager::enqueue([this]() {
-                this->startToWelcomeClientGroups();
-            });
-
-            return;
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));  // Pause pour éviter une surcharge de threads
         }
     });
 }
@@ -140,44 +119,39 @@ void DinningRoomController::startTakingOrders() {
         Table* currentOrderingTable;
         {
             std::unique_lock lock(orderingTablesMutex);
-            orderingTablesCond.wait(lock, [this]() {return !orderingTables.empty();});
+            orderingTablesCond.wait(lock, [this]() { return !orderingTables.empty(); });
             currentOrderingTable = orderingTables.front();
+            orderingTables.pop();
         }
 
-        //On détermine combien de cartes la table a besoin
-        int neededCards = 1;
-
-        if(currentOrderingTable->getClientsOnTable().size() > 4) {
-            neededCards = 2;
-        }
+        int neededCards = currentOrderingTable->getClientsOnTable().size() > 4 ? 2 : 1;
 
         std::unique_lock lock(cardMutex);
-        if(cardLeft >= neededCards) {
+        if (cardLeft >= neededCards) {
             cardLeft -= neededCards;
-            for(ClientModel* client : currentOrderingTable->getClientsOnTable()) {
+            for (ClientModel* client : currentOrderingTable->getClientsOnTable()) {
                 client->makeChoice(currentCard->getCurrentCard());
-                std::this_thread::sleep_for(std::chrono::seconds(5));
-                cout << "un client a fait son choix" << endl;
+                std::this_thread::sleep_for(std::chrono::seconds(5));  // Délais entre chaque choix
+                std::cout << "un client a fait son choix" << std::endl;
+
                 {
                     std::unique_lock lock(orderingTablesMutex);
-                    // on l'enleve de la queue des tables qui sont entrain de commander
                     orderingTables.pop();
                 }
+
                 {
                     std::unique_lock lock(orderedTablesMutex);
-                    // on l'ajoute dans la liste des tables qui on fini de commander
                     orderedTables.push(currentOrderingTable);
                     orderedTablesCond.notify_one();
                 }
             }
         } else {
-            cout  << "PAS ASSEZ DE CARTES... RESTEZ EN ATTENTE SVP" << endl;
+            std::cout << "PAS ASSEZ DE CARTES... RESTEZ EN ATTENTE SVP" << std::endl;
         }
 
-
         ThreadPoolManager::enqueue([this]() {
-                this->startTakingOrders();
-            });
+            this->startTakingOrders();  // Re-enqueue pour la prochaine itération
+        });
     });
 }
 
@@ -188,65 +162,56 @@ void DinningRoomController::startCollectingOrders() {
 
         {
             std::unique_lock lock(orderedTablesMutex);
-            orderedTablesCond.wait(lock, [this]() {return !orderedTables.empty();});
+            orderedTablesCond.wait(lock, [this]() { return !orderedTables.empty(); });
             currentOrderedTable = orderedTables.front();
             orderedTables.pop();
         }
 
-        // on constitue l'order pour la table
-
         vector<Recipe*> tableChoices;
-        for(ClientModel* client : currentOrderedTable->getClientsOnTable()) {
-            // on récupre les choix de chaque client
+        for (ClientModel* client : currentOrderedTable->getClientsOnTable()) {
             tableChoices.push_back(client->getChoice());
         }
 
         std::unordered_map<Recipe*, int> recipeCounts;
 
-        // Compte les occurrences de chaque recette
         for (Recipe* recipe : tableChoices) {
             recipeCounts[recipe]++;
         }
 
-        // Crée le vecteur final
         std::vector<OrderRecipe*> orderRecipes;
         for (const auto& [recipe, quantity] : recipeCounts) {
             orderRecipes.emplace_back(new OrderRecipe{recipe, quantity});
         }
 
+        Order* newOrder = new Order(orderRecipes, currentOrderedTable->getTableId());
+        std::cout << "APPORTONS LES COMMANDES DE LA TABLE " << currentOrderedTable->getTableId() << " AU COMPTOIR" << std::endl;
 
-        // créer la commande
-        Order *newOrder = new Order(orderRecipes, currentOrderedTable->getTableId());
-
-
-        cout << "APPORTONS LES COMMANDES DE LA TABLE " << currentOrderedTable->getTableId()<< " AU COMPTOIR" << endl;
-
-        int neededCards = 1;
-
-        if(currentOrderedTable->getClientsOnTable().size() > 4) {
-            neededCards = 2;
-        }
+        int neededCards = currentOrderedTable->getClientsOnTable().size() > 4 ? 2 : 1;
         cardLeft += neededCards;
 
-
-        // on part déposer les la commande de la table
         {
             std::unique_lock lock(characterControllerMutex);
-            characterElementController->second_headWaiter->move({currentOrderedTable->getAbscice(),currentOrderedTable->getIntercept()});
+            characterElementController->second_headWaiter->move({currentOrderedTable->getAbscice(), currentOrderedTable->getIntercept()});
             std::this_thread::sleep_for(std::chrono::milliseconds(500));
-            characterElementController->second_headWaiter->move({1000,100});
+            characterElementController->second_headWaiter->move({1000, 100});
         }
 
-        // emit newOrderReady(newOrder);
-
-
+        sharedOrdersQueue.addOrder(*newOrder);  // Ajouter la commande à la queue partagée
 
         ThreadPoolManager::enqueue([this]() {
-            this->startCollectingOrders();
+            this->startCollectingOrders();  // Re-enqueue pour la prochaine itération
         });
     });
 }
 
+void DinningRoomController::setFreeTablesList() {
+    freeTablesList = TableFactory::dinningRoomTables;
+}
+
+void DinningRoomController::addOrder(const Order& order) {
+    std::cout << "DinningRoomController: Nouvelle commande ajoutée pour la table : " << order.getTableId() << std::endl;
+        sharedOrdersQueue.addOrder(order);
+}
 
 // void DinningRoomController::handleOrderCompletion(Order *order) {
 //

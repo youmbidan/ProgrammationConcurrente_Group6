@@ -17,6 +17,7 @@
 #include "../../Utilities/ThreadPoolManager.h"
 #include "../../Structs/Attribution.h"
 #include "../../Factories/classDeclaration/TableFactory.h"
+#include "../classDeclaration/SharedOrdersQueue.h"
 
 
 
@@ -38,6 +39,7 @@ class DinningRoomController {
 
     // queue de tables ayant déjà commandée
     queue<Table*> orderedTables;
+
 
     //pour pouvoir récupérer les instances des personnages
     CharacterElementController *characterElementController;
@@ -76,18 +78,21 @@ class DinningRoomController {
 
     std::queue<Order*> ordersReadyOnCounterQueue;
 
+    SharedOrdersQueue& sharedOrdersQueue;
+
     public:
     /**
      *
      * @param characterElementController
      * @param motionlessElementController
      */
-    DinningRoomController(
+    DinningRoomController(SharedOrdersQueue& sharedOrdersQueue,
         CharacterElementController *characterElementController, MotionlessElementController *motionlessElementController
         )
         : characterElementController(characterElementController),
             clientGroupFactory(new ClientGroupFactory()),
             motionlessElementController(motionlessElementController),
+            sharedOrdersQueue(sharedOrdersQueue),
             currentCard(new CardModel()) {};
 
     ~DinningRoomController();
@@ -103,6 +108,9 @@ class DinningRoomController {
     void startTakingOrders();
 
     void startCollectingOrders();
+
+    void addOrder(const Order& order);
+
 
     // public slots:
     //     void handleOrderCompletion(Order* order);

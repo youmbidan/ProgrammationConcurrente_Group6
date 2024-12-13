@@ -20,6 +20,16 @@ void CharacterElementController::initializeEmployeesCharacter() {
     second_server_point_view = new CommonPointView("server2", 100, 500, ":/assets/serveur1.png",nullptr);
     room_clerk_point_view = new CommonPointView("roomClerk", 500, 500, ":/assets/commis.png", nullptr);
 
+
+    chief = new CommonPointView("chief", 50, 150, ":/assets/chief.png", nullptr);
+    kitchenView->addCharacterToScene(chief);
+
+    cook1 = new CommonPointView("cook", 100, 450, ":/assets/commis.png", nullptr);
+    kitchenView->addCharacterToScene(cook1);
+
+    cook2 = new CommonPointView("cook", 450, 450, ":/assets/commis.png", nullptr);
+    kitchenView->addCharacterToScene(cook2);
+
     // Instanciation des objets
     butler = new Butler();
     headWaiter = new HeadWaiter(head_waiter_point_view->getX(), head_waiter_point_view->getY());
@@ -51,7 +61,7 @@ void CharacterElementController::insertClientGroupOnScene(ClientGroupModel* clie
     const std::string clientLabel = "Clients(" + std::to_string(nbr_client) + ")";
 
     // Créer un point graphique représentant le groupe de clients
-    CommonPointView* client_point_view = new CommonPointView(QString::fromStdString(clientLabel), 0, 20,":/assets/group4.png", nullptr);
+    CommonPointView* client_point_view = new CommonPointView(QString::fromStdString(clientLabel), 200, 300,":/assets/group4.png", nullptr);
 
     // Synchroniser les coordonnées entre le modèle et la vue
     PointStruct clientGroupCoord = {

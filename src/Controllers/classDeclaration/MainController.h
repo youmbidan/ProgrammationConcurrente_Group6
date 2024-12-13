@@ -13,6 +13,7 @@
 #include <QTimer>
 
 #include "KitchenController.h"
+#include "SharedOrdersQueue.h"
 
 
 class MainController : public QObject {
@@ -28,6 +29,7 @@ class MainController : public QObject {
     std::queue<Order*> ordersOnCounterQueue;
 
     std::queue<Order*> ordersReadyOnCounterQueue;
+    SharedOrdersQueue sharedOrdersQueue;
 
 public:
     MainController(MainView& mainView);

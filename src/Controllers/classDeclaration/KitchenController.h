@@ -4,18 +4,23 @@
 #include <QObject>
 #include "../../Models/kitchenModels/classDeclaration/Chief.h"
 #include <queue>
+#include "../classDeclaration/SharedOrdersQueue.h"
+
+
 
 class KitchenController : public QObject {
     Q_OBJECT
 
 public:
-    explicit KitchenController(ChiefModel* chefModel,  QObject* parent = nullptr);
+
+    explicit KitchenController(ChiefModel *chefModel,  SharedOrdersQueue& sharedOrdersQueue, QObject *parent = nullptr);
 
     ChiefModel* getChiefModel() const;
 
-    void processOrder();
     std::queue<Order*> ordersOnCounterQueue;
     std::queue<Order*> ordersReadyOnCounterQueue;
+
+    void processOrders();
 
     // public slots:
     //     void receiveOrder(Order* order);
@@ -26,6 +31,8 @@ public:
 private:
     ChiefModel* chiefModel;
     int nextOrderId;
+    SharedOrdersQueue& sharedOrdersQueue;
+
 };
 
 #endif // KITCHENCONTROLLER_H

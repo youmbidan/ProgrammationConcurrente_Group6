@@ -11,9 +11,10 @@
 #include <ctime>
 #include <vector>
 
+SharedOrdersQueue sharedOrderQueue;
 
-KitchenController::KitchenController(ChiefModel* chefModel, QObject* parent)
-    : QObject(parent), chiefModel(chefModel) {}
+KitchenController::KitchenController(ChiefModel* chefModel,  SharedOrdersQueue& sharedOrdersQueue, QObject* parent)
+    : QObject(parent), chiefModel(chefModel), sharedOrdersQueue(sharedOrdersQueue) {}
 
 ChiefModel* KitchenController::getChiefModel() const {
     return chiefModel;
@@ -23,6 +24,19 @@ ChiefModel* KitchenController::getChiefModel() const {
 // void KitchenController::receiveOrder(Order *order) {
 //     chiefModel->addOrder(order);
 // }
+
+void KitchenController::processOrders() {
+        ThreadPoolManager::enqueue([this]() {
+            while (true) {
+                Order order = sharedOrdersQueue.getOrder();
+                std::cout << "KitchenController: Traitement de la commande : " << order.getTableId() << std::endl;
+
+                // Simuler le traitement de la commande
+                std::this_thread::sleep_for(std::chrono::seconds(2));
+            }
+        });
+
+}
 
 
 

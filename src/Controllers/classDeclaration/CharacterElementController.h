@@ -47,6 +47,12 @@ public:
  CommonPointView *room_clerk_point_view;
  CommonPointView *client_point_view ;
 
+ CommonPointView *chief;
+ CommonPointView *cook1;
+ CommonPointView *cook2;
+ CommonPointView *clerk1;
+ CommonPointView *clerk2;
+
  CommonPointView *client_group_point_view;
  void initializeEmployeesCharacter();
  void insertClientGroupOnScene(ClientGroupModel* clientGroup);

@@ -3,15 +3,15 @@
 #include "../../Views/MainView.h"
 
 MainController::MainController(MainView &mainView)
-    : mainView(&mainView)
+    : mainView(&mainView), sharedOrdersQueue()
 {
     dinningRoomView = mainView.getDinningRoomView();
     kitchenView = mainView.getKitchenView();
     motionlessElementController = new MotionlessElementController(dinningRoomView);
     characterElementController = new CharacterElementController(&mainView);
     threadPoolManager = new ThreadPoolManager();
-    dinningRoomController = new DinningRoomController(characterElementController, motionlessElementController);
-    KitchenController kitchenController(new ChiefModel());
+    dinningRoomController = new DinningRoomController( sharedOrdersQueue,characterElementController, motionlessElementController);
+    KitchenController kitchenController(new ChiefModel(), sharedOrdersQueue);
 }
 
 
@@ -27,8 +27,8 @@ void MainController::startMainView() {
 void MainController::onConfigurationValidated(int time, int clients, const QString& mode, const QString& additionalInfo) {
     // Une fois la configuration validée, afficher la vue principale
     mainView->show();
-    //m_mainView.updateConfiguration(time, clients, mode, additionalInfo); // Mise à jour de la vue principale avec les informations
     motionlessElementController->createAllTable();
+    // kitchenController->processOrders();
     dinningRoomController->setFreeTablesList();
     characterElementController->initializeEmployeesCharacter();
     dinningRoomController->startClientGroupCreation();

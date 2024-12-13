@@ -27,8 +27,8 @@ KitchenView::KitchenView(QWidget *parent)
     mainLayout->addWidget(createControlBar());
 
     // Vue graphique
-    QGraphicsScene *scene = new QGraphicsScene();
-    QGraphicsView *view = new QGraphicsView(scene);
+    scene = new QGraphicsScene();
+    view = new QGraphicsView(scene);
 
     // Désactivation des interactions utilisateur avec la scène
     view->setInteractive(false);
@@ -171,3 +171,7 @@ QWidget* KitchenView::createControlBar() {
 
     return controlBar;
 } 
+
+void KitchenView::addCharacterToScene(QGraphicsItem *characterPoint) {
+    scene->addItem(characterPoint);
+}

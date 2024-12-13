@@ -20,14 +20,18 @@ class KitchenView : public QWidget {
 public:
     explicit KitchenView(QWidget *parent = nullptr);
     void updateImagePosition(int index, int x, int y);
+    void addCharacterToScene(QGraphicsItem *characterPoint);
+
 private:
     QLCDNumber *lcdTimer;
     QTimer *timer;
     int elapsedSeconds;
     void addImagesToScene(QGraphicsScene *scene);  // Déclaration de la fonction
+    void setupTimer();
 
     QWidget* createControlBar();
-    void setupTimer();
+    QGraphicsScene *scene;
+    QGraphicsView *view;
 };
 
 #endif // kitchenView_H
