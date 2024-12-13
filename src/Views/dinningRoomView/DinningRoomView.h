@@ -14,7 +14,7 @@
 
 
 class DinningRoomView : public QWidget {
-    
+    Q_OBJECT
 
 public:
     explicit DinningRoomView(QWidget *parent = nullptr);
@@ -22,6 +22,7 @@ public:
     void addTableFourToDinningRoomScene(int x, int y);
     void addTableSixToDinningRoomScene(int x, int y);
     void addTableHeightToDinningRoomScene(int x, int y);
+    void addTableTenToDinningRoomScene(int x, int y);
 
     void addCharacterToScene(QGraphicsItem *characterPoint);
 

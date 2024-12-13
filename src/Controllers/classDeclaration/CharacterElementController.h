@@ -48,6 +48,11 @@ public:
  CommonPointView *client_point_view ;
 
  CommonPointView *client_group_point_view;
+ /**
+  * @brief initialize employees/clients and associate them with
+  * corresponding models.
+  * Also add them to scene
+  */
  void initializeEmployeesCharacter();
  void insertClientGroupOnScene(ClientGroupModel* clientGroup);
 
@@ -57,11 +62,6 @@ public:
  KitchenView *kitchenView;
  std::vector<CommonPointView*> clientPointViews; // Conteneur pour stocker les points de vue
 
- /**
-  * @brief initialize employees/clients and associate them with
-  * corresponding models.
-  * Also add them to scene
-  */
 
 
 
